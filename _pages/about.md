@@ -5,26 +5,31 @@ permalink: /about/
 layout: page
 ---
 
-The [Sustainable Development Goals](http://www.un.org/sustainabledevelopment/sustainable-development-goals/) (SDGs) are a universal call to action to:
+#### Please note that this site is in the Beta stage of development, therefore the site is still a 'work in progress'.
 
-  * end poverty
-  
-  * protect the planet
-  
-  * improve the lives and prospects of everyone, everywhere
+## 2030 Agenda for Sustainable Development
+The <a href="https://www.un.org/ga/search/view_doc.asp?symbol=A/RES/70/1&Lang=E">2030 Agenda for Sustainable Development</a>, adopted by all United Nations Member States in 2015, provides a blueprint for improving outcomes in the economy, society and the environment. 
 
-The 17 Goals were adopted by all UN Member States in 2015, as part of the [2030 Agenda for Sustainable Development](https://sustainabledevelopment.un.org/post2015/transformingourworld).
+At its heart are the 17 Sustainable Development Goals (SDGs), a universal call to action to:
+* end poverty,
+* protect the planet,
+* and ensure that all people enjoy peace and prosperity.
 
-## About this site
-This site is based on the open source [Open SDG](https://open-sdg.org/) platform.
-    
-Other countries or organisations wishing to reuse the Open SDG reporting platform are welcome to do so for free. The [Open SDG Quick Start Guide](https://open-sdg.readthedocs.io/en/latest/quick-start/) gives technical instructions on the quickest way to get a copy of the Open SDG platform up and running.
+The goals are underpinned by a framework of global indicators that allow Canada and other countries to monitor and report on progress. They cover a broad range of social, environmental and economic issues, including but not limited to poverty, hunger, health, education, social equality, innovation, climate change, biodiversity and justice, with a focus on the most vulnerable and a commitment to “leave no one behind”. Countries are also encouraged to develop a national implementation plan that can include country-developed indicators to address specific national contexts and priorities to achieving the SDGs.
 
-If you have comments, feedback, or want to get involved with the Open SDG community please email <opensdg@googlegroups.com> or contact the [Open SDG GitHub](https://github.com/open-sdg/open-sdg).
+## Canada’s Priorities for Sustainable Development
+To support Canada’s domestic implementation of the SDGs that the Government of Canada has committed to, a <a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">national strategy</a> (Moving forward together: Canada’s 2030 Agenda National Strategy) has been developed. The development of a Canada specific indicator framework was an opportunity to elaborate a set of indicators that aligns more closely with Canada’s domestic priorities related to sustainable development.
 
-## Need more info?
-Answers to some specific questions about this website are included on our [frequently asked questions]({{ site.baseurl }}{% link _pages/faq.md %}) page.
+The Canadian Indicator Framework (CIF) encompasses the 17 goals, and adds 31 Canadian Ambitions which have been elaborated by federal departments. In order to report on these Ambitions, Statistics Canada has developed 76 indicators that monitor progress on the National Ambitions and targets. The CIF lays the foundation for Canada to track and report on its progress on the 17 SDGs in the Canadian context.
 
-## Feedback
-To provide feedback on our SDG data please [contact us]({{ site.baseurl }}/contact-us)
+## About this website
+Statistics Canada is the central focal point for reporting the data and statistics for both the Canadian and the Global SDG indicators  and has developed this interactive data hub using the <a href="https://open-sdg.org/">Open SDG platform</a> to disseminate the Canadian Indicator Framework data and report on progress towards the Canadian ambitions and targets.
+
+Statistics Canada is continuing to examine data sources that may be useful for reporting on the indicators and over the coming months will continue to add further data disaggregation, statistics, and data visualization features to enhance the experience of users.
+
+<em>Statistics Canada's SDG team would like to thank everyone that participated in the quality assurance, made suggestions for improvement or contributed in any other way to the creation of this hub.</em>
+
+
+## Interested in more information?
+If you have further questions, or would like to provide feedback on the SDG Data Hub please <a href="mailto:statcan.sdg-odd.statcan@canada.ca">contact us</a>. The answers to some frequently asked questions are also available in our [FAQ]({{ site.baseurl }}/faq/).
 
