@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Contact us
+title: Contact
 language: fr
-permalink: /fr/contact-us/
+permalink: /fr/contact/
 ---
-### We are interested in your feedback regarding this website and its contents.
+### Nous sommes intéressé à recevoir votre rétroaction au sujet de ce site et son contenu.
 
 
-- If you have questions about the statistics, data sources, or metadata provided for our SDG indicators, please contact [{{site.email_contacts.questions}}](mailto:{{site.email_contacts.questions}})
+- Si vous avez des questions à propos des statistiques, sources de données, ou des métadonnées fournies, veuillez contacter l'équipe ODD de Statistique Canada à l'adrese suivante : [{{site.email_contacts.questions}}](mailto:{{site.email_contacts.questions}})
 
-- If you have suggestions regarding additional site content or data sources, please contact [{{site.email_contacts.suggestions}}](mailto:{{site.email_contacts.suggestions}})
+- Si vous avez des suggestions pour du contenu supplémentaire ou de nouvelles source de données, veuillez contacter l'équipe ODD de Statistique Canada à l'adrese suivante : [{{site.email_contacts.questions}}](mailto:{{site.email_contacts.questions}})
 
-- If you have suggestions on how to improve the functionality of this website, including data accessibility, please contact [{{site.email_contacts.functional}}](mailto:{{site.email_contacts.functional}})
+- Si vous avec des suggestions sur comment améliorer les fonctionalités de ce site web, incluant l'accesssibilité des données, veuillez contacter l'équipe ODD de Statistique Canada à l'adrese suivante : [{{site.email_contacts.questions}}](mailto:{{site.email_contacts.questions}})
