@@ -5,65 +5,59 @@ permalink: /fr/faq/
 layout: page
 ---
 
-## Table of contents
-- [How often will new data be added to this site?](#how-often-will-new-data-be-added-to-this-site)
+## Comment puis-je suggérer des améliorations au carrefour de données ?
 
-- [How do I suggest new or different data sources?](#how-do-i-suggest-new-or-different-data-sources)
-
-- [What are you doing to fill data gaps?](#what-are-you-doing-to-fill-data-gaps)
-
-- [What does the reporting status mean?](#what-does-the-reporting-status-mean)
-
-- [Can other countries copy this website?](#can-other-countries-copy-this-website)
-
-- [How accessible is this website?](#how-accessible-is-this-website)
-
-- [What browsers can I use to view this website?](#what-browsers-can-i-use-to-view-this-website)
-
-- [What do each of the three tiers mean?](#what-do-each-of-the-three-tiers-mean)
-
-## How often will new data be added to this site?
-We will add data as soon as it has been sourced and checked. This includes new data as well as updates to data we have already published. We will continue to collect data from existing sources where possible.
-
-## How do I suggest new or different data sources?
-If you have feedback on the data sources we have used or have suggestions for new data sources then please email us at <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>.
-
-## What are you doing to fill data gaps?
-For some indicators, although we may have data at the national level, our existing data sources don’t always allow us to disaggregate by all main groups.
-
-This means we need to look for new data sources, link existing ones, or model data.
-
-## What does the reporting status mean?
-We have used three different types of reporting status for an indicator, which are also colour coded:
-
-- **Reported (black):** As a minimum the headline national data for this indicator is available on this website but the data might not be fully disaggregated yet. We are continuing to source additional disaggregations.
-
-- **Statistics in progress (grey):** We have found a suitable source of data for this indicator or relevant proxy at national level. We are currently quality assuring the data and preparing it for publication.
-
-- **Exploring data sources (white):** We are still looking for a suitable data source for this indicator.
-
-- **Not applicable (striped):** This indicator is not applicable in the national context.
+Si vous avez de la rétroaction à propos du carrefour de données, veuillez <a href="mailto:statcan.sdg-odd.statcan@canada.ca">nous contacter</a>.
 
 
-## Can other countries copy this website?
-Yes. See the [Open SDG Quick Start guide](https://open-sdg.readthedocs.io/en/latest/quick-start/) for technical instructions on the quickest way to get a copy of the Open SDG platform up and running.
+## À quelle fréquence de nouvelles données seront-elles ajoutées à ce site ?
 
-## How accessible is this website?
-Open SDG aims to be as accessible and usable as possible for every user and works towards meeting AA level of [Web Content Accessibility Guidelines (WCAG 2.0)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag-20).
+Nous ajouterons des nouvelles données dès qu’elles auront été recueillies et validées. Cela inclut les nouvelles données ainsi que les dernières mises à jour aux données déjà publiées. Nous allons continuer d’incorporer des données de sources existante lorsque possible.
 
-## What browsers can I use to view this website?
-Our website works with most of the latest versions of the commonly used browsers.
 
-## What do each of the three tiers mean?
-Each of the SDG indicators are assigned to one (or more) of the following tiers:
- - **Tier 1:** Indicator is conceptually clear, has an internationally established methodology and standards are available, and data are regularly produced by countries for at least 50 per cent of countries and of the population in every region where the indicator is relevant.
+## Quel est le lien entre le Cadre d’indicateurs canadien et la Stratégie nationale du Canada pour le Programme 2030 ?
 
- - **Tier 2:** Indicator is conceptually clear, has an internationally established methodology and standards are available, but data are not regularly produced by countries.
+La <a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html">Stratégie nationale du Canada pour le Programme 2030 : Aller de l’avant ensemble</a> établit une approche pour accélérer les progrès en vue d’atteindre les objectifs de développement durable (ODD) au Canada et contribuer à les atteindre à l’échelle internationale.
+Pour promouvoir l’engagement et l’action, les cinq objectifs fondamentaux suivants ont été établis : 
+1.	Encourager le leadership, la gouvernance et la cohérence des politiques
+2.	Accroître la sensibilisation, la mobilisation et les partenariats
+3.	Responsabilisation, transparence, mesure et production de rapports
+4.	Réconciliation avec les peuples autochtones et Programme 2030
+5.	Investissement dans les ODD
 
- - **Tier 3:** No internationally established methodology or standards are yet available for the indicator, but methodology/standards are being (or will be) developed or tested (As of the 51st session of the UN Statistical Commission, the global indicator framework does not contain any Tier III indicators)
+Le Cadre d’indicateurs canadien et le carrefour de données constituent des outils de mesure et de diffusion nécessaires afin d’assurer la responsabilité et la transparence. Ils sont cruciaux dans le suivi du progrès vers la réalisation des 17 objectifs et 31 des ambitions canadiennes.
 
-**As of 28 December 2020:** The updated tier classification contains **130 Tier I indicators**, **97 Tier II indicators** and **4 indicators that have multiple tiers** (different components of the indicator are classified into different tiers).
 
-For more information, [see the IAEG-SDGs Tier Classification for Global SDG Indicators](https://unstats.un.org/sdgs/iaeg-sdgs/tier-classification/)
+## Quelle est la différence entre le Cadre d’indicateurs canadien et le Cadre de qualité de vie ?
+
+L’objectif des objectifs de développement durable de ne « laisser personne de côté » est un appel critique à l’action à toutes les nations et personnes. Cet appel demandera l’effort et la participation de tous les paliers de gouvernement, des membres de la société civile et des individus.  
+
+En complément à la <a href= "https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html">Stratégie nationale du Canada pour le Programme 2030 : Aller de l’avant ensemble</a> et au Cadre d’indicateurs canadien, le Budget de 2021 a lancé le nouveau <a href=" https://www.budget.gc.ca/2021/report-rapport/anx4-fr.html">Cadre de qualité de vie</a>, conçu pour mieux intégrer les mesures de qualité de vie telles que la prospérité, la santé, l’environnement, la cohésion sociale et une saine gouvernance dans la budgétisation et le développement de politiques du gouvernement fédéral. Le cadre met également l’emphase la distribution des résultats sont distribués à travers les sous-groupes de la population et l’assurance que ces résultats seront durables dans le temps.
+
+Le Cadre de qualité de vie est dérivé d’évidence sur les différents déterminants du bien-être, plutôt que de mettre une emphase spécifique sur les objectifs de développement durables et les défis mondiaux pour un futur meilleur et plus durable pour tous.
+
+Les deux cadres partagent ultimement un dessein commun : encourager un changement social, économique et environnemental transformationnel afin d’atteindre une amélioration de la qualité de vie et du bien-être. Ils se renforcent mutuellement. Cela implique que le CIC et le Cadre de qualité de vie partagent plusieurs indicateurs en commun. En tandem, ils peuvent aider à façonner les conversations futures à propos des éléments importants à mesurer et des façons d’améliorer la vie des Canadiens.
+
+
+## Quelle est la différence entre le Cadre d’indicateurs canadien et le programme des Indicateurs canadiens de durabilité de l'environnement ?
+
+Les objectifs de développement durable et les cadres d’indicateurs mondial et canadien sont conçus pour fournir des mesures aux trois piliers de la durabilité – société, économie et environnement – tandis que le programme des Indicateurs canadiens de durabilité de l'environnement (ICDE) fournit des données et des renseignements qui permettent d’effectuer un suivi du rendement du Canada à l'égard d'enjeux clés en matière de durabilité de l'environnement comme les changements climatiques et la qualité de l'air, la qualité de l'eau et sa disponibilité, et la protection de la nature. Les ICDE sont le principal instrument permettant de mesurer les progrès de la Stratégie fédérale de développement durable et répond à l'engagement d'Environnement et Changement climatique Canada de rendre compte à la population canadienne de l'état de l'environnement, conformément à la Loi canadienne sur la protection de l'environnement et à la Loi sur le ministère de l'Environnement.
+  
+Plusieurs des indicateurs environnementaux du Cadre d'indicateurs canadien proviennent des ICDE, puisque ces cadres sont complémentaires.
+
+
+## À quel point le site est-il accessible ?
+
+Nous visons à rendre ce site web le plus accessible et utilisable que possible. La plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) a récemment atteinte le niveau AA de standard des [Règles pour l'accessibilité des contenus Web (WCAG 2.1)](https://www.w3.org/WAI/standards-guidelines/wcag/fr).
+
+
+## Quel fureteur puis-je utiliser pour visiter ce site web ?
+
+Le site web fonctionne avec la plupart des plus récentes versions des fureteurs les plus utilisés. Il y a quelques problèmes avec l’utilisation de fureteurs plus vieux (tel que IE8) et l’équipe internationale <em>Open SDG</em> s’efforce de remédier à ces problèmes.
+
+
+## Est-ce que d’autres pays peuvent copier ce site web ?
+
+Oui. Ce site est construit à partir de la plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement), qui est un gabarit libre d'accès et d'utilisation pour la gestion et la publication de données et de statistiques liées aux objectifs de développement durable (ODD) des Nations Unies. Consultez le <a href="https://open-sdg.readthedocs.io/en/latest/quick-start/">guide de démarrage rapide de <em>Open SDG</em></a> (en anglais seulement) pour obtenir des instructions techniques sur le moyen le plus rapide de mettre en place une copie du gabarit <em>Open SDG</em>. Les pays qui explorent les façons de diffuser leurs données liées aux objectifs de développement durable peuvent obtenir du support du <em>[Center for Open Data Enterprise (CODE)](http://www.opendataenterprise.org/)</em> via leur <em>[SDG National Reporting Initiative](https://www.sdgreporting.org/)</em> (en anglais seulement).
 
 [Back to top](#top)
