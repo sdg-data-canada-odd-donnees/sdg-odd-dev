@@ -4,5 +4,5 @@ language: en
 permalink: /categories/
 title: Categories
 ---
-## Posts by Category
-Here is a list of posts, grouped by category:
+## Related products
+This page contains a series of SDG related products. Select a post or a category to access them.
