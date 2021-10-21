@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20211020192641">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20211021134903">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -630,6 +630,8 @@ data-event-label="high"
 
   <div id="datatableFooter">
     
+    <p>La source: Statistics Canada</p>
+    
     
     <p>Zone géographique: Canada</p>
     
@@ -933,6 +935,9 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
+        <dt>La source:</dt>
+        <dd>Statistics Canada</dd>
+        
 
         
         <dt>Zone géographique:</dt>
@@ -971,6 +976,9 @@ opensdg.chartConfigAlter(function(config, info) {
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
+        
+        <dt>La source:</dt>
+        <dd>Statistics Canada</dd>
         
 
         
@@ -1156,20 +1164,7 @@ data-event-label="Change to Sources tab"
           
       
         
-      
-      
-      <tr>
-        <th scope="row">Mise à jour des métadonnées </th>
-        <td>
           
-            <p>Last updated: 19 July 2016</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
           
@@ -1208,43 +1203,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Définition et concepts </th>
         <td>
           
-            <h1>Concepts and definitions</h1>
-<h2>Definition:</h2>
-<p>The indicator &#x201C;proportion of the population below the international poverty line&#x201D; is defined as the percentage of the population living on less than $1.90 a day at 2011 international prices. The &apos;international poverty line&apos; is currently set at $1.90 a day at 2011 international prices. </p>
-<h2>Concepts:</h2>
-<p>In assessing poverty in a given country, and how best to reduce poverty, one naturally focuses on a poverty line that is considered appropriate for that country. But how do we talk meaningfully about &#x201C;global poverty?&#x201D; Poverty lines across countries vary in terms of their purchasing power, and they have a strong economic gradient, such that richer countries tend to adopt higher standards of living in defining poverty. But to consistently measure global absolute poverty in terms of consumption we need to treat two people with the same purchasing power over commodities the same way&#x2014;both are either poor or not poor&#x2014;even if they live in different countries.</p>
-<p>Since World Development Report 1990, the World Bank has aimed to apply a common standard in measuring extreme poverty, anchored to what poverty means in the world&apos;s poorest countries. The welfare of people living in different countries can be measured on a common scale by adjusting for differences in the purchasing power of currencies. The commonly used $1 a day standard, measured in 1985 international prices and adjusted to local currency using PPPs, was chosen for World Development Report 1990 because it was typical of the poverty lines in low-income countries at the time. As differences in the cost of living across the world evolve, the international poverty line has to be periodically updated using new PPP price data to reflect these changes. The last change was in October 2015, when the World Bank adopted $1.90 as the international poverty line using the 2011 PPP. Prior to that, the 2008 update set the international poverty line at $1.25 using the 2005 PPP. Poverty measures based on international poverty lines attempt to hold the real value of the poverty line constant across countries, as is done when making comparisons over time. Early editions of the World Bank&#x2019;s World Development Indicators (WDI) used PPPs from the Penn World Tables to convert values in local currency to equivalent purchasing power measured in U.S dollars. Later editions used 1993, 2005, and 2011 consumption PPP estimates produced by the World Bank&#x2019;s International Comparison Program (ICP).</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-          
-      
-        
-          
-      
-        
-          
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Source des données </th>
-        <td>
-          
-            <h1>Data sources</h1>
-<h2>Description:</h2>
-<p>The World Bank typically receives data from National Statistical Offices (NSOs) directly. In other cases it uses NSO data received indirectly. For example, it receives data from Eurostat and from LIS (Luxemburg Income Study), who provide the World Bank NSO data they have received / harmonized. The Universidad Nacional de La Plata, Argentina and the World Bank jointly maintain the SEDLAC (Socio-Economic Database for Latin American and Caribbean) database that includes harmonized statistics on poverty and other distributional and social variables from 24 Latin American and Caribbean countries, based on microdata from household surveys conducted by NSOs. </p>
-<p>Data is obtained through country specific programs, including technical assistance programs and joint analytical and capacity building activities. The World Bank has relationships with NSOs on work programs involving statistical systems and data analysis. Poverty economists from the World Bank typically engage with NSOs broadly on poverty measurement and analysis as part of technical assistance activities. </p>
-<p>Within the World Bank, the Global Poverty Working Group (GPWG) is in charge of the collection, validation and estimation of poverty estimates. GPWG archives the datasets obtained from NSOs and then harmonizes them, applying common methodologies. The objective of the GPWG is to ensure that poverty and inequality data generated, curated, and disseminated by the World Bank are up to date, meet high-quality standards, and are well documented and consistent across dissemination channels. Members of GPWG generate and update the estimates for the proportion of population below the international poverty line using raw data typically provided by country governments. The raw data are obtained by poverty economists through their contacts in the NSOs, and checked for quality before being submitted for further analysis. The raw data can be unit-record survey data, or grouped data, depending on the agreements with the country governments. In most cases, the welfare aggregate, the essential element for poverty estimation, is generated by the country governments. Sometimes, the World Bank has to construct the welfare aggregate or adjust the aggregate provided by the country.</p>
-<h2>List:</h2>
-<p>Directly from National Statistical Offices (NSOs) or indirectly from others &#x2013; see section on data sources.</p>
+            <p>The indicator &#x201C;proportion of the population below the international poverty line&#x201D; is defined as the percentage of the population living on less than $1.90 a day at 2011 international prices. The &apos;international poverty line&apos; is currently set at $1.90 a day at 2011 international prices. </p>
 
           
         </td>
@@ -1257,80 +1216,10 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Méthode de collecte des données </th>
+        <th scope="row">Unité de mesure </th>
         <td>
           
-            <h2>Collection process:</h2>
-<p>The World Bank transparently shares and makes public the methodologies for all kinds of adjustments to original data (e.g., through its PovcalNet website and its various analytical documents). The poverty estimates are developed by economists, who work closely with national government counterparts concerning each poverty data update. </p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Calendrier de collecte des données </th>
-        <td>
-          
-            <h1>Calendar</h1>
-<h2>Data collection:</h2>
-<p>Source collection is ongoing by the Global Poverty Working Group of the World Bank. The calculation of new poverty numbers using updated source data normally takes place from May to September every year. </p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Calendrier de publication des données </th>
-        <td>
-          
-            <h2>Data release:</h2>
-<p>The World Bank Group is committed to updating the poverty data every year. Updated estimates are released at the World Bank&#x2019;s Annual Meetings in October every year. </p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Fournisseurs de données </th>
-        <td>
-          
-            <h1>Data providers</h1>
-<p>The World Bank typically receives data from National Statistical Offices (NSOs) directly. In other cases it uses NSO data received indirectly. Please see the section on data sources for further details.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Compilateurs de données </th>
-        <td>
-          
-            <h1>Data compilers</h1>
-<p>World Bank</p>
+            <p>Percentage</p>
 
           
         </td>
@@ -1346,62 +1235,37 @@ data-event-label="Change to Sources tab"
           
       
         
-      
-      
-      <tr>
-        <th scope="row">Justification </th>
-        <td>
           
-            <h2>Rationale:</h2>
-<p>Monitoring poverty is important on the global development agenda as well as on the national development agenda of many countries. The World Bank produced its first global poverty estimates for developing countries for World Development Report 1990: Poverty (World Bank 1990) using household survey data for 22 countries (Ravallion, Datt, and van de Walle 1991). Since then there has been considerable expansion in the number of countries that field household income and expenditure surveys. The World Bank&apos;s Development Research Group maintains a database that is updated annually as new survey data become available (and thus may contain more recent data or revisions) and conducts a major reassessment of progress against poverty every year. PovcalNet is an interactive computational tool that allows users to replicate these internationally comparable $1.90 and $3.10 a day global, regional and country-level poverty estimates and to compute poverty measures for custom country groupings and for different poverty lines. </p>
-<p>The Poverty and Equity Data portal provides access to the database and user-friendly dashboards with graphs and interactive maps that visualize trends in key poverty and inequality indicators for different regions and countries. The country dashboards display trends in poverty measures based on the national poverty lines alongside the internationally comparable estimates, produced from and consistent with PovcalNet.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">Commentaires et limitations </th>
-        <td>
           
-            <h2>Comments and limitations:</h2>
-<p>Five countries &#x2013; Bangladesh, Cabo Verde, Cambodia, Jordan, and Laos &#x2013; use the 2005 PPP conversion factors and corresponding $1.25 a day and $2 a day poverty lines. This is due to the large deviations in the rate of change in PPP factors relative to the rate of change in domestic consumer price indexes. See Box 1.1 in the Global Monitoring Report 2015/2016 (<a href="http://www.worldbank.org/en/publication/global-monitoring-report">http://www.worldbank.org/en/publication/global-monitoring-report</a>) for a detailed explanation.</p>
-<p>Despite progress in the last decade, the challenges of measuring poverty remain. The timeliness, frequency, quality, and comparability of household surveys needs to increase substantially, particularly in the poorest countries. The availability and quality of poverty monitoring data remains low in small states, countries with fragile situations, and low-income countries and even some middle-income countries. The low frequency and lack of comparability of the data available in some countries create uncertainty over the magnitude of poverty reduction. </p>
-<p>Besides the frequency and timeliness of survey data, other data quality issues arise in measuring household living standards. The surveys ask detailed questions on sources of income and how it was spent, which must be carefully recorded by trained personnel. Income is generally more difficult to measure accurately, and consumption comes closer to the notion of living standards. And income can vary over time even if living standards do not. But consumption data are not always available: the latest estimates reported here use consumption data for about two-thirds of countries.</p>
-<p>However, even similar surveys may not be strictly comparable because of differences in timing or in the quality and training of enumerators. Comparisons of countries at different levels of development also pose a potential problem because of differences in the relative importance of the consumption of nonmarket goods. The local market value of all consumption in kind (including own production, particularly important in underdeveloped rural economies) should be included in total consumption expenditure but may not be. Most survey data now include valuations for consumption or income from own production, but valuation methods vary.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">Méthode de calcul </th>
-        <td>
           
-            <h1>Methodology</h1>
-<h2>Computation method:</h2>
-<p>To measure poverty across countries consistently, the World Bank&#x2019;s international measures apply a common standard, anchored to what &#x201C;poverty&#x201D; means in the world&#x2019;s poorest countries. The original &#x201C;$1-a-day&#x201D; line was based on a compilation of national lines for only 22 developing countries, mostly from academic studies in the 1980s (Ravallion, et al., 1991). While this was the best that could be done at the time, the sample was hardly representative of developing countries even in the 1980s. Since then, national poverty lines have been developed for many other countries. Based on a new compilation of national lines for 75 developing countries, Ravallion, Chen and Sangraula (RCS) (2009) proposed a new international poverty line of $1.25 a day. This is the average poverty line for the poorest 15 countries in their data set. </p>
-<p>The current extreme poverty line is set at $1.90 a day in 2011 PPP terms, which represents the mean of the national poverty lines found in the same poorest 15 countries ranked by per capita consumption. The new poverty line maintains the same standard for extreme poverty - the poverty line typical of the poorest countries in the world - but updates it using the latest information on the cost of living in developing countries. </p>
-<p>When measuring international poverty of a country, the international poverty line at PPP is converted to local currencies in 2011 price and is then converted to the prices prevailing at the time of the relevant household survey using the best available Consumer Price Index (CPI). (Equivalently, the survey data on household consumption or income for the survey year are expressed in the prices of the ICP base year, and then converted to PPP $&#x2019;s.) Then the poverty rate is calculated from that survey. All inter-temporal comparisons are real, as assessed using the country-specific CPI. Interpolation/extrapolation methods are used to line up the survey-based estimates with these reference years.</p>
-
-          
-        </td>
-        </tr>
+      
         
+          
       
-  
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
       
         
           
@@ -1425,17 +1289,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Disponibilité et désagrégation des données </th>
         <td>
           
-            <h1>Data availability</h1>
-<h2>Description:</h2>
-<p>Data availability (measured in terms of number of countries that have at least 1 data point by region):</p>
-<p><strong><em>2010 to present </em></strong></p>
-<p>Asia and Pacific: 23 (40 if modelled estimates are considered); Africa: 23 (48 if modelled estimates are considered); Latin America and Caribbean: 19 (21 if modelled estimates are considered)</p>
-<p>Europe, North America, Australia, New Zealand and Japan: 17 (25 if modelled estimates are considered)</p>
-<p><strong><em>2000-2009 </em></strong></p>
-<p>Asia and Pacific: 38 (40 if modelled estimates are considered); Africa: 47 (48 if modelled estimates are considered); Latin America and Caribbean: 21 (21 if modelled estimates are considered)</p>
-<p>Europe, North America, Australia, New Zealand and Japan: 20 (25 if modelled estimates are considered)</p>
-<h2>Disaggregation:</h2>
-<p>Work is underway at the World Bank for disaggregated poverty estimates.</p>
+            <p>Canada</p>
 
           
         </td>
@@ -1445,21 +1299,7 @@ data-event-label="Change to Sources tab"
   
       
         
-      
-      
-      <tr>
-        <th scope="row">Comparabilité/écart par rapport aux normes internationales </th>
-        <td>
           
-            <h2>Sources of discrepancies:</h2>
-<p>National poverty is a different concept than global poverty. National poverty rate is defined at country-specific poverty lines in local currencies, which are different in real terms across countries and different from the $1.90-a-day international poverty line. Thus, national poverty rates cannot be compared across countries or with the $1.90-a-day poverty rate.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
       
@@ -1468,16 +1308,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Références et documentation </th>
         <td>
           
-            <h1>References</h1>
-<h2>URL:</h2>
-<p><a href="www.worldbank.org">www.worldbank.org</a></p>
-<h2>References:</h2>
-<p>For more information and methodology, please see PovcalNet (<a href="http://iresearch.worldbank.org/PovcalNet/index.htm">http://iresearch.worldbank.org/PovcalNet/index.htm</a>).</p>
-<p>Also, consult: <a href="http://documents.worldbank.org/curated/en/2015/10/25114899/global-count-extreme-poor-2012-data-issues-methodology-initial-results">http://documents.worldbank.org/curated/en/2015/10/25114899/global-count-extreme-poor-2012-data-issues-methodology-initial-results</a> </p>
-<p>For a short review see: <a href="http://www.worldbank.org/en/topic/poverty/brief/global-poverty-line-faq%20">http://www.worldbank.org/en/topic/poverty/brief/global-poverty-line-faq</a> </p>
-<p>For a comprehensive link to related background papers, working papers and journal articles see: </p>
-<p><a href="http://iresearch.worldbank.org/PovcalNet/index.htm?0,4%20">http://iresearch.worldbank.org/PovcalNet/index.htm?0,4</a> </p>
-<p>A Measured Approach to Ending Poverty and Boosting Shared Prosperity: Concepts, Data, and the Twin Goals. (<a href="http://www.worldbank.org/en/research/publication/a-measured-approach-to-ending-poverty-and-boosting-shared-prosperity">http://www.worldbank.org/en/research/publication/a-measured-approach-to-ending-poverty-and-boosting-shared-prosperity</a>)</p>
+            <p><a href="www.worldbank.org">www.worldbank.org</a></p>
 
           
         </td>
@@ -1530,8 +1361,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/8a0367406dbcb19b204300e6c9665d806ca9c4fd" target="_blank">
-                2021-10-20: see changes on GitHub <span class="visuallyhidden">s'ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/2b2ebf8d9b43884007efeb6f96260bf5b5cf76d7" target="_blank">
+                2021-10-21: see changes on GitHub <span class="visuallyhidden">s'ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1634,16 +1465,68 @@ data-event-label="Change to Sources tab"
   
       
         
+      
+      
+      <tr>
+        <th scope="row">Informations sur l'indicateur </th>
+        <td>
           
+            <p>test</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
+      
+      
+      <tr>
+        <th scope="row">Objectif </th>
+        <td>
           
+            <p>Goal 1: End poverty in all its forms everywhere</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
+      
+      
+      <tr>
+        <th scope="row">Cible </th>
+        <td>
           
+            <p>Target 1.1: By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
+      
+      
+      <tr>
+        <th scope="row">Indicateur </th>
+        <td>
           
+            <p>Indicator 1.1.1: Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
           
@@ -1888,6 +1771,252 @@ data-event-label="Change to Sources tab"
 
 
 
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Statistics Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Couverture géographique </th>
+        <td>
+          
+            <p>Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Lien vers la source de données </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="https://www144.statcan.gc.ca/sdg-odd/goal-objectif01-eng.htm" target="_blank">
+                Test link <span class="visuallyhidden">s'ouvre dans une nouvelle fenêtre</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
+  </div>
+
 
 </div>
 
@@ -1990,12 +2119,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20211020192641'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20211021134903'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20211020192641"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20211021134903"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
