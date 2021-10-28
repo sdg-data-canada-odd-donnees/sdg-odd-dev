@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20211027174006">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20211028185758">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -644,60 +644,12 @@ data-event-label="high"
     }
 
     // Set values according to this site's configuration.
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR_INFO__GLOBAL', "test");
-        var propertyEditor = editor.getEditor('root.SDG_INDICATOR_INFO__GLOBAL');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_INDICATOR_INFO__GLOBAL');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR_INFO__GLOBAL'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_GOAL__GLOBAL', "Goal 1: End poverty in all its forms everywhere");
-        var propertyEditor = editor.getEditor('root.SDG_GOAL__GLOBAL');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_GOAL__GLOBAL');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_GOAL__GLOBAL'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "Target 1.1: By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day.");
-        var propertyEditor = editor.getEditor('root.SDG_TARGET__GLOBAL');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_TARGET__GLOBAL');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_TARGET__GLOBAL'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "Indicator 1.1.1: Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)");
-        var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_INDICATOR__GLOBAL');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR__GLOBAL'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_SERIES_DESCR__GLOBAL'));
@@ -780,46 +732,10 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR_INFO'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_GOAL', "<p>Goal 1: End poverty in all its forms everywhere</p>");
-        var propertyEditor = editor.getEditor('root.SDG_GOAL');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_GOAL');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_GOAL'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET', "<p>Target 1.1: By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day</p>");
-        var propertyEditor = editor.getEditor('root.SDG_TARGET');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_TARGET');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_TARGET'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 1.1.1: Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)</p>");
-        var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_INDICATOR');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_SERIES_DESCR'));
@@ -846,32 +762,8 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.IND_DEF_CON_CLASS'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>The indicator &#x201C;proportion of the population below the international poverty line&#x201D; is defined as the percentage of the population living on less than $1.90 a day at 2011 international prices. The &apos;international poverty line&apos; is currently set at $1.90 a day at 2011 international prices. </p>");
-        var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: STAT_CONC_DEF');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.STAT_CONC_DEF'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('UNIT_MEASURE', "Percentage");
-        var propertyEditor = editor.getEditor('root.UNIT_MEASURE');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: UNIT_MEASURE');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.UNIT_MEASURE'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.CLASS_SYSTEM'));
@@ -910,102 +802,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSMNT'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('COVERAGE', "Canada");
-        var propertyEditor = editor.getEditor('root.COVERAGE');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: COVERAGE');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COVERAGE'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('COMPARABILITY', "");
-        var propertyEditor = editor.getEditor('root.COMPARABILITY');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: COMPARABILITY');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COMPARABILITY'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('OTHER_DOC', "<p><a href=\"www.worldbank.org\">www.worldbank.org</a></p>");
-        var propertyEditor = editor.getEditor('root.OTHER_DOC');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: OTHER_DOC');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_DOC'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('national_data_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/0669b80af1709490592fba073b8715fe6ea9ec3c");
-        var propertyEditor = editor.getEditor('root.national_data_update_url');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: national_data_update_url');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_update_url'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('national_data_update_url_text', "2021-09-23: see changes on GitHub");
-        var propertyEditor = editor.getEditor('root.national_data_update_url_text');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: national_data_update_url_text');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_update_url_text'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/2b2ebf8d9b43884007efeb6f96260bf5b5cf76d7");
-        var propertyEditor = editor.getEditor('root.national_metadata_update_url');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: national_metadata_update_url');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_update_url'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('national_metadata_update_url_text', "2021-10-21: see changes on GitHub");
-        var propertyEditor = editor.getEditor('root.national_metadata_update_url_text');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: national_metadata_update_url_text');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_update_url_text'));
 
     
@@ -1140,12 +948,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20211027174006'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20211028185758'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20211027174006"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20211028185758"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
