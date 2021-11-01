@@ -35,7 +35,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/1-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-2-2",
@@ -299,7 +299,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-1-2",
@@ -315,7 +315,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-2-2",
@@ -323,7 +323,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-2-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-3-1",
@@ -379,7 +379,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-4-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-5-1",
@@ -395,7 +395,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-6-1",
@@ -403,7 +403,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-7-1",
@@ -419,7 +419,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-7-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-8-1",
@@ -710,6 +710,22 @@
           "status": "notstarted"
         },
         {
+          "id": "5-5-1a",
+          "title": "global_indicators.5-5-1a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-odd-dev/5-5-1a",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-5-1b",
+          "title": "global_indicators.5-5-1b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-odd-dev/5-5-1b",
+          "status": "notstarted"
+        },
+        {
           "id": "5-6-1",
           "title": "Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care",
           "description": "",
@@ -803,7 +819,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/6-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "6-4-2",
@@ -835,6 +851,22 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/6-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-6-1a",
+          "title": "global_indicators.6-6-1a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-odd-dev/6-6-1a",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-6-1b",
+          "title": "global_indicators.6-6-1b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-odd-dev/6-6-1b",
           "status": "notstarted"
         },
         {
@@ -891,7 +923,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/7-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "7-a-1",
@@ -923,7 +955,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-2-1",
@@ -931,7 +963,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-3-1",
@@ -963,7 +995,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-5-2",
@@ -971,7 +1003,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-6-1",
@@ -979,7 +1011,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-7-1",
@@ -1011,7 +1043,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-9-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-10-1",
@@ -1075,7 +1107,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/9-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-2-2",
@@ -1083,7 +1115,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/9-2-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-3-1",
@@ -1115,7 +1147,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/9-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-5-2",
@@ -1123,7 +1155,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/9-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-a-1",
@@ -1139,7 +1171,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/9-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-c-1",
@@ -1187,7 +1219,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/10-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-4-2",
@@ -1811,7 +1843,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/16-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-1-2",
@@ -1875,7 +1907,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/16-3-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-3-3",
@@ -2015,11 +2047,11 @@
         
         {
           "id": "17-1-1",
-          "title": "Total government revenue as a proportion of GDP, by source",
+          "title": "'Total government revenue as a proportion of GDP, by source'",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/17-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-1-2",
@@ -2027,7 +2059,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/17-1-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-2-1",
@@ -2107,7 +2139,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/17-8-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-9-1",
