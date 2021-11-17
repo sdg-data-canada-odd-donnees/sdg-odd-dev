@@ -486,22 +486,6 @@
           "status": "notstarted"
         },
         {
-          "id": "4-1-1a",
-          "title": "global_indicators.4-1-1a-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/4-1-1a",
-          "status": "notstarted"
-        },
-        {
-          "id": "4-1-1bc",
-          "title": "global_indicators.4-1-1bc-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/4-1-1bc",
-          "status": "notstarted"
-        },
-        {
           "id": "4-2-1",
           "title": "Proportion d'enfants âgés de 24 à 59 mois dont le développement est en bonne voie en matière de santé, d'apprentissage et de bien-être psychosocial, par sexe",
           "description": "",
@@ -654,22 +638,6 @@
           "status": "notstarted"
         },
         {
-          "id": "5-5-1a",
-          "title": "global_indicators.5-5-1a-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/5-5-1a",
-          "status": "notstarted"
-        },
-        {
-          "id": "5-5-1b",
-          "title": "global_indicators.5-5-1b-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/5-5-1b",
-          "status": "notstarted"
-        },
-        {
           "id": "5-6-1",
           "title": "Proportion de femmes âgées de 15 à 49 ans prenant, en connaissance de cause, leurs propres décisions concernant leurs relations sexuelles, l’utilisation de contraceptifs et les soins de santé procréative",
           "description": "",
@@ -795,22 +763,6 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/6-6-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "6-6-1a",
-          "title": "global_indicators.6-6-1a-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/6-6-1a",
-          "status": "notstarted"
-        },
-        {
-          "id": "6-6-1b",
-          "title": "global_indicators.6-6-1b-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/6-6-1b",
           "status": "notstarted"
         },
         {
@@ -1406,22 +1358,6 @@
           "status": "notstarted"
         },
         {
-          "id": "12-3-1a",
-          "title": "global_indicators.12-3-1a-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/12-3-1a",
-          "status": "notstarted"
-        },
-        {
-          "id": "12-3-1b",
-          "title": "global_indicators.12-3-1b-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/12-3-1b",
-          "status": "notstarted"
-        },
-        {
           "id": "12-4-1",
           "title": "Nombre de parties aux accords internationaux multilatéraux sur l’environnement relatifs aux substances chimiques et autres déchets dangereux ayant satisfait à leurs engagements et obligations en communiquant les informations requises par chaque accord",
           "description": "",
@@ -1926,14 +1862,6 @@
           "status": "notstarted"
         },
         {
-          "id": "16-7-1a",
-          "title": "global_indicators.16-7-1a-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/16-7-1a",
-          "status": "notstarted"
-        },
-        {
           "id": "16-8-1",
           "title": "Proportion de pays en développement qui sont membres d’organisations internationales et y disposent du droit de vote",
           "description": "",
@@ -2027,22 +1955,6 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/17-3-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-3-1a",
-          "title": "global_indicators.17-3-1a-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/17-3-1a",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-3-1b",
-          "title": "global_indicators.17-3-1b-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/17-3-1b",
           "status": "notstarted"
         },
         {
@@ -2195,22 +2107,6 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/17-19-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-19-2a",
-          "title": "global_indicators.17-19-2a-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/17-19-2a",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-19-2b",
-          "title": "global_indicators.17-19-2b-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/fr/17-19-2b",
           "status": "notstarted"
         }]
     }
