@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20211118134253">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20211118205813">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -552,7 +552,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;,&quot;Alberta&quot;,&quot;Atlantic provinces&quot;,&quot;British Columbia&quot;,&quot;Calgary, Alberta&quot;,&quot;Canada&quot;,&quot;Edmonton, Alberta&quot;,&quot;Manitoba&quot;,&quot;Quebec, Montréal&quot;,&quot;New Brunswick&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Nova Scotia&quot;,&quot;Ontario&quot;,&quot;Ontario/Quebec, Ottawa-Gatineau&quot;,&quot;Prairie provinces&quot;,&quot;Prince Edward Island&quot;,&quot;Quebec&quot;,&quot;Quebec, Québec&quot;,&quot;Saskatchewan&quot;,&quot;Toronto, Ontario&quot;,&quot;Vancouver, British Columbia&quot;,&quot;Winnipeg, Manitoba&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;Persons in low income&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;,&quot;All persons&quot;,&quot;Females&quot;,&quot;Females, 18 to 64 years&quot;,&quot;Females, 65 years and over&quot;,&quot;Females, under 18 years&quot;,&quot;Males&quot;,&quot;Males, 18 to 64 years&quot;,&quot;Males, 65 years and over&quot;,&quot;Males, under 18 years&quot;,&quot;Persons 18 to 64 years&quot;,&quot;Persons 65 years and over&quot;,&quot;Persons under 18 years&quot;]},&quot;title&quot;:&quot;Persons in low income&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -589,8 +589,76 @@ data-event-label="high"
       <caption>Proportion of population living below the national poverty line, by sex and age</caption>
       <thead>
         
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
       </thead>
       <tbody>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">14.5</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">12.8</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">11.7</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">11.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">10.1</td>
+          
+          
+        </tr>
         
       </tbody>
     </table>
@@ -1284,10 +1352,35 @@ data-event-label="Change to Sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Data last updated </th>
+        <td>
           
+            
+            
+            
+            
+
+            
+              <a href="https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/93258191911375921bebebdcee80a837f1c90483" target="_blank">
+                2021-11-18: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
-          
+      
+      
+      
+  
       
         
       
@@ -2127,12 +2220,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20211118134253'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20211118205813'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20211118134253"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20211118205813"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
