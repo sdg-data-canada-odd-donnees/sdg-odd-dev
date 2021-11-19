@@ -206,7 +206,7 @@ news:
   category_links: false
 non_global_metadata: indicator.national_metadata
 progress_status:
-    status_heading: heading goes here
+    status_heading: Progress status
     status_types:
       - value: not_available
         label: status.progress_not_available
