@@ -218,7 +218,7 @@ progress_status:
         alt: status.progress_target_achieved
       - value: approaching_target
         label: status.progress_approaching_target
-        image: assets/img/progress/approaching_target.png
+        image: assets/img/approaching_target.png
         alt: status.progress_approaching_target
 remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
 reporting_status:
