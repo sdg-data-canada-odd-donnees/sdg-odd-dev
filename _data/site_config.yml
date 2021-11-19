@@ -91,7 +91,7 @@ frontpage_cards:
     rule_color: ''
   - title: Lorem ipsum
     content: |
-      test tes test test test test test test test test e
+      This is some text to fill an unfinished box.
     include: ''
     button_label: Read more
     button_link: 'https://example.com'
@@ -216,6 +216,10 @@ progress_status:
         label: status.progress_target_achieved
         image: assets/img/progress/target-achieved.png
         alt: status.progress_target_achieved
+      - value: approaching_target
+        label: status.progress_approaching_target
+        image: assets/img/progress/approaching_target.png
+        alt: status.progress_approaching_target
 remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
 reporting_status:
   title: status.reporting_status
