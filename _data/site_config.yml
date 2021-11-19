@@ -25,15 +25,15 @@ contrast_type: default
 cookie_consent_form:
   enabled: false
 country:
-  name: Australia
-  adjective: Australian
+  name: Canada
+  adjective: Canadian
 create_goals:
   layout: goal-with-progress
   previous_next_links: true
   goals: []
 create_indicators:
   layout: indicator
-  previous_next_links: false
+  previous_next_links: true
 create_pages:
   - filename: ''
     folder: /
@@ -91,8 +91,7 @@ frontpage_cards:
     rule_color: ''
   - title: Lorem ipsum
     content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
+      test tes test test test test test test test test e
     include: ''
     button_label: Read more
     button_link: 'https://example.com'
@@ -206,6 +205,8 @@ metadata_tabs: []
 news:
   category_links: false
 non_global_metadata: indicator.national_metadata
+progress_status:
+    status_heading: heading goes here
 remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
 reporting_status:
   title: status.reporting_status
