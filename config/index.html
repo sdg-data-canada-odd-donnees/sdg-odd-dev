@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20211122132630">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20211122133330">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -748,7 +748,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('create_goals', {"layout":"goal-with-progress","previous_next_links":true,"goals":[]});
+        var currentValue = normalizeCurrentValue('create_goals', {"layout":"goal-with-","previous_next_links":true,"goals":[]});
         var propertyEditor = editor.getEditor('root.create_goals');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1428,7 +1428,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('progress_status', {"status_heading":"Progress status","status_types":[{"value":"not_available","label":"status.progress_not_available","image":"assets/img/progress/not-available.png","alt":"status.progress_not_available"},{"value":"target_achieved","label":"status.progress_target_achieved","image":"assets/img/progress/target-achieved.png","alt":"status.progress_target_achieved"},{"value":"approaching_target","label":"status.progress_approaching_target","image":"assets/img/progress/approaching_target.png","alt":"status.progress_approaching_target"}]});
+        var currentValue = normalizeCurrentValue('progress_status', {"status_heading":"Progress status","status_types":[{"value":"not_available","label":"status.progress_not_available","image":"assets/img/progress/not-available.png","alt":"status.progress_not_available"},{"value":"target_achieved","label":"status.progress_target_achieved","image":"assets/img/progress/target-achieved.png","alt":"status.progress_target_achieved"},{"value":"approaching_target","label":"status.progress_approaching_target","image":"assets/img/progress/approaching-target.png","alt":"status.progress_approaching_target"}]});
         var propertyEditor = editor.getEditor('root.progress_status');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1714,12 +1714,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20211122132630'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20211122133330'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20211122132630"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20211122133330"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
