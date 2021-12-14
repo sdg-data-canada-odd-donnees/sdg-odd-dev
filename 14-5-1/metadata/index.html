@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20211214170045">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20211214203107">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -934,7 +934,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "   ");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "<p>Land and/or water access and use within protected areas are controlled primarily for the purpose of conserving nature (for example, a park, a conservation area or a wildlife reserve). Other effective area-based conservation measures are also managed over the long term in ways that result in the effective conservation of biodiversity. However, they might have been established for other purposes. <br><br>Trends are estimated based on the date a site was established, rather than the date when it was recognized as a Protected Area or other effective area-based conservation measure (OECM). As such, the totals for a previous year may change as data are updated. <br><br>Comparisons with previous reports should be made with caution, as data quality and completeness continue to improve. Privately protected land and other effective area-based conservation measures contribute to achievement of Canada's targets, but many are not yet captured within the database. <em>(ECCC)</em></p>");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -948,7 +948,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "   ");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "The area conserved is estimated by means of a geographical analysis based on reported boundaries, accounting for overlaps. <em>(ECCC)</em>");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -990,7 +990,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/67c294d671b3f1b203ffa86c937b300d72824960");
+        var currentValue = normalizeCurrentValue('national_data_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/e78a5b6bca75526bcdd163401fdba27922e410aa");
         var propertyEditor = editor.getEditor('root.national_data_update_url');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1018,7 +1018,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/67c294d671b3f1b203ffa86c937b300d72824960");
+        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/e78a5b6bca75526bcdd163401fdba27922e410aa");
         var propertyEditor = editor.getEditor('root.national_metadata_update_url');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1176,12 +1176,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20211214170045'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20211214203107'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20211214170045"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20211214203107"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
