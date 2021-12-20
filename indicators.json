@@ -303,7 +303,7 @@
         },
         {
           "id": "3-3-5",
-          "title": "<p> 3.3.5 Number of people requiring interventions against neglected tropical diseases <br>     3.3.5.a Leprosy",
+          "title": "Number of people requiring interventions against neglected tropical diseases",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-3-5",
@@ -411,7 +411,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-b-1",
