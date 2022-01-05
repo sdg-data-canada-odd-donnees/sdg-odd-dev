@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220104210022">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220105205324">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -908,6 +908,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.STAT_CONC_DEF'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('UNIT_MEASURE', "Service provider per 100,000 population");
+        var propertyEditor = editor.getEditor('root.UNIT_MEASURE');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: UNIT_MEASURE');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.UNIT_MEASURE'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.CLASS_SYSTEM'));
@@ -990,7 +1002,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/cb0d14bd68a0e9c965b090359d63b8cb4895a7f6");
+        var currentValue = normalizeCurrentValue('national_data_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/0ac97af94ba1327d0573b6364552492b61e5297c");
         var propertyEditor = editor.getEditor('root.national_data_update_url');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1004,7 +1016,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_update_url_text', "2022-01-04: see changes on GitHub");
+        var currentValue = normalizeCurrentValue('national_data_update_url_text', "2022-01-05: see changes on GitHub");
         var propertyEditor = editor.getEditor('root.national_data_update_url_text');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1018,7 +1030,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/fbe78d5d7efd03086b78daef8f720486fd673036");
+        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/0ac97af94ba1327d0573b6364552492b61e5297c");
         var propertyEditor = editor.getEditor('root.national_metadata_update_url');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1032,7 +1044,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_update_url_text', "2022-01-04: see changes on GitHub");
+        var currentValue = normalizeCurrentValue('national_metadata_update_url_text', "2022-01-05: see changes on GitHub");
         var propertyEditor = editor.getEditor('root.national_metadata_update_url_text');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1176,12 +1188,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220104210022'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220105205324'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220104210022"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220105205324"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
