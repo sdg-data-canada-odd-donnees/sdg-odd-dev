@@ -579,7 +579,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/5-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-2-1",
@@ -587,7 +587,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/5-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-2-2",
@@ -595,7 +595,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/5-2-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-3-1",
@@ -635,7 +635,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/5-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-6-1",
@@ -683,7 +683,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/5-c-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },

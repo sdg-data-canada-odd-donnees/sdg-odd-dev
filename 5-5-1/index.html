@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220107182335">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220110172032">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -573,14 +573,14 @@ data-event-label="high"
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;National elected officials&quot;,&quot;value&quot;:&quot;Members of Parliament&quot;},{&quot;field&quot;:&quot;National elected officials&quot;,&quot;value&quot;:&quot;Members of Cabinet&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Government&quot;,&quot;value&quot;:&quot;National&quot;},{&quot;field&quot;:&quot;National elected officials&quot;,&quot;value&quot;:&quot;Members of Parliament&quot;}]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Elected officials&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;,&quot;Chiefs in First Nation communities&quot;,&quot;First Nations council members&quot;,&quot;Members of Cabinet&quot;,&quot;Members of Parliament&quot;]},&quot;title&quot;:&quot;Elected officials&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Canada&quot;,&quot;Manitoba&quot;,&quot;New Brunswick&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Northwest Territories&quot;,&quot;Nova Scotia&quot;,&quot;Nunavut&quot;,&quot;Ontario&quot;,&quot;Prince Edward Island&quot;,&quot;Quebec&quot;,&quot;Saskatchewan&quot;,&quot;Yukon&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;Government&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;,&quot;Local&quot;,&quot;National&quot;]},&quot;title&quot;:&quot;Government&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -1338,10 +1338,35 @@ data-event-label="Change to Sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Data last updated </th>
+        <td>
           
+            
+            
+            
+            
+
+            
+              <a href="https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/2bba4aa6e3f77a0c3dd08a898723ffaa191f4c5f" target="_blank">
+                2022-01-07: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
-          
+      
+      
+      
+  
       
         
       
@@ -2181,12 +2206,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220107182335'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220110172032'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220107182335"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220110172032"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
