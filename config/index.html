@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220113202656">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220113203755">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -1318,7 +1318,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('map_layers', []);
+        var currentValue = normalizeCurrentValue('map_layers', [{"min_zoom":2,"max_zoom":6,"subfolder":"regions","label":"Regions"}]);
         var propertyEditor = editor.getEditor('root.map_layers');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1332,7 +1332,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('map_options', {"minZoom":5,"maxZoom":10,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}});
+        var currentValue = normalizeCurrentValue('map_options', {"minZoom":2,"maxZoom":6,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":null,"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#deebf7","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#3182bd","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}});
         var propertyEditor = editor.getEditor('root.map_options');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1714,12 +1714,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220113202656'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220113203755'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220113202656"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220113203755"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
