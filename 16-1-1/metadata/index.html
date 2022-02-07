@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220207163651">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220207180705">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -896,7 +896,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>The indicator is defined as the total count of victims of intentional homicide divided by the total population, expressed per 100,000 population.</p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>The indicator is defined as the total count of victims of intentional homicide divided by the total population, expressed per 100,000 population.</p> <p> Homicide includes Criminal Code offences of murder, manslaughter and infanticide. </p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -934,7 +934,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "   ");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "<p>The total count of a given year's number of homicides could include incidents that occurred in previous years. Homicides are allotted to the year in which they become known to or are deemed homicides by police, according to the report date submitted to Statistics Canada.</p> <p> Indigenous identity is reported by the police and is determined through information found with the victim, such as status cards, or through information supplied by the victims' families, community members, or other sources (i.e., such as band records, or forensic evidence such as genetic testing).</p> <p>The year 2019 marked the first cycle of collection of the Homicide Survey data for which information on gender identity was reported for victims of homicide. Gender refers to the gender a person publicly expresses in their daily life, including at work, while shopping or accessing other services, in their housing environment or in the broader community. Prior to 2019, Homicide Survey data was presented by the sex of the victims. Sex and gender refer to two different concepts. Caution should be exercised when comparing counts for sex with those for gender.</p> <p>Given that small counts of victims identified as \"gender diverse\" may exist, the aggregate Homicide Survey data available to the public has been recoded to assign these counts to either \"male\" or \"female\" in order to ensure the protection of confidentiality and privacy. Victims identified as gender diverse have been assigned to either male or female based on the regional distribution of victims’ gender.</p>");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -988,13 +988,37 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_DOC'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_data_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/f917742078d8b98b1024aa6abfbca1e7333f57d1");
+        var propertyEditor = editor.getEditor('root.national_data_update_url');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_data_update_url');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_update_url'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_data_update_url_text', "2022-02-07: see changes on GitHub");
+        var propertyEditor = editor.getEditor('root.national_data_update_url_text');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_data_update_url_text');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_update_url_text'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/0345523400906741327a93b3d8cdca3e75f0865e");
+        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/f917742078d8b98b1024aa6abfbca1e7333f57d1");
         var propertyEditor = editor.getEditor('root.national_metadata_update_url');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1008,7 +1032,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_update_url_text', "2022-01-27: see changes on GitHub");
+        var currentValue = normalizeCurrentValue('national_metadata_update_url_text', "2022-02-07: see changes on GitHub");
         var propertyEditor = editor.getEditor('root.national_metadata_update_url_text');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1152,12 +1176,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220207163651'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220207180705'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220207163651"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220207180705"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
