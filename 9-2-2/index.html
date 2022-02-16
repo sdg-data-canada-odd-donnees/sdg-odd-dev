@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220211131154">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220216154120">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -564,28 +564,611 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_9-2-2'
   data-id="9-2-2"
-  data-country="Canada"
+  data-country="Canada, Province or territory"
   data-charttitle="Manufacturing employment as a proportion of total employment"
   data-charttitles="[]"
-  data-measurementunit=""
+  data-measurementunit="Percentage"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
-  data-showmap="false"
-  data-startvalues="[]"
+  data-showmap="true"
+  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Type of employee&quot;,&quot;value&quot;:&quot;All employees&quot;},{&quot;field&quot;:&quot;Industry&quot;,&quot;value&quot;:&quot;Manufacturing&quot;}]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Canada&quot;,&quot;Manitoba&quot;,&quot;New Brunswick&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Northwest Territories&quot;,&quot;Nova Scotia&quot;,&quot;Nunavut&quot;,&quot;Ontario&quot;,&quot;Prince Edward Island&quot;,&quot;Quebec&quot;,&quot;Saskatchewan&quot;,&quot;Yukon&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;Industry&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;,&quot;Aerospace product and parts manufacturing&quot;,&quot;Agricultural, construction and mining machinery manufacturing&quot;,&quot;Alumina and aluminum production and processing&quot;,&quot;Animal food manufacturing&quot;,&quot;Architectural and structural metals manufacturing&quot;,&quot;Audio and video equipment manufacturing&quot;,&quot;Bakeries and tortilla manufacturing&quot;,&quot;Basic chemical manufacturing&quot;,&quot;Beverage and tobacco product manufacturing&quot;,&quot;Beverage manufacturing&quot;,&quot;Boiler, tank and shipping container manufacturing&quot;,&quot;Cannabis product manufacturing&quot;,&quot;Cement and concrete product manufacturing&quot;,&quot;Chemical manufacturing&quot;,&quot;Clay product and refractory manufacturing&quot;,&quot;Clothing accessories and other clothing manufacturing&quot;,&quot;Clothing knitting mills&quot;,&quot;Clothing manufacturing&quot;,&quot;Coating, engraving, cold and heat treating and allied activities&quot;,&quot;Commercial and service industry machinery manufacturing&quot;,&quot;Communications equipment manufacturing&quot;,&quot;Computer and electronic product manufacturing&quot;,&quot;Computer and peripheral equipment manufacturing&quot;,&quot;Converted paper product manufacturing&quot;,&quot;Cut and sew clothing manufacturing&quot;,&quot;Cutlery and hand tool manufacturing&quot;,&quot;Dairy product manufacturing&quot;,&quot;Durable goods&quot;,&quot;Electric lighting equipment manufacturing&quot;,&quot;Electrical equipment manufacturing&quot;,&quot;Electrical equipment, appliance and component manufacturing&quot;,&quot;Engine, turbine and power transmission equipment manufacturing&quot;,&quot;Fabric mills&quot;,&quot;Fabricated metal product manufacturing&quot;,&quot;Fibre, yarn and thread mills&quot;,&quot;Food manufacturing&quot;,&quot;Footwear manufacturing&quot;,&quot;Forging and stamping&quot;,&quot;Foundries&quot;,&quot;Fruit and vegetable preserving and specialty food manufacturing&quot;,&quot;Furniture and related product manufacturing&quot;,&quot;Glass and glass product manufacturing&quot;,&quot;Grain and oilseed milling&quot;,&quot;Hardware manufacturing&quot;,&quot;Household and institutional furniture and kitchen cabinet manufacturing&quot;,&quot;Household appliance manufacturing&quot;,&quot;Industrial machinery manufacturing&quot;,&quot;Iron and steel mills and ferro-alloy manufacturing&quot;,&quot;Leather and allied product manufacturing&quot;,&quot;Leather and hide tanning and finishing&quot;,&quot;Lime and gypsum product manufacturing&quot;,&quot;Machine shops, turned product, and screw, nut and bolt manufacturing&quot;,&quot;Machinery manufacturing&quot;,&quot;Manufacturing&quot;,&quot;Manufacturing and reproducing magnetic and optical media&quot;,&quot;Meat product manufacturing&quot;,&quot;Medical equipment and supplies manufacturing&quot;,&quot;Metalworking machinery manufacturing&quot;,&quot;Miscellaneous manufacturing&quot;,&quot;Motor vehicle body and trailer manufacturing&quot;,&quot;Motor vehicle manufacturing&quot;,&quot;Motor vehicle parts manufacturing&quot;,&quot;Navigational, measuring, medical and control instruments manufacturing&quot;,&quot;Non-durable goods&quot;,&quot;Non-ferrous metal (except aluminum) production and processing&quot;,&quot;Non-metallic mineral product manufacturing&quot;,&quot;Office furniture (including fixtures) manufacturing&quot;,&quot;Other chemical product manufacturing&quot;,&quot;Other electrical equipment and component manufacturing&quot;,&quot;Other fabricated metal product manufacturing&quot;,&quot;Other food manufacturing&quot;,&quot;Other furniture-related product manufacturing&quot;,&quot;Other general-purpose machinery manufacturing&quot;,&quot;Other leather and allied product manufacturing&quot;,&quot;Other miscellaneous manufacturing&quot;,&quot;Other non-metallic mineral product manufacturing&quot;,&quot;Other textile product mills&quot;,&quot;Other transportation equipment manufacturing&quot;,&quot;Other wood product manufacturing&quot;,&quot;Paint, coating and adhesive manufacturing&quot;,&quot;Paper manufacturing&quot;,&quot;Pesticide, fertilizer and other agricultural chemical manufacturing&quot;,&quot;Petroleum and coal product manufacturing&quot;,&quot;Pharmaceutical and medicine manufacturing&quot;,&quot;Plastic product manufacturing&quot;,&quot;Plastics and rubber products manufacturing&quot;,&quot;Primary metal manufacturing&quot;,&quot;Printing and related support activities&quot;,&quot;Pulp, paper and paperboard mills&quot;,&quot;Railroad rolling stock manufacturing&quot;,&quot;Resin, synthetic rubber, and artificial and synthetic fibres and filaments manufacturing&quot;,&quot;Rubber product manufacturing&quot;,&quot;Sawmills and wood preservation&quot;,&quot;Seafood product preparation and packaging&quot;,&quot;Semiconductor and other electronic component manufacturing&quot;,&quot;Ship and boat building&quot;,&quot;Soap, cleaning compound and toilet preparation manufacturing&quot;,&quot;Spring and wire product manufacturing&quot;,&quot;Steel product manufacturing from purchased steel&quot;,&quot;Sugar and confectionery product manufacturing&quot;,&quot;Textile and fabric finishing and fabric coating&quot;,&quot;Textile furnishings mills&quot;,&quot;Textile mills&quot;,&quot;Textile product mills&quot;,&quot;Tobacco manufacturing&quot;,&quot;Transportation equipment manufacturing&quot;,&quot;Veneer, plywood and engineered wood product manufacturing&quot;,&quot;Ventilation, heating, air-conditioning and commercial refrigeration equipment manufacturing&quot;,&quot;Wood product manufacturing&quot;]},&quot;title&quot;:&quot;Industry&quot;},{&quot;name&quot;:&quot;Type of employee&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;,&quot;All employees&quot;,&quot;Employees paid by the hour&quot;,&quot;Salaried employees paid a fixed salary&quot;]},&quot;title&quot;:&quot;Type of employee&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="sr-only" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Sub-categories</h4>
+    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-odd-dev/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    <a href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/en/headline/9-2-2.csv" class="btn btn-primary btn-download" download="indicator_9-2-2.csv" tabindex="0" role="button">Download Headline CSV</a>
+
+    <a href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/en/data/9-2-2.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_9-2-2.csv' tabindex='0' role='button'>Download All Data (CSV)</a>
+
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Manufacturing employment as a proportion of total employment</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col" class="table-value">GeoCode</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>9.49</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>9.28</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>9.27</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>9.33</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>9.31</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>9.33</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <div id="datatableFooter">
+    
+    <p>Source: Statistics Canada</p>
+    
+    
+    <p>Geographical Area: Canada, Province or territory</p>
+    
+    
+    <p>Unit of Measurement: Percentage</p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-odd-dev/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded spacer medium" style="display:none;">
+
+    <div style="display: none;">
+  <span id="table-alternative">For tabular data alternative see Table tab.</span>
+</div>
+<ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+  <li role="presentation" class="nav-item active">
+    <a class="nav-link" data-toggle="tab" id="tab-chartview" href="#chartview" aria-controls="chartview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+ aria-describedby="table-alternative">Chart</a>
+  </li>
+  <li role="presentation" class="nav-item">
+    <a class="nav-link" data-toggle="tab" id="tab-tableview" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+>Table</a>
+  </li><li role="presentation" class="nav-item map" style="display:none">
+    <a data-no-disagg="true" class="nav-link" data-toggle="tab" id="tab-mapview" href="#mapview" aria-controls="mapview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Map tab"
+ aria-describedby="table-alternative">Map</a>
+  </li></ul>
+
+    <div class="tab-content data-view">
+  <div role="tabpanel" class="tab-pane active" id="chartview">
+    
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
+      There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
+    </div>
+
+    
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">Manufacturing employment as a proportion of total employment</h4>
+          <div id="chart" class="plot-container">
+            
+<canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+<script>
+// Add a chart alteration to support the chart_graph_limits metadata field.
+opensdg.chartConfigAlter(function(config, info) {
+  if (info.graphLimits && Object.keys(info.graphLimits).length > 0) {
+    var overrides = {
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              min: info.graphLimits.minimum,
+              max: info.graphLimits.maximum,
+            }
+          }]
+        }
+      }
+    }
+    // Add these overrides onto the normal config.
+    $.extend(true, config, overrides);
+  }
+});
+</script>
+
+<span style="display: none;" id="chart-annotations" role="status"></span>
+<script>
+opensdg.annotationPresets = {
+    common: {
+        // This "common" preset is applied to all annotations automatically.
+        borderColor: '#949494',
+        type: 'line',
+        borderDash: [10, 5],
+        borderWidth: 1,
+        label: {
+            backgroundColor: 'white',
+            fontColor: 'black',
+        },
+        // This "highContrast" overrides colors when in high-contrast mode.
+        highContrast: {
+            label: {
+                backgroundColor: 'black',
+                fontColor: 'white'
+            }
+        },
+        // This callback is used to generate a generic description for screenreaders.
+        // This can be overridden to be a more specific string, eg:
+        //
+        //     description: 'Chart annotation showing a 2030 target of 15%'
+        //
+        description: function() {
+            var descriptionParts = [translations.indicator.chart_annotation];
+            if (this.label && this.label.content) {
+                descriptionParts.push(translations.t(this.label.content));
+            }
+            else {
+                // If there is no label, just specify whether it is a box or line.
+                if (this.type == 'line') {
+                    descriptionParts.push(this.mode + ' line');
+                }
+                if (this.type == 'box') {
+                    descriptionParts.push('box');
+                }
+            }
+            if (typeof this.value !== 'undefined') {
+                descriptionParts.push(this.value);
+            }
+            return descriptionParts.join(': ');
+        },
+    },
+    target_line: {
+        mode: 'horizontal',
+        borderWidth: 2,
+        borderDash: [15, 10],
+        borderColor: '#757575',
+        label: {
+            position: 'right',
+            content: translations.indicator.annotation_2030_target,
+        },
+    },
+    series_break: {
+        mode: 'vertical',
+        borderDash: [2, 2],
+        label: {
+            position: 'top',
+            content: translations.indicator.annotation_series_break,
+        },
+    },
+};
+
+// Add a chart alteration to support the chart_annotations metadata field.
+opensdg.chartConfigAlter(function(config, info) {
+    if (info.graphAnnotations && info.graphAnnotations.length > 0) {
+        // Apply some helpers/fixes to the annotations.
+        var annotations = info.graphAnnotations.map(function(annotationOverrides) {
+            var annotation = {};
+            // Apply the "common" preset.
+            if (opensdg.annotationPresets.common) {
+                $.extend(true, annotation, opensdg.annotationPresets.common);
+            }
+            // Apply any specified presets.
+            if (annotationOverrides.preset) {
+                var preset = annotationOverrides.preset;
+                if (opensdg.annotationPresets[preset]) {
+                    $.extend(true, annotation, opensdg.annotationPresets[preset]);
+                }
+            }
+            // Now add any more annotation config.
+            $.extend(true, annotation, annotationOverrides);
+            // Default to horizontal lines.
+            if (!annotation.mode && annotation.type === 'line') {
+                annotation.mode = 'horizontal';
+            }
+            // Provide the obscure scaleID properties on user's behalf.
+            if (!annotation.scaleID && annotation.type === 'line') {
+                if (annotation.mode === 'horizontal') {
+                    annotation.scaleID = 'y-axis-0';
+                }
+                if (annotation.mode === 'vertical') {
+                    annotation.scaleID = 'x-axis-0';
+                }
+            }
+            if (!annotation.xScaleID && annotation.type === 'box') {
+                annotation.xScaleID = 'x-axis-0';
+            }
+            if (!annotation.yScaleID && annotation.type === 'box') {
+                annotation.yScaleID = 'y-axis-0';
+            }
+            // Provide the "enabled" label property on the user's behalf.
+            if (annotation.label && annotation.label.content) {
+                annotation.label.enabled = true;
+            }
+            // Translate any label content.
+            if (annotation.label && annotation.label.content) {
+                annotation.label.content = translations.t(annotation.label.content);
+            }
+            // Save some original values for later used when contrast mode is switched.
+            if (typeof annotation.defaultContrast === 'undefined') {
+                annotation.defaultContrast = {};
+                if (annotation.borderColor) {
+                    annotation.defaultContrast.borderColor = annotation.borderColor;
+                }
+                if (annotation.backgroundColor) {
+                    annotation.defaultContrast.backgroundColor = annotation.backgroundColor;
+                }
+                if (annotation.label) {
+                    annotation.defaultContrast.label = {};
+                    if (annotation.label.fontColor) {
+                        annotation.defaultContrast.label.fontColor = annotation.label.fontColor;
+                    }
+                    if (annotation.label.backgroundColor) {
+                        annotation.defaultContrast.label.backgroundColor = annotation.label.backgroundColor;
+                    }
+                }
+            }
+            return annotation;
+        });
+        if (annotations.length > 0) {
+            var overrides = {
+                options: {
+                    annotation: {
+                        drawTime: 'beforeDatasetsDraw',
+                        annotations: annotations
+                    }
+                }
+            };
+            // Add these overrides onto the normal config.
+            $.extend(true, config, overrides);
+
+            // Update the chart annotations element.
+            var descriptions = annotations.map(function(annotation) {
+                var description = '';
+                if (annotation.description) {
+                    if (typeof annotation.description === 'function') {
+                        description = annotation.description.call(annotation);
+                    }
+                    else {
+                        description = translations.t(annotation.description);
+                    }
+                }
+                return description;
+            }).filter(function(description) { return description != ''; });
+
+            var currentDescription = $('#chart-annotations').text();
+            var newDescription = descriptions.join('. ');
+            if (currentDescription != newDescription) {
+                $('#chart-annotations').text(newDescription);
+            }
+        }
+    }
+    else if (config.options && config.options.annotation) {
+        delete config.options.annotation;
+    }
+});
+</script>
+
+<script>
+// For line charts, add the vertical line hover functionality.
+opensdg.chartConfigAlter(function(config, info) {
+    var overrides = {
+        options: {
+            tooltips: {
+                intersect: false,
+                axis: 'x'
+            },
+        },
+        plugins: [{
+            beforeDatasetsDraw: function(chart) {
+                if (chart.tooltip._active && chart.tooltip._active.length) {
+                    var activePoint = chart.tooltip._active[0],
+                        ctx = chart.ctx,
+                        x = activePoint.tooltipPosition().x,
+                        topY = chart.scales['y-axis-0'].top,
+                        bottomY = chart.scales['y-axis-0'].bottom;
+
+                    // draw line
+                    ctx.save();
+                    ctx.beginPath();
+                    ctx.moveTo(x, topY);
+                    ctx.lineTo(x, bottomY);
+                    ctx.lineWidth = 2;
+                    ctx.strokeStyle = '#757575';
+                    ctx.stroke();
+                    ctx.restore();
+                }
+            }
+        }],
+    };
+    // Add these overrides onto the normal config, and return it.
+    $.extend(true, config, overrides);
+});
+</script>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Statistics Canada</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Canada, Province or territory</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Percentage</dd>
+        
+
+        
+
+        
+    <dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button id="btnSave" title="Download chart as image" class='btn btn-primary btn-download'>
+          Download Chart Image
+        </button>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="tableview">
+    <div style="display: none;">
+      <span id="column-sort-info">Click to sort by this column</span>
+    </div>
+    <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Statistics Canada</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Canada, Province or territory</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Percentage</dd>
+        
+
+        
+
+        
+    <dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+  </div><div role="tabpanel" class="tab-pane" id="mapview" class="map">
+    
+<h4 id="map-heading" class="chart-title">Manufacturing employment as a proportion of total employment</h4>
+<div id="map" aria-describedby="table-alternative">
+  <img class="map-loading-image" src="/sdg-odd-dev/assets/img/loading.gif" alt="Loading map" />
+</div>
+
+
+
+
+<div id="mapFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Statistics Canada</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Canada, Province or territory</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Percentage</dd>
+        
+
+        
+
+        
+    <dl>
+</div>
+
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="embeddedmapview" class="embedded-map">
+    <div class="row">
+  <div class="col-xs-12">
+    
+    
+    
+    <div class="embedded-map" id="embeddedmapframe">
+    
+  </div>
+</div>
+
+  </div>
+  
+</div>
+
+
+  </div>
+
+</section>
+
   
   <ul class="nav nav-tabs spacer medium" role="tablist">
 
@@ -776,7 +1359,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            <p>This indicator presents the share of manufacturing employment in total employment.</p>
+            
 
           
         </td>
@@ -828,7 +1411,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Comment and limitations </th>
         <td>
           
-            
+            <p>Industry estimates in this table are based on the 2017 North American Industry Classification System (NAICS) Version 3.0.</p>
 
           
         </td>
@@ -891,10 +1474,35 @@ data-event-label="Change to Sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Data last updated </th>
+        <td>
           
+            
+            
+            
+            
+
+            
+              <a href="https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/a6d49857a9a42bcb00f5404b1a6422db3557e93c" target="_blank">
+                2022-02-16: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
-          
+      
+      
+      
+  
       
         
       
@@ -909,8 +1517,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/0345523400906741327a93b3d8cdca3e75f0865e" target="_blank">
-                2022-01-27: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/sdg-data-donnees-odd/commit/a6d49857a9a42bcb00f5404b1a6422db3557e93c" target="_blank">
+                2022-02-16: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1718,6 +2326,15 @@ data-event-label="Change to Sources tab"
 <script src="//cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js" integrity="sha512-9hzM/Gfa9KP1hSBlq3/zyNF/dfbcjAYwUTBWYX+xi8fzfAPHL3ILwS1ci0CTVeuXTGkRAWgRMZZwtSNV7P+nfw==" crossorigin="anonymous"></script>
 
 
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
+<script src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
@@ -1734,12 +2351,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220211131154'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220216154120'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220211131154"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220216154120"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
