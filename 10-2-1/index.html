@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220216154120">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220218164628">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -572,7 +572,7 @@ data-event-label="high"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
-  data-showmap="false"
+  data-showmap="true"
   data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Persons in low income&quot;,&quot;value&quot;:&quot;All persons&quot;}]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
@@ -757,6 +757,12 @@ data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Table tab"
 >Table</a>
+  </li><li role="presentation" class="nav-item map" style="display:none">
+    <a data-no-disagg="true" class="nav-link" data-toggle="tab" id="tab-mapview" href="#mapview" aria-controls="mapview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Map tab"
+ aria-describedby="table-alternative">Map</a>
   </li></ul>
 
     <div class="tab-content data-view">
@@ -1090,6 +1096,41 @@ opensdg.chartConfigAlter(function(config, info) {
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
+
+  </div><div role="tabpanel" class="tab-pane" id="mapview" class="map">
+    
+<h4 id="map-heading" class="chart-title">Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities</h4>
+<div id="map" aria-describedby="table-alternative">
+  <img class="map-loading-image" src="/sdg-odd-dev/assets/img/loading.gif" alt="Loading map" />
+</div>
+
+
+
+
+<div id="mapFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Statistics Canada</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Canada, Geographical region of Canada, Province or territory, Census metropolitan area</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Percentage</dd>
+        
+
+        
+
+        
+    <dl>
+</div>
+
 
   </div>
   <div role="tabpanel" class="tab-pane" id="embeddedmapview" class="embedded-map">
@@ -2269,6 +2310,15 @@ data-event-label="Change to Sources tab"
 <script src="//cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js" integrity="sha512-9hzM/Gfa9KP1hSBlq3/zyNF/dfbcjAYwUTBWYX+xi8fzfAPHL3ILwS1ci0CTVeuXTGkRAWgRMZZwtSNV7P+nfw==" crossorigin="anonymous"></script>
 
 
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
+<script src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
@@ -2285,12 +2335,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220216154120'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220218164628'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220216154120"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220218164628"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
