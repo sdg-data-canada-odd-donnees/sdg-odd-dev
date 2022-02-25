@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220224183545">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220225123730">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -664,7 +664,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('computation_units', "");
+        var currentValue = normalizeCurrentValue('computation_units', "Percentage");
         var propertyEditor = editor.getEditor('root.computation_units');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -748,11 +748,23 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_notice_text'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('data_show_map', true);
+        var propertyEditor = editor.getEditor('root.data_show_map');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: data_show_map');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_show_map'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_start_values', []);
+        var currentValue = normalizeCurrentValue('data_start_values', [{"field":"Geography","value":"Newfoundland and Labrador"},{"field":"Geography","value":"Prince Edward Island"},{"field":"Geography","value":"Nova Scotia"},{"field":"Geography","value":"New Brunswick"},{"field":"Geography","value":"Quebec"},{"field":"Geography","value":"Ontario"},{"field":"Geography","value":"Manitoba"},{"field":"Geography","value":"Saskatchewan"},{"field":"Geography","value":"Alberta"},{"field":"Geography","value":"British Columbia"},{"field":"Geography","value":"Yukon"},{"field":"Geography","value":"Northwest Territories"},{"field":"Geography","value":"Nunavut"}]);
         var propertyEditor = editor.getEditor('root.data_start_values');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -836,7 +848,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('expected_disaggregations', []);
+        var currentValue = normalizeCurrentValue('expected_disaggregations', ["Geography","Census divisions"]);
         var propertyEditor = editor.getEditor('root.expected_disaggregations');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -924,7 +936,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_type', "line");
+        var currentValue = normalizeCurrentValue('graph_type', "bar");
         var propertyEditor = editor.getEditor('root.graph_type');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -968,7 +980,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_geographical_coverage', "");
+        var currentValue = normalizeCurrentValue('national_geographical_coverage', "Province or territory, Census subdivision, Census metropolitan area");
         var propertyEditor = editor.getEditor('root.national_geographical_coverage');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1028,7 +1040,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('reporting_status', "inprogress");
+        var currentValue = normalizeCurrentValue('reporting_status', "complete");
         var propertyEditor = editor.getEditor('root.reporting_status');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1204,12 +1216,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220224183545'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220225123730'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220224183545"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220225123730"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
