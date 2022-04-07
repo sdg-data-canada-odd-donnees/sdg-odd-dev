@@ -1939,7 +1939,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/17-2-1",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "17-3-1",
@@ -2107,6 +2107,22 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/17-19-2",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "indicator",
+      "title": "global_goals.indicator-title",
+      "indicators": [
+        
+        {
+          "id": "indicator-17-2-1",
+          "title": "global_indicators.indicator-17-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-odd-dev/indicator-17-2-1",
           "status": "complete"
         }]
     }
