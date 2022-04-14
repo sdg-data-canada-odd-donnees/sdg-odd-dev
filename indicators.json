@@ -2110,20 +2110,4 @@
           "status": "complete"
         }]
     }
-  },
-  {
-    "goal": {
-      "id": "indicator",
-      "title": "global_goals.indicator-title",
-      "indicators": [
-        
-        {
-          "id": "indicator-17-2-1",
-          "title": "global_indicators.indicator-17-2-1-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-odd-dev/indicator-17-2-1",
-          "status": "complete"
-        }]
-    }
   }]
