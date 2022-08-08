@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220712122056">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220808201105">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -652,30 +652,129 @@ data-event-label="high"
   <span id="table-alternative">For tabular data alternative see Table tab.</span>
 </div>
 <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
-  <li role="presentation" class="nav-item active">
-    <a class="nav-link" data-toggle="tab" id="tab-chartview" href="#chartview" aria-controls="chartview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Chart tab"
- aria-describedby="table-alternative">Chart</a>
-  </li>
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" id="tab-tableview" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Table tab"
->Table</a>
-  </li><li role="presentation" class="nav-item map" style="display:none">
-    <a data-no-disagg="true" class="nav-link" data-toggle="tab" id="tab-mapview" href="#mapview" aria-controls="mapview" role="tab" data-on="click"
+  
+  <li role="presentation"
+    class="
+      nav-item
+      map
+      
+      active
+    ">
+    <a
+      class="nav-link"
+      data-toggle="tab"
+      role="tab"
+      
+        id="tab-mapview"
+        href="#mapview"
+        aria-controls="mapview"
+        data-no-disagg="true"
+        data-on="click"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Map tab"
- aria-describedby="table-alternative">Map</a>
-  </li></ul>
+
+      
+    >Map</a>
+  </li>
+  
+  <li role="presentation"
+    class="
+      nav-item
+      
+      
+      
+    ">
+    <a
+      class="nav-link"
+      data-toggle="tab"
+      role="tab"
+      
+        id="tab-chartview"
+        href="#chartview"
+        aria-controls="chartview"
+        aria-describedby="table-alternative"
+        data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+      
+    >Chart</a>
+  </li>
+  
+  <li role="presentation"
+    class="
+      nav-item
+      
+      
+      
+    ">
+    <a
+      class="nav-link"
+      data-toggle="tab"
+      role="tab"
+      
+        id="tab-tableview"
+        href="#tableview"
+        aria-controls="tableview"
+        data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+      
+    >Table</a>
+  </li>
+  
+</ul>
 
     <div class="tab-content data-view">
-  <div role="tabpanel" class="tab-pane active" id="chartview">
+  
     
+      <div role="tabpanel" class="tab-pane active" id="mapview" class="map">
+        
+<h4 id="map-heading" class="chart-title">Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities</h4>
+<div id="map" aria-describedby="table-alternative">
+  <img class="map-loading-image" src="/sdg-odd-dev/assets/img/loading.gif" alt="Loading map" />
+</div>
+
+
+
+
+<div id="mapFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Statistics Canada</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Province or territory, Census subdivision, Census metropolitan area</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Percentage</dd>
+        
+
+        
+
+        
+
+        
+    <dl>
+</div>
+
+
+      </div>
+    
+  
+    
+      <div role="tabpanel" class="tab-pane " id="chartview">
+        
 
     <div id="dataset-size-warning" style="display:none" role="alert">
       <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
@@ -715,6 +814,14 @@ opensdg.chartConfigAlter(function(config, info) {
     }
     // Add these overrides onto the normal config.
     $.extend(true, config, overrides);
+  }
+  else {
+    // Otherwise remove any min/max that may be there.
+    try {
+      delete config.options.scales.yAxes[0].ticks.min;
+      delete config.options.scales.yAxes[0].ticks.max;
+    }
+    catch(e) {}
   }
 });
 </script>
@@ -947,6 +1054,8 @@ opensdg.chartConfigAlter(function(config, info) {
         
 
         
+
+        
     <dl>
 </div>
 
@@ -961,12 +1070,15 @@ opensdg.chartConfigAlter(function(config, info) {
 
 
 
-  </div>
-  <div role="tabpanel" class="tab-pane" id="tableview">
-    <div style="display: none;">
-      <span id="column-sort-info">Click to sort by this column</span>
-    </div>
-    <div id="selectionsTable"></div>
+      </div>
+    
+  
+    
+      <div role="tabpanel" class="tab-pane " id="tableview">
+        <div style="display: none;">
+          <span id="column-sort-info">Click to sort by this column</span>
+        </div>
+        <div id="selectionsTable"></div>
 <dl id="tableTargetLines" class="clearfix"></dl>
 
 
@@ -993,59 +1105,15 @@ opensdg.chartConfigAlter(function(config, info) {
         
 
         
+
+        
     <dl>
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
 
-  </div><div role="tabpanel" class="tab-pane" id="mapview" class="map">
+      </div>
     
-<h4 id="map-heading" class="chart-title">Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities</h4>
-<div id="map" aria-describedby="table-alternative">
-  <img class="map-loading-image" src="/sdg-odd-dev/assets/img/loading.gif" alt="Loading map" />
-</div>
-
-
-
-
-<div id="mapFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-        <dt>Source:</dt>
-        <dd>Statistics Canada</dd>
-        
-
-        
-        <dt>Geographical Area:</dt>
-        <dd>Province or territory, Census subdivision, Census metropolitan area</dd>
-        
-
-        
-        <dt>Unit of Measurement:</dt>
-        <dd>Percentage</dd>
-        
-
-        
-
-        
-    <dl>
-</div>
-
-
-  </div>
-  <div role="tabpanel" class="tab-pane" id="embeddedmapview" class="embedded-map">
-    <div class="row">
-  <div class="col-xs-12">
-    
-    
-    
-    <div class="embedded-map" id="embeddedmapframe">
-    
-  </div>
-</div>
-
-  </div>
   
 </div>
 
@@ -2236,12 +2304,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220712122056'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220808201105'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220712122056"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220808201105"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
