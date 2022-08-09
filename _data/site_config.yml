@@ -240,3 +240,5 @@ site_config_form:
 validate_indicator_config: false
 validate_site_config: false
 x_axis_label: ''
+bootstrap_5: true
+chartjs_3: true
