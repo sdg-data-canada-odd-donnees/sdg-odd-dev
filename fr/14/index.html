@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -130,10 +130,13 @@ var translations = {
 
 
         
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220808201105">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20220809134502">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -148,163 +151,67 @@ var translations = {
 
     </head>
 <body class="language-fr
-layout-goal-with-progress
+layout-goal-bootstrap5
 ">
 <!-- <div class="container"> -->
 
 
+
 <script>translations['header'] = {"alpha":"Beta","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site en développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
 <div id="disclaimer">
-  <div class="container">
+    
+<div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Beta</strong>
     
     Ceci est un site en développement. Nous apprécions vos <a href="mailto:test@example.com">commentaires</a>.
+    
   </div>
 </div>
 
 </div>
 
-<header role="banner" class="header-menu-left-aligned">
-  <div class="container">
-
-    <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/sdg-odd-dev/fr/" id="home">
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/sdg-odd-dev/fr/" id="home">
     <img src="/sdg-odd-dev/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
 </a>
-      <div class="mobile-widgets">
-    <ul id='accessibility-nav' class='contrast-switcher'>
-        
-
-    <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Désactiver le contraste élevé"
-           aria-label="Désactiver le contraste élevé"
-           data-contrast-switch-to="default"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="default"
-
-        >A</a>
-    </li>
-    <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Activer le contraste élevé"
-           aria-label="Activer le contraste élevé"
-           data-contrast-switch-to="high"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
-
-        >A</a>
-    </li>
-
-
-    </ul><div class="language-toggle-mobile">
-        <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/sdg-odd-dev/14/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-    </div></div>
-    </div>
-
-    <div class="search-and-desktop-widgets">
-      <div id="search" class="menu-target">
-  <form action="/sdg-odd-dev/fr/search/">
-    <label class="sr-only" for="indicator_search">Chercher</label>
-    <input type="text" name="q" id="indicator_search" title="Chercher" /><!--
-    --><button aria-label="Chercher" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-      <div class="navbar navbar-default widgets-without-menu">
-        <ul class="nav navbar-nav contrast-switcher"><li class="language-toggle-menu-header">
-            
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/sdg-odd-dev/14/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-        </li>
-
-    <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Désactiver le contraste élevé"
-           aria-label="Désactiver le contraste élevé"
-           data-contrast-switch-to="default"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="default"
-
-        >A</a>
-    </li>
-    <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Activer le contraste élevé"
-           aria-label="Activer le contraste élevé"
-           data-contrast-switch-to="high"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
-
-        >A</a>
-    </li>
-
-
-        </ul>
-      </div>
-    </div>
-
-    <div class="navbar navbar-default menu-without-widgets" id="main-nav">
-      <ul class="top-level">
-    <li id="menuToggle"
-        aria-label="Interrupteur du menu. Cliquez pour développer ou réduire le menu."
-        aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
-        <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/sdg-odd-dev/fr/goals">Objectifs</a>
-</li><li class="nav-link ">
-    <a href="/sdg-odd-dev/fr/reporting-status">Statut de rapport</a>
-</li><li class="nav-link ">
-    <a href="/sdg-odd-dev/fr/about">À propos</a>
-</li><li class="nav-link ">
-    <a href="/sdg-odd-dev/fr/faq">FAQ</a>
-</li><li class="nav-link ">
-    <a href="/sdg-odd-dev/fr/news">Mises à jour</a>
-</li><li class="language-toggle-menu-header">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/sdg-odd-dev/fr/goals">Objectifs</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-odd-dev/fr/reporting-status">Statut de rapport</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-odd-dev/fr/about">À propos</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-odd-dev/fr/faq">FAQ</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-odd-dev/fr/news">Mises à jour</a>
+</li></ul>
     
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/sdg-odd-dev/fr/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">Chercher</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Chercher">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Chercher" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+</form>
+
+                </div>
+                <div class="header-toggles d-flex">
 
 
 
@@ -312,12 +219,13 @@ data-event-label="high"
 
   <div class="language-toggle-container">
   
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/sdg-odd-dev/14/">
+  <div class="btn-group language-toggle-dropdown  dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-globe"></i>
+      Français
+    </button>
+    <ul class="dropdown-menu"><li>
+            <a class="dropdown-item" href="/sdg-odd-dev/14/">
               English
             </a>
           </li></ul>
@@ -325,101 +233,50 @@ data-event-label="high"
 </div>
 
 
-
-</li>
-
-
-
-    <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Désactiver le contraste élevé"
-           aria-label="Désactiver le contraste élevé"
-           data-contrast-switch-to="default"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="default"
-
-        >A</a>
-    </li>
-    <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Activer le contraste élevé"
-           aria-label="Activer le contraste élevé"
-           data-contrast-switch-to="high"
-           href="javascript:void(0)"
-           data-on="click"
+<a title="Activer le contraste élevé" aria-label="Activer le contraste élevé"
+    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
-
-        >A</a>
-    </li>
-
-
-
-</ul>
-
-    </li>
-    <li id="searchToggle"
-        aria-label="Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."
-        aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Chercher</button>
-        <div id="search-mobile" class="menu-target">
-  <form action="/sdg-odd-dev/fr/search/">
-    <label class="sr-only" for="indicator_search-mobile">Chercher</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Chercher" /><!--
-    --><button aria-label="Chercher" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-    </li>
-</ul>
-      <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/sdg-odd-dev/fr/goals">Objectifs</a>
-</li><li class="nav-link ">
-    <a href="/sdg-odd-dev/fr/reporting-status">Statut de rapport</a>
-</li><li class="nav-link ">
-    <a href="/sdg-odd-dev/fr/about">À propos</a>
-</li><li class="nav-link ">
-    <a href="/sdg-odd-dev/fr/faq">FAQ</a>
-</li><li class="nav-link ">
-    <a href="/sdg-odd-dev/fr/news">Mises à jour</a>
-</li>
-
-</ul>
-
+>A</a>
+                </div>
+            </div>
+        </nav>
     </div>
-
-  </div>
-
 </header>
 <div id="top" tabindex=-1></div>
 
 
 
 
-<div class="container">
-  <ol class="breadcrumb">
-  
-  <li><a href="/sdg-odd-dev/fr/">Accueil</a></li>
-  <li><a href="/sdg-odd-dev/fr/goals">Objectifs</a></li>
-  
-  
-</ol>
 
+<div class="container">
+  <nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item" >
+            <a href="/sdg-odd-dev/fr/">Accueil</a>
+        </li>
+        <li class="breadcrumb-item" >
+            <a href="/sdg-odd-dev/fr/goals">Objectifs</a>
+        </li>
+        
+        
+    </ol>
+</nav>
   
     
-<div class="previous-next-links row">
-    <div class="col-xs-3 col-md-3 col-lg-4 pull-left text-left">
+<div class="previous-next-links d-flex justify-content-between">
+    <div class="text-left">
         <a class="btn btn-primary" href="/sdg-odd-dev/fr/13" aria-labelledby="previous-link">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            <span id="previous-link" class="hidden-sm hidden-xs">Objectif précédent</span>
+            <span id="previous-link" class="d-none d-md-inline">Objectif précédent</span>
         </a>
     </div>
-    <div class="col-xs-3 col-md-3 col-lg-4 pull-right text-right">
+    <div class="text-right">
         <a class="btn btn-primary" href="/sdg-odd-dev/fr/15" aria-labelledby="next-link">
+            <span id="next-link" class="d-none d-md-inline">Objectif suivant</span>
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            <span id="next-link" class="hidden-sm hidden-xs">Objectif suivant</span>
         </a>
     </div>
 </div>
@@ -429,18 +286,16 @@ data-event-label="high"
 </div>
 
 <div class="heading goal-banner goal-14">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fr/14.png" alt="Vie aquatique - Objectif 14" id="goal-14" class="goal-icon-image goal-icon-image-" />
-      </div>
-      <div class="col-xs-8 col-md-9 col-lg-10">
-        <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Objectif 14: </span>Conserver et exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable
-        </h1>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-3 col-lg-2 goal-tiles">
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fr/14.png" alt="Vie aquatique - Objectif 14" id="goal-14" class="goal-icon-image goal-icon-image-" />
+            </div>
+            <div class="col-8 col-md-9 col-lg-10">
+                <h1>Conserver et exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable</h1>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
@@ -450,28 +305,37 @@ data-event-label="high"
 
 
 
-  <div class="container">
-    <h2>Cibles et indicateurs</h2>
+  <div class="container g-0">
+    <h2 class="goal-page-heading">Cibles et indicateurs</h2>
 
     
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Cible</span> 14.1</span>
-        </h3>
-        <span class="target-name">D’ici à 2025, prévenir et réduire nettement la pollution marine de tous types, en particulier celle résultant des activités terrestres, y compris les déchets en mer et la pollution par les nutriments</span>
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.1</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">D’ici à 2025, prévenir et réduire nettement la pollution marine de tous types, en particulier celle résultant des activités terrestres, y compris les déchets en mer et la pollution par les nutriments</span>
+          </div>
+      </div>
         
 
           
           
           
+          
 
-          <div class="goal-indicator clearfix">
-            <div class="goal-with-progress-left">
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="sr-only">Indicateur</span> 14.1.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.1.1</span>
               </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
               <span class="indicator-name"><a href="/sdg-odd-dev/fr/14-1-1">a) Indicateur du potentiel d’eutrophisation côtière (ICEP) et b) densité des débris de plastiques</a></span>
               
@@ -479,10 +343,8 @@ data-event-label="high"
 
 
 
-    <ul class="tags" aria-label="Étiquettes">
-    
-        <li>
-        <span class="sr-only">État de l’indicateur</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
         
 
 
@@ -492,38 +354,42 @@ data-event-label="high"
 </span>
 
 
-        </li>
-    
-    
-    </ul>
+        </li></ul>
 
 
             </div>
-            <div class="goal-with-progress-right">
-              
-            </div>
+            
             
           </div>
         
-      </div>
+        <hr class="goal-page-target-rule" />
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Cible</span> 14.2</span>
-        </h3>
-        <span class="target-name">D’ici à 2020, gérer et protéger durablement les écosystèmes marins et côtiers, notamment en renforçant leur résilience, afin d’éviter les graves conséquences de leur dégradation et prendre des mesures en faveur de leur restauration pour rétablir la santé et la productivité des océans</span>
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.2</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">D’ici à 2020, gérer et protéger durablement les écosystèmes marins et côtiers, notamment en renforçant leur résilience, afin d’éviter les graves conséquences de leur dégradation et prendre des mesures en faveur de leur restauration pour rétablir la santé et la productivité des océans</span>
+          </div>
+      </div>
         
 
           
           
           
+          
 
-          <div class="goal-indicator clearfix">
-            <div class="goal-with-progress-left">
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="sr-only">Indicateur</span> 14.2.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.2.1</span>
               </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
               <span class="indicator-name"><a href="/sdg-odd-dev/fr/14-2-1">Nombre de pays appliquant des approches écosystémiques à la gestion des zones marines</a></span>
               
@@ -531,10 +397,8 @@ data-event-label="high"
 
 
 
-    <ul class="tags" aria-label="Étiquettes">
-    
-        <li>
-        <span class="sr-only">État de l’indicateur</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
         
 
 
@@ -544,38 +408,42 @@ data-event-label="high"
 </span>
 
 
-        </li>
-    
-    
-    </ul>
+        </li></ul>
 
 
             </div>
-            <div class="goal-with-progress-right">
-              
-            </div>
+            
             
           </div>
         
-      </div>
+        <hr class="goal-page-target-rule" />
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Cible</span> 14.3</span>
-        </h3>
-        <span class="target-name">Réduire au maximum l’acidification des océans et lutter contre ses effets, notamment en renforçant la coopération scientifique à tous les niveaux</span>
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.3</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Réduire au maximum l’acidification des océans et lutter contre ses effets, notamment en renforçant la coopération scientifique à tous les niveaux</span>
+          </div>
+      </div>
         
 
           
           
           
+          
 
-          <div class="goal-indicator clearfix">
-            <div class="goal-with-progress-left">
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="sr-only">Indicateur</span> 14.3.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.3.1</span>
               </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
               <span class="indicator-name"><a href="/sdg-odd-dev/fr/14-3-1">Acidité moyenne des mers (pH) mesurée à plusieurs points de prélèvement représentatifs</a></span>
               
@@ -583,10 +451,8 @@ data-event-label="high"
 
 
 
-    <ul class="tags" aria-label="Étiquettes">
-    
-        <li>
-        <span class="sr-only">État de l’indicateur</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
         
 
 
@@ -596,38 +462,42 @@ data-event-label="high"
 </span>
 
 
-        </li>
-    
-    
-    </ul>
+        </li></ul>
 
 
             </div>
-            <div class="goal-with-progress-right">
-              
-            </div>
+            
             
           </div>
         
-      </div>
+        <hr class="goal-page-target-rule" />
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Cible</span> 14.4</span>
-        </h3>
-        <span class="target-name">D’ici à 2020, réglementer efficacement la pêche, mettre un terme à la surpêche, à la pêche illicite, non déclarée et non réglementée et aux pratiques de pêche destructrices et exécuter des plans de gestion fondés sur des données scientifiques, l’objectif étant de rétablir les stocks de poissons le plus rapidement possible, au moins à des niveaux permettant d’obtenir un rendement constant maximal compte tenu des caractéristiques biologiques</span>
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.4</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">D’ici à 2020, réglementer efficacement la pêche, mettre un terme à la surpêche, à la pêche illicite, non déclarée et non réglementée et aux pratiques de pêche destructrices et exécuter des plans de gestion fondés sur des données scientifiques, l’objectif étant de rétablir les stocks de poissons le plus rapidement possible, au moins à des niveaux permettant d’obtenir un rendement constant maximal compte tenu des caractéristiques biologiques</span>
+          </div>
+      </div>
         
 
           
           
           
+          
 
-          <div class="goal-indicator clearfix">
-            <div class="goal-with-progress-left">
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="sr-only">Indicateur</span> 14.4.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.4.1</span>
               </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
               <span class="indicator-name"><a href="/sdg-odd-dev/fr/14-4-1">Proportion de stocks de poissons dont le niveau est biologiquement viable</a></span>
               
@@ -635,10 +505,8 @@ data-event-label="high"
 
 
 
-    <ul class="tags" aria-label="Étiquettes">
-    
-        <li>
-        <span class="sr-only">État de l’indicateur</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
         
 
 
@@ -648,38 +516,42 @@ data-event-label="high"
 </span>
 
 
-        </li>
-    
-    
-    </ul>
+        </li></ul>
 
 
             </div>
-            <div class="goal-with-progress-right">
-              
-            </div>
+            
             
           </div>
         
-      </div>
+        <hr class="goal-page-target-rule" />
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Cible</span> 14.5</span>
-        </h3>
-        <span class="target-name">D’ici à 2020, préserver au moins 10 pour cent des zones marines et côtières, conformément au droit national et international et compte tenu des meilleures informations scientifiques disponibles</span>
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.5</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">D’ici à 2020, préserver au moins 10 pour cent des zones marines et côtières, conformément au droit national et international et compte tenu des meilleures informations scientifiques disponibles</span>
+          </div>
+      </div>
         
 
           
           
           
+          
 
-          <div class="goal-indicator clearfix">
-            <div class="goal-with-progress-left">
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="sr-only">Indicateur</span> 14.5.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.5.1</span>
               </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
               <span class="indicator-name"><a href="/sdg-odd-dev/fr/14-5-1">Surface des aires marines protégées, en proportion de la surface totale</a></span>
               
@@ -687,10 +559,8 @@ data-event-label="high"
 
 
 
-    <ul class="tags" aria-label="Étiquettes">
-    
-        <li>
-        <span class="sr-only">État de l’indicateur</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
         
 
 
@@ -700,38 +570,42 @@ data-event-label="high"
 </span>
 
 
-        </li>
-    
-    
-    </ul>
+        </li></ul>
 
 
             </div>
-            <div class="goal-with-progress-right">
-              
-            </div>
+            
             
           </div>
         
-      </div>
+        <hr class="goal-page-target-rule" />
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Cible</span> 14.6</span>
-        </h3>
-        <span class="target-name">D’ici à 2020, interdire les subventions à la pêche qui contribuent à la surcapacité et à la surpêche, supprimer celles qui favorisent la pêche illicite, non déclarée et non réglementée et s’abstenir d’en accorder de nouvelles, sachant que l’octroi d’un traitement spécial et différencié efficace et approprié aux pays en développement et aux pays les moins avancés doit faire partie intégrante des négociations sur les subventions à la pêche menées dans le cadre de l’Organisation mondiale du commerce</span>
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.6</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">D’ici à 2020, interdire les subventions à la pêche qui contribuent à la surcapacité et à la surpêche, supprimer celles qui favorisent la pêche illicite, non déclarée et non réglementée et s’abstenir d’en accorder de nouvelles, sachant que l’octroi d’un traitement spécial et différencié efficace et approprié aux pays en développement et aux pays les moins avancés doit faire partie intégrante des négociations sur les subventions à la pêche menées dans le cadre de l’Organisation mondiale du commerce</span>
+          </div>
+      </div>
         
 
           
           
           
+          
 
-          <div class="goal-indicator clearfix">
-            <div class="goal-with-progress-left">
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="sr-only">Indicateur</span> 14.6.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.6.1</span>
               </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
               <span class="indicator-name"><a href="/sdg-odd-dev/fr/14-6-1">État d’avancement de la mise en œuvre des instruments internationaux visant à combattre la pêche illicite, non déclarée et non réglementée</a></span>
               
@@ -739,10 +613,8 @@ data-event-label="high"
 
 
 
-    <ul class="tags" aria-label="Étiquettes">
-    
-        <li>
-        <span class="sr-only">État de l’indicateur</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
         
 
 
@@ -752,38 +624,42 @@ data-event-label="high"
 </span>
 
 
-        </li>
-    
-    
-    </ul>
+        </li></ul>
 
 
             </div>
-            <div class="goal-with-progress-right">
-              
-            </div>
+            
             
           </div>
         
-      </div>
+        <hr class="goal-page-target-rule" />
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Cible</span> 14.7</span>
-        </h3>
-        <span class="target-name">D’ici à 2030, faire bénéficier plus largement les petits États insulaires en développement et les pays les moins avancés des retombées économiques de l’exploitation durable des ressources marines, notamment grâce à une gestion durable des pêches, de l’aquaculture et du tourisme</span>
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.7</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">D’ici à 2030, faire bénéficier plus largement les petits États insulaires en développement et les pays les moins avancés des retombées économiques de l’exploitation durable des ressources marines, notamment grâce à une gestion durable des pêches, de l’aquaculture et du tourisme</span>
+          </div>
+      </div>
         
 
           
           
           
+          
 
-          <div class="goal-indicator clearfix">
-            <div class="goal-with-progress-left">
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="sr-only">Indicateur</span> 14.7.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.7.1</span>
               </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
               <span class="indicator-name"><a href="/sdg-odd-dev/fr/14-7-1">Proportion du PIB correspondant aux activités de pêche viables dans les petits États insulaires en développement, les pays les moins avancés et tous les pays</a></span>
               
@@ -791,10 +667,8 @@ data-event-label="high"
 
 
 
-    <ul class="tags" aria-label="Étiquettes">
-    
-        <li>
-        <span class="sr-only">État de l’indicateur</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
         
 
 
@@ -804,38 +678,42 @@ data-event-label="high"
 </span>
 
 
-        </li>
-    
-    
-    </ul>
+        </li></ul>
 
 
             </div>
-            <div class="goal-with-progress-right">
-              
-            </div>
+            
             
           </div>
         
-      </div>
+        <hr class="goal-page-target-rule" />
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Cible</span> 14.a</span>
-        </h3>
-        <span class="target-name">Approfondir les connaissances scientifiques, renforcer les moyens de recherche et transférer les techniques marines, conformément aux Critères et principes directeurs de la Commission océanographique intergouvernementale concernant le transfert de techniques marines, l’objectif étant d’améliorer la santé des océans et de renforcer la contribution de la biodiversité marine au développement des pays en développement, en particulier des petits États insulaires en développement et des pays les moins avancés</span>
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.a</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Approfondir les connaissances scientifiques, renforcer les moyens de recherche et transférer les techniques marines, conformément aux Critères et principes directeurs de la Commission océanographique intergouvernementale concernant le transfert de techniques marines, l’objectif étant d’améliorer la santé des océans et de renforcer la contribution de la biodiversité marine au développement des pays en développement, en particulier des petits États insulaires en développement et des pays les moins avancés</span>
+          </div>
+      </div>
         
 
           
           
           
+          
 
-          <div class="goal-indicator clearfix">
-            <div class="goal-with-progress-left">
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="sr-only">Indicateur</span> 14.a.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.a.1</span>
               </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
               <span class="indicator-name"><a href="/sdg-odd-dev/fr/14-a-1">Proportion du budget total de la recherche allouée à la recherche sur les techniques marines</a></span>
               
@@ -843,10 +721,8 @@ data-event-label="high"
 
 
 
-    <ul class="tags" aria-label="Étiquettes">
-    
-        <li>
-        <span class="sr-only">État de l’indicateur</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
         
 
 
@@ -856,38 +732,42 @@ data-event-label="high"
 </span>
 
 
-        </li>
-    
-    
-    </ul>
+        </li></ul>
 
 
             </div>
-            <div class="goal-with-progress-right">
-              
-            </div>
+            
             
           </div>
         
-      </div>
+        <hr class="goal-page-target-rule" />
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Cible</span> 14.b</span>
-        </h3>
-        <span class="target-name">Garantir aux petits pêcheurs l’accès aux ressources marines et aux marchés</span>
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.b</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Garantir aux petits pêcheurs l’accès aux ressources marines et aux marchés</span>
+          </div>
+      </div>
         
 
           
           
           
+          
 
-          <div class="goal-indicator clearfix">
-            <div class="goal-with-progress-left">
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="sr-only">Indicateur</span> 14.b.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.b.1</span>
               </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
               <span class="indicator-name"><a href="/sdg-odd-dev/fr/14-b-1">État d’avancement de la mise en œuvre d’un cadre juridique, réglementaire, politique ou institutionnel reconnaissant et protégeant les droits d’accès des petits pêcheurs</a></span>
               
@@ -895,10 +775,8 @@ data-event-label="high"
 
 
 
-    <ul class="tags" aria-label="Étiquettes">
-    
-        <li>
-        <span class="sr-only">État de l’indicateur</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
         
 
 
@@ -908,38 +786,42 @@ data-event-label="high"
 </span>
 
 
-        </li>
-    
-    
-    </ul>
+        </li></ul>
 
 
             </div>
-            <div class="goal-with-progress-right">
-              
-            </div>
+            
             
           </div>
         
-      </div>
+        <hr class="goal-page-target-rule" />
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Cible</span> 14.c</span>
-        </h3>
-        <span class="target-name">Améliorer la conservation et l’utilisation durable des océans et de leurs ressources en application des dispositions du droit international, énoncées dans la Convention des Nations Unies sur le droit de la mer, qui fournit le cadre juridique requis pour la conservation et l’utilisation durable des océans et de leurs ressources, comme il est rappelé au paragraphe 158 de « L’avenir que nous voulons »</span>
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.c</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Améliorer la conservation et l’utilisation durable des océans et de leurs ressources en application des dispositions du droit international, énoncées dans la Convention des Nations Unies sur le droit de la mer, qui fournit le cadre juridique requis pour la conservation et l’utilisation durable des océans et de leurs ressources, comme il est rappelé au paragraphe 158 de « L’avenir que nous voulons »</span>
+          </div>
+      </div>
         
 
           
           
           
+          
 
-          <div class="goal-indicator clearfix">
-            <div class="goal-with-progress-left">
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="sr-only">Indicateur</span> 14.c.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.c.1</span>
               </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
               <span class="indicator-name"><a href="/sdg-odd-dev/fr/14-c-1">Nombre de pays progressant dans la ratification, l’acceptation et la mise en œuvre, au moyen de cadres juridiques, opérationnels et institutionnels, des instruments relatifs aux océans visant à donner effet aux dispositions du droit international énoncées dans la Convention des Nations Unies sur le droit de la mer qui concernent la conservation et de l’utilisation durable des océans et de leurs ressources</a></span>
               
@@ -947,10 +829,8 @@ data-event-label="high"
 
 
 
-    <ul class="tags" aria-label="Étiquettes">
-    
-        <li>
-        <span class="sr-only">État de l’indicateur</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
         
 
 
@@ -960,68 +840,74 @@ data-event-label="high"
 </span>
 
 
-        </li>
-    
-    
-    </ul>
+        </li></ul>
 
 
             </div>
-            <div class="goal-with-progress-right">
-              
-            </div>
+            
             
           </div>
         
-      </div>
+        <hr class="goal-page-target-rule" />
     
-  </div>
-</div>
-
-<footer role="contentinfo">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div id="footerLinks">
-          <ul>
-            <li><a href="https://open-sdg.org">Construit en utilisant Open SDG</a></li>
-            
-              <li>
-                <a href="/sdg-odd-dev/fr/contact-us">Contactez-nous</a>
-                
-                </li>
-              <li>
-                
-                  <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
-                
-                </li>
-              <li>
-                
-                  <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                
-                </li>
-              <li>
-                <a href="/sdg-odd-dev/fr/about/cookies-and-privacy/">Cookies</a>
-                
-                </li>
-              
-            
-            
-            <li><a href="/sdg-odd-dev/fr/config">Configuration</a></li>
-            </ul>
-        </div>
-      </div>
     </div>
   </div>
+
+
+
+<footer role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="footerLinks">
+                    <ul>
+                        <li>
+                            <a href="https://open-sdg.org">Construit en utilisant Open SDG</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/sdg-odd-dev/fr/contact-us">Contactez-nous</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/sdg-odd-dev/fr/about/cookies-and-privacy/">Cookies</a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/sdg-odd-dev/fr/config">Configuration</a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-<script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
 
@@ -1041,80 +927,14 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220808201105'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20220809134502'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220808201105"></script><script>
-$(function() {
-    if($('#indicatorData').length) {
-      var domData = $('#indicatorData').data();
-
-      if (domData.showdata) {
-
-        $('.async-loading').each(function(i, obj) {
-            $(obj).append($('<img />').attr('src', $(obj).data('img')).attr('alt', translations.indicator.loading));
-        });
-
-        var remoteUrl = '/comb/' + domData.id + '.json';
-        if (opensdg.remoteDataBaseUrl !== '/') {
-          remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
-        }
-
-        $.ajax({
-          url: remoteUrl,
-          success: function(res) {
-
-            $('.async-loading').remove();
-            $('.async-loaded').show();
-
-            var model = new indicatorModel({
-              data: res.data,
-              edgesData: res.edges,
-              showMap: domData.showmap,
-              country: domData.country,
-              indicatorId: domData.indicatorid,
-              shortIndicatorId: domData.id,
-              chartTitle: domData.charttitle,
-              chartTitles: domData.charttitles,
-              measurementUnit: domData.measurementunit,
-              xAxisLabel: domData.xaxislabel,
-              showData: domData.showdata,
-              graphType: domData.graphtype,
-              startValues: domData.startvalues,
-              graphLimits: domData.graphlimits,
-              stackedDisaggregation: domData.stackeddisaggregation,
-              graphAnnotations: domData.graphannotations,
-              graphTargetLines: domData.graphtargetlines,
-              graphSeriesBreaks: domData.graphseriesbreaks,
-              indicatorDownloads: domData.indicatordownloads,
-              dataSchema: domData.dataschema,
-              compositeBreakdownLabel: domData.compositebreakdownlabel,
-              precision: domData.precision,
-            }),
-            view  = new indicatorView(model, {
-              rootElement: '#indicatorData',
-              legendElement: '#plotLegend',
-              decimalSeparator: '',
-              maxChartHeight: 420,
-              tableColumnDefs: [
-                { maxCharCount: 25 }, // nowrap
-                { maxCharCount: 35, width: 200 },
-                { maxCharCount: Infinity, width: 250 }
-              ]
-            }),
-            controller = new indicatorController(model, view);
-            controller.initialise();
-          }
-        });
-      }
-    }
-
-    var switcher = new accessibilitySwitcher();
-
-
-});
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20220809134502"></script><script>
+    new indicatorInit();
+    new accessibilitySwitcher();
 </script>
 
 
