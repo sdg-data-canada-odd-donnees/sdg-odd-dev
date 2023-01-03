@@ -2993,7 +2993,7 @@ var mapView = function () {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: {"minZoom":2,"maxZoom":6,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":null,"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#deebf7","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#3182bd","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
+      mapOptions: {"disaggregation_controls":true,"minZoom":2,"maxZoom":6,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":null,"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#deebf7","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#3182bd","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
       mapLayers: [{"min_zoom":2,"max_zoom":6,"subfolder":"regions","label":"Regions"}],
       precision: precision,
       decimalSeparator: decimalSeparator,
@@ -5487,7 +5487,7 @@ $(function() {
             this.displayedDisaggregation = 0;
             this.seriesColumn = 'Series';
             this.unitsColumn = 'Units';
-            this.displayForm = null;
+            this.displayForm = true;
             this.updateDisaggregations();
         },
 
