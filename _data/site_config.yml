@@ -156,6 +156,8 @@ languages:
 languages_public: []
 logos: []
 map_options:
+  # Whether the map should provide a button and form for changing the displayed disaggregation:
+  disaggregation_controls: true
   minZoom: 2
   maxZoom: 6
   tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
