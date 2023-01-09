@@ -375,11 +375,11 @@
         },
         {
           "id": "3-8-2",
-          "title": "Proportion of population with large household expenditures on health as a share of total household expenditure or income",
+          "title": "Proportion of population (individuals) with large household expenditures on select health care items as a share of total after-tax income",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-8-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-9-1",
