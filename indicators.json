@@ -851,7 +851,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-1-1",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "8-2-1",
@@ -859,7 +859,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-2-1",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "8-3-1",
@@ -891,7 +891,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-5-1",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "8-5-2",
@@ -899,7 +899,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-5-2",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "8-6-1",
@@ -907,7 +907,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-6-1",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "8-7-1",
@@ -939,7 +939,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/8-9-1",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "8-10-1",
