@@ -163,15 +163,15 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/2-3-1",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "2-3-2",
-          "title": "Average income of small-scale food producers, by sex and indigenous status",
+          "title": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/2-3-2",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "2-4-1",
@@ -1611,7 +1611,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/15-1-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-2-1",
