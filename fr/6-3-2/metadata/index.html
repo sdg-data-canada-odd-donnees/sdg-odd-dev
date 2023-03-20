@@ -125,7 +125,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230320175335">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230320181038">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -480,7 +480,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_GOAL__GLOBAL', "<p>Goal 6: Ensure availability and sustainable management of water and sanitation for all</p>");
+        var currentValue = normalizeCurrentValue('SDG_GOAL__GLOBAL', "Goal 6: Ensure availability and sustainable management of water and sanitation for all\n");
         var propertyEditor = editor.getEditor('root.SDG_GOAL__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -494,7 +494,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "<p>Target: 6.3 By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally.</p>");
+        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "Target: 6.3: By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally.\n");
         var propertyEditor = editor.getEditor('root.SDG_TARGET__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -508,7 +508,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator: 6.3.2 Proportion of bodies of water with good ambient water quality</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "Indicator: 6.3.2 Proportion of bodies of water with good ambient water quality\n");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -658,7 +658,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_GOAL', "<p>Goal 6: Ensure availability and sustainable management of water and sanitation for all</p>");
+        var currentValue = normalizeCurrentValue('SDG_GOAL', "Goal 6: Ensure availability and sustainable management of water and sanitation for all\n");
         var propertyEditor = editor.getEditor('root.SDG_GOAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -672,7 +672,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET', "<p>Target: 6.3 By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally.</p>");
+        var currentValue = normalizeCurrentValue('SDG_TARGET', "Target: 6.3: By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally.\n");
         var propertyEditor = editor.getEditor('root.SDG_TARGET');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -686,7 +686,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator: 6.3.2 Proportion of bodies of water with good ambient water quality</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "Indicator: 6.3.2: Water quality in Canadian rivers\n");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -724,7 +724,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>The indicator is defined as the proportion of water bodies in the country that have good ambient water quality. Ambient water quality refers to natural, untreated water in rivers, lakes and groundwaters and represents a combination of natural influences together with the impacts of all anthropogenic activities. The indicator relies on water quality data derived from in situ measurements and the analysis of samples collected from surface and groundwaters. Water quality is assessed by means of core physical and chemical parameters that reflect natural water quality related to climatological and geological factors, together with major impacts on water quality. The continuous monitoring of all surface and groundwaters is economically unfeasible and not required to sufficiently characterize the status of ambient water quality in a country. Therefore, countries select river, lake and groundwater bodies that are representative and significant for the assessment and management of water quality to monitor and report on indicator 6.3.2. The quality status of individual water bodies is classified based on the compliance of the available water quality monitoring data for the core parameters with target values defined by the country. The indicator is computed as the proportion of the number of water bodies classified as having good quality (i.e. with at least 80 % compliance) to the total number of assessed water bodies, expressed as a percentage. </p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>These indicators provide a measure of the ability of river water across Canada to support plants and animals. At each monitoring site, specific water quality data are compared to water quality guidelines to create a rating for the site. If measured water quality remains within the guidelines, it can maintain a healthy ecosystem.<br><br> Water quality at a monitoring site is considered excellent when parameters in a river almost always meet their guidelines. Conversely, water quality is rated poor when parameters usually do not meet their guidelines, sometimes by a wide margin. (<em>Environment and Climate Change Canada (ECCC)</em>)</p>\n");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -762,7 +762,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "   ");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "<p>These indicators reflect the state of water quality in rivers in southern Canada. Northern Canada is under-represented.<br><br> The indicators only use data for a subset of variables where guidelines exist. They do not cover all potential water quality issues in Canada.<br><br> The indicators are based on the impacts of a number of parameters at each site. These concentrations do not show the effect of spills or other transient events unless samples were collected right after the spill happened or their effect on water quality is long-lasting. <em>(ECCC)</em></p>\n");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -776,7 +776,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "   ");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "Water quality is reported in these indicators by measuring a number of chemical and physical properties (parameters) in water. The results for each parameter are compared to its water quality guideline. <em>(ECCC)</em>\n");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -975,12 +975,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230320175335'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230320181038'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230320175335"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230320181038"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
