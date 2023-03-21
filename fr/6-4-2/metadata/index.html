@@ -125,7 +125,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230321143604">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230321153306">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -724,7 +724,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>The level of water stress: freshwater withdrawal as a proportion of available freshwater resources is the ratio between total freshwater withdrawn by all major sectors and total renewable freshwater resources, after taking into account environmental flow requirements. Main sectors, as defined by ISIC standards, include agriculture; forestry and fishing; manufacturing; electricity industry; and services. This indicator is also known as water withdrawal intensity.</p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>The level of water stress: freshwater withdrawal as a proportion of available freshwater resources is the ratio between total freshwater withdrawn by all major sectors and total renewable freshwater resources, after taking into account environmental flow requirements. Main sectors, as defined by ISIC standards, include agriculture; forestry and fishing; manufacturing; electricity industry; and services. This indicator is also known as water withdrawal intensity. <br> <br>Above 25% of water stress, four classes have been identified to signal different levels of stress severity; <br> <br>- No stress <25% <br> <br>- Low 25% - 50% <br> <br>- Medium 50% - 75% <br> <br>- High 75-100% <br> <br>- Critical >100%</p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -762,7 +762,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "   ");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "<p>Freshwater withdrawal as a percentage of renewable freshwater resources is a good indicator of pressure on limited water resources, one of the most important natural resources. However, it only partially addresses the issues related to sustainable water management. <br> <br>Trends in freshwater withdrawal show relatively slow patterns of change. Usually, three-five years are a minimum frequency to be able to detect significant changes, as it is unlikely that the indicator would show meaningful variations from one year to the other.</p>");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -975,12 +975,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230321143604'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230321153306'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230321143604"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230321153306"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
