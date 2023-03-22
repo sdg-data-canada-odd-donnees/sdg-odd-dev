@@ -130,7 +130,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230321194616">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230322132904">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -441,7 +441,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Ethnicity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total minorités visibles&quot;,&quot;Sud-Asiatique&quot;,&quot;Chinois&quot;,&quot;Noir&quot;,&quot;Philippin&quot;,&quot;Arabe&quot;,&quot;Latino-Américain&quot;,&quot;Asiatique du Sud-Est&quot;,&quot;Pas une minorité visible&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Ethnicité&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Ethnicity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Sud-Asiatique&quot;,&quot;Chinois&quot;,&quot;Noir&quot;,&quot;Philippin&quot;,&quot;Arabe&quot;,&quot;Latino-Américain&quot;,&quot;Asiatique du Sud-Est&quot;,&quot;Pas une minorité visible&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Ethnicité&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -472,15 +472,61 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/fr/headline/16-1-4.csv" class="btn btn-primary btn-download" download="indicator_16-1-4.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
+    
     <a href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/fr/data/16-1-4.csv" class="btn btn-primary btn-download" download='indicator_16-1-4.csv' tabindex='0' role='button'>Télécharger toutes les données (CSV)</a>
 
     <p class="no-js-disaggregation-hint">Télécharger le CSV source pour les désagrégations</p>
 
     
-    <h3>Aucune donnée principale disponible</h3>
+    <h3>Données d'en-tête</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Nombre de personnes considérant qu’il n’y a pas de danger à se déplacer seules à pied dans leur zone de résidence, en proportion de la population totale</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">79</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source(s): Statistique Canada</p>
+    
+    
+    <p>Zone géographique: Canada</p>
+    
+    
+    <p>Unité de mesure: Pourcentage</p>
+    
+    
+    <p>Note de bas de page: </p>
+    
+  </div>
   
 
 </div>
@@ -1849,12 +1895,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230321194616'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230322132904'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230321194616"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230322132904"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
