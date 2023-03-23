@@ -1367,7 +1367,7 @@
         },
         {
           "id": "12-4-2",
-          "title": "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment",
+          "title": "Percentage of households that disposed of hazardous waste, by type and method of disposal",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/12-4-2",
@@ -1791,11 +1791,11 @@
         },
         {
           "id": "16-3-3",
-          "title": "Proportion of the population who have experienced a dispute in the past two years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism",
+          "title": "Proportion of the population who have experienced a dispute in the past three years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/16-3-3",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-4-1",
