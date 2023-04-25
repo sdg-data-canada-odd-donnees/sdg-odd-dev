@@ -1315,7 +1315,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/11-b-2",
-          "status": "complete"
+          "status": "notstarted"
         }]
     }
   },
@@ -1443,7 +1443,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/13-1-1",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "13-1-2",
