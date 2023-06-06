@@ -26,8 +26,9 @@ var opensdg = {
   },
 
   // A hook which can be replaced to alter whether/how the values that are
-  // displayed on indicator tables/graphs get rounded.
-  dataRounding: function(value) {
+  // displayed on indicator tables/graphs get rounded. A "context" parameter
+  // is also passed which contains additional information.
+  dataRounding: function(value, context) {
     // Alterations go here.
     return value;
   },
@@ -37,6 +38,9 @@ var opensdg = {
   dataDisplayAlter: function(callback) {
     this.dataDisplayAlterations.push(callback);
   },
+
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
 
   language: 'fr',
 };
@@ -125,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230606160934">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230606171835">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -171,10 +175,10 @@ layout-goal
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/sdg-odd-dev/fr/" id="home">
+            <a class="navbar-brand" href="/sdg-odd-dev/fr/" id="home" aria-label="" title="">
     <img src="/sdg-odd-dev/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
@@ -198,7 +202,7 @@ layout-goal
         <label class="visually-hidden" for="indicator_search">Chercher</label>
         <input class="form-control" type="search" name="q" id="indicator_search" title="Chercher">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Chercher" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -300,16 +304,28 @@ data-event-label="high"
 </div>
 
 
+
+
+
+
 <div id="main-content" class="container" role="main">
 
   
 
 
 
-  <div class="container g-0">
-    <h2 class="goal-page-heading">Cibles et indicateurs</h2>
-
-    
+  <div class="container g-0 goal-showing-progress">
+    <div class="row align-items-end">
+      <div class="col">
+        <h2 class="goal-page-heading">Cibles et indicateurs</h2>
+      </div>
+      
+      <div class="col-lg-2 d-none d-lg-block progress-column-header">
+        <span aria-hidden="true"></span>
+      </div>
+      
+    </div>
+    <hr class="goal-page-column-header-rule">
     
       
       <div class="row align-items-start goal-target">
@@ -321,6 +337,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Réduire nettement, partout dans le monde, toutes les formes de violence et les taux de mortalité qui y sont associés</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -360,7 +379,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
     
@@ -409,7 +428,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -455,7 +474,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
     
@@ -504,7 +523,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -525,6 +544,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Mettre un terme à la maltraitance, à l’exploitation et à la traite, et à toutes les formes de violence et de torture dont sont victimes les enfants</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -564,7 +586,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -610,7 +632,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -656,7 +678,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -677,6 +699,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Promouvoir l’état de droit dans l’ordre interne et international et garantir à tous un égal accès à la justice</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -716,7 +741,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
     
@@ -778,7 +803,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
     
@@ -827,7 +852,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -848,6 +873,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">D’ici à 2030, réduire nettement les flux financiers illicites et le trafic d’armes, renforcer les activités de récupération et de restitution des biens volés et lutter contre toutes les formes de criminalité organisée</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -887,7 +915,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -933,7 +961,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -954,6 +982,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Réduire nettement la corruption et la pratique des pots-de-vin sous toutes leurs formes</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -993,7 +1024,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -1039,7 +1070,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -1060,6 +1091,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Mettre en place des institutions efficaces, responsables et transparentes à tous les niveaux</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -1099,7 +1133,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
     
@@ -1161,7 +1195,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -1182,6 +1216,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Faire en sorte que le dynamisme, l’ouverture, la participation et la représentation à tous les niveaux caractérisent la prise de décisions</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -1221,7 +1258,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -1267,7 +1304,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -1288,6 +1325,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Élargir et renforcer la participation des pays en développement aux institutions chargées de la gouvernance au niveau mondial</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -1327,7 +1367,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -1348,6 +1388,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">D’ici à 2030, garantir à tous une identité juridique, notamment grâce à l’enregistrement des naissances</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -1387,7 +1430,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -1408,6 +1451,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Garantir l’accès public à l’information et protéger les libertés fondamentales, conformément à la législation nationale et aux accords internationaux</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -1447,7 +1493,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -1493,7 +1539,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
     
@@ -1530,6 +1576,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Appuyer, notamment dans le cadre de la coopération internationale, les institutions nationales chargées de renforcer, à tous les niveaux, les moyens de prévenir la violence et de lutter contre le terrorisme et la criminalité, en particulier dans les pays en développement</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -1569,7 +1618,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
     
@@ -1593,6 +1642,9 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Promouvoir et appliquer des lois et politiques non discriminatoires pour le développement durable</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
       </div>
         
 
@@ -1632,7 +1684,7 @@ data-event-label="high"
 
             </div>
             
-            <div class="col-lg-1 goal-page-indicator-progress">
+            <div class="col-lg-2 goal-page-indicator-progress">
               <span class="visually-hidden">Progress status</span>
               
 
@@ -1716,12 +1768,12 @@ data-event-label="high"
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
@@ -1742,12 +1794,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230606160934'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230606171835'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230606160934"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230606171835"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
