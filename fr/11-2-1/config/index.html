@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230803140820">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230803173831">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -582,7 +582,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_start_values', []);
+        var currentValue = normalizeCurrentValue('data_start_values', [{"field":"Series","value":"Age"},{"field":"Demographic and geodemographic","value":"0 to 14 years"},{"field":"Geography","value":"Canada"},{"field":"Series","value":"Gender"},{"field":"Demographic and geodemographic","value":"Women+"},{"field":"Geography","value":"Canada"},{"field":"Series","value":"Total"},{"field":"Demographic and geodemographic","value":"Percentage of population within 500 metres of a public transit stop"},{"field":"Geography","value":"Canada"}]);
         var propertyEditor = editor.getEditor('root.data_start_values');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1087,12 +1087,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230803140820'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230803173831'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230803140820"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230803173831"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
