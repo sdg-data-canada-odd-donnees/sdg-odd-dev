@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230804134206">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230804141929">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -508,36 +508,11 @@ data-event-label="high"
     <li role="presentation"
       class="
         nav-item
-        map
+        
         
       ">
       <button
         class="nav-link active"
-        data-bs-toggle="tab"
-        role="tab"
-        type="button"
-        
-          id="tab-mapview"
-          data-bs-target="#mapview"
-          aria-controls="mapview"
-          data-no-disagg="true"
-          data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Map tab"
-
-        
-      >Map</button>
-    </li>
-    
-    <li role="presentation"
-      class="
-        nav-item
-        
-        
-      ">
-      <button
-        class="nav-link "
         data-bs-toggle="tab"
         role="tab"
         type="button"
@@ -579,73 +554,37 @@ data-event-label="Change to Table tab"
       >Table</button>
     </li>
     
+    <li role="presentation"
+      class="
+        nav-item
+        map
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-mapview"
+          data-bs-target="#mapview"
+          aria-controls="mapview"
+          data-no-disagg="true"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Map tab"
+
+        
+      >Map</button>
+    </li>
+    
   </ul>
   
     <div class="tab-content data-view">
     
       
-        <div role="tabpanel" class="tab-pane active" id="mapview" class="map">
-          
-<h4 id="map-heading" class="map-title">Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities</h4>
-<div id="map" aria-describedby="table-alternative">
-  <img class="map-loading-image" src="/sdg-odd-dev/assets/img/loading.gif" alt="Loading map" />
-</div>
-
-
-
-
-<div id="mapFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-        <dt>Source:</dt>
-        <dd>Statistics Canada</dd>
-        
-
-        
-        <dt>Geographical Area:</dt>
-        <dd>Province or territory, Census subdivision, Census metropolitan area</dd>
-        
-
-        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
-        <dd class="data-controlled-footer-field unit-from-data"></dd>
-
-        
-
-        
-
-        
-
-        
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        >Footnote:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        ></dd>
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        >Data last updated:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        ></dd>
-        
-        
-    </dl>
-</div>
-
-
-        </div>
-      
-    
-      
-        <div role="tabpanel" class="tab-pane " id="chartview">
+        <div role="tabpanel" class="tab-pane active" id="chartview">
           
 
     <div id="dataset-size-warning" style="display:none" role="alert">
@@ -794,6 +733,67 @@ data-event-label="Change to Table tab"
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="mapview" class="map">
+          
+<h4 id="map-heading" class="map-title">Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities</h4>
+<div id="map" aria-describedby="table-alternative">
+  <img class="map-loading-image" src="/sdg-odd-dev/assets/img/loading.gif" alt="Loading map" />
+</div>
+
+
+
+
+<div id="mapFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Statistics Canada</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Province or territory, Census subdivision, Census metropolitan area</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
 
         </div>
       
@@ -1023,7 +1023,8 @@ data-event-label="Change to Sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            
+            <p>The access to public transport is considered convenient when a stop is accessible within a walking distance along the street network 
+of 500 meters from a reference point.</p>
 
           
         </td>
@@ -1099,7 +1100,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Comment and limitations </th>
         <td>
           
-            <p>On November 6, 2020, 30 Census Subdivision (CSD) member names within the Census Metropolitan Areas of Regina and Saskatoon (Saskatchewan), Edmonton and Lethbridge (Alberta), and Kelowna (British Columbia) were corrected. The data values were correct, but were assigned to the wrong CSD. The errors did not affect totals for higher-order tabulation geographies.</p>
+            <p>Source: Statistics Canada, 2021 Census of Population. The aggregate totals were calculated based on the sum of values within the scope of analysis only. The analysis scope included municipalities where a regularly scheduled public transit service was identified.</p>
 
           
         </td>
@@ -1115,7 +1116,18 @@ data-event-label="Change to Sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            
+            <p>The method used to estimate the percentage of Canadians living within 500 metres of a public transport access point was as follows:</p>
+<ol>
+  <li>Locations of public transport stops of all kinds (bus, trolley, surface and underground rail) were obtained from the cities’ 
+websites or the local transit authorities. Complete data coverage was achieved for the municipalities constituting the 41 census 
+metropolitan areas (CMA). Other municipalities within certain agglomeration areas (CA) were included when data was available. 2. 
+Public transit stop locations were integrated with Statistics Canada’s 2021 Census population counts data at the blockface geographic 
+level. The proportion of population located within a service area of 500-metre walking distance (for example, convenient access) 
+from public transit stops was calculated, using the National Road Network. Based on these estimates, the population with convenient 
+access to public transport was estimated for each municipality inside CMAs and CAs. 3. In the final step, the total population with 
+convenient access to public transport was divided by the total population of the entire CMA to produce indicator 11.2.1, following 
+the UN Sustainable Development Goals guidelines.</li>
+</ol>
 
           
         </td>
@@ -1866,7 +1878,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>Province or territory, Census subdivision, Census metropolitan area, Census metropolitan area part</p>
+            <p>Canada, Province or territory, Census subdivision, Census metropolitan area, Census agglomeration, Census metropolitan area part</p>
 
           
         </td>
@@ -1887,8 +1899,8 @@ data-event-label="Change to Sources tab"
             
             
             
-              <a href="https://doi.org/10.25318/2310028601-eng" target="_blank">
-                Statistics Canada. Table 23-10-0286-01  Proximity to Public Transportation in Canada's Metropolitan Cities, and related Commuting Data <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2310031101" target="_blank">
+                Statistics Canada. Table 23-10-0311-01  Convenient access to public transport by geography, gender, age, income after tax <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -2138,12 +2150,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230804134206'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230804141929'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230804134206"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230804141929"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

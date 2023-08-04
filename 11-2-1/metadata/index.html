@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230804134206">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230804141929">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -726,7 +726,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "    ");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "The access to public transport is considered convenient when a stop is accessible within a walking distance along the street network \nof 500 meters from a reference point.\n");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -764,7 +764,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "On November 6, 2020, 30 Census Subdivision (CSD) member names within the Census Metropolitan Areas of Regina and Saskatoon (Saskatchewan), Edmonton and Lethbridge (Alberta), and Kelowna (British Columbia) were corrected. The data values were correct, but were assigned to the wrong CSD. The errors did not affect totals for higher-order tabulation geographies.");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "Source: Statistics Canada, 2021 Census of Population. The aggregate totals were calculated based on the sum of values within the scope of analysis only. The analysis scope included municipalities where a regularly scheduled public transit service was identified.");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -778,7 +778,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "   ");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "The method used to estimate the percentage of Canadians living within 500 metres of a public transport access point was as follows: \n1. Locations of public transport stops of all kinds (bus, trolley, surface and underground rail) were obtained from the cities' \nwebsites or the local transit authorities. Complete data coverage was achieved for the municipalities constituting the 41 census \nmetropolitan areas (CMA). Other municipalities within certain agglomeration areas (CA) were included when data was available. 2. \nPublic transit stop locations were integrated with Statistics Canada's 2021 Census population counts data at the blockface geographic \nlevel. The proportion of population located within a service area of 500-metre walking distance (for example, convenient access) \nfrom public transit stops was calculated, using the National Road Network. Based on these estimates, the population with convenient \naccess to public transport was estimated for each municipality inside CMAs and CAs. 3. In the final step, the total population with \nconvenient access to public transport was divided by the total population of the entire CMA to produce indicator 11.2.1, following \nthe UN Sustainable Development Goals guidelines.\n");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -989,12 +989,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230804134206'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230804141929'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230804134206"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230804141929"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
