@@ -37,3 +37,23 @@ exclude:
   - README.md
   - LICENSE
 
+frontpage_cards:
+  - 
+    title: frontpage.download_all
+    include: components/download-all-data.html
+    
+  - 
+    title: frontpage.second_header
+    content: frontpage.second_content
+#    button_label: custom.access
+#    button_link: custom.gif_link
+    
+  - 
+    title: frontpage.third_header
+    content: frontpage.third_content
+      
+#    button_label: custom.access
+#    button_link: custom.about_link
+
+  
+
