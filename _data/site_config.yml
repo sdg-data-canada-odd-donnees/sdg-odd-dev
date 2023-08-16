@@ -67,9 +67,9 @@ disclaimer:
   phase: ''
   message: ''
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: statcan.sdg-odd.statcan@statcan.gc.ca
+  suggestions: statcan.sdg-odd.statcan@statcan.gc.ca
+  functional: statcan.sdg-odd.statcan@statcan.gc.ca
 environment: staging
 favicons: favicon.io
 footer_language_toggle: none
@@ -102,15 +102,13 @@ frontpage_cards:
     button_link: ''
     rule_color: ''
   - title: frontpage.second_header
-    content: |
-      frontpage.second_content
+    content: frontpage.second_content
     include: ''
     # button_label: 
     # button_link: 'https://example.com'
     rule_color: ''
   - title: frontpage.third_header
-    content: |
-      frontpage.third_content
+    content: frontpage.third_content
     include: ''
     # button_label: Read more
     # button_link: 'https://example.com'
