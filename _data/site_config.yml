@@ -67,9 +67,9 @@ disclaimer:
   phase: ''
   message: ''
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: statcan.sdg-odd.statcan@statcan.gc.ca
+  suggestions: statcan.sdg-odd.statcan@statcan.gc.ca
+  functional: statcan.sdg-odd.statcan@statcan.gc.ca
 environment: staging
 favicons: favicon.io
 footer_language_toggle: none
@@ -101,26 +101,24 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
-  - title: Lorem ipsum
-    content: |
-      This is some text to fill an unfinished box.
-    include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
-    rule_color: ''
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
-    include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
-    rule_color: ''
+    
+  - title: frontpage.second_header
+    content: frontpage.second_content
+    #include: ''
+    #button_label: frontpage.second_text
+    #button_link: frontpage.second_link
+    #rule_color: ''
+
+  - title: frontpage.third_header
+    content: frontpage.third_content
+    #include: ''
+    #button_label: frontpage.third_text
+    #button_link: frontpage.third_link
+    #rule_color: ''
+
 frontpage_goals_grid:
-  title: Our data for Sustainable Development Goal indicators
-  description: >-
-    Click on each goal for our Sustainable Development Goal global indicator
-    data.
+  title: frontpage.heading
+  description: frontpage.instructions
 frontpage_heading: ''
 frontpage_instructions: ''
 frontpage_introduction_banner:
@@ -167,6 +165,7 @@ languages:
   - fr
 languages_public: []
 logos: []
+
 map_options:
   # Whether the map should provide a button and form for changing the displayed disaggregation:
   disaggregation_controls: true
@@ -212,9 +211,15 @@ menu:
   - path: /faq
     translation_key: menu.faq
     dropdown: []
-  - path: /news
-    translation_key: menu.updates
-    dropdown: []
+  - translation_key: menu.more_info
+    dropdown:
+      - path: /news
+        translation_key: menu.related-products
+      - path: /methodology
+        translation_key: menu.methodology
+#  - path: /news
+#    translation_key: menu.updates
+#    dropdown: []
 metadata_edit_url: ''
 metadata_tabs: []
 news:
