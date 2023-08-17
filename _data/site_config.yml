@@ -104,17 +104,17 @@ frontpage_cards:
     
   - title: frontpage.second_header
     content: frontpage.second_content
-    include: ''
-    button_label: frontpage.second_text
-    button_link: frontpage.second_link
-    rule_color: ''
+    #include: ''
+    #button_label: frontpage.second_text
+    #button_link: frontpage.second_link
+    #rule_color: ''
 
   - title: frontpage.third_header
     content: frontpage.third_content
-    include: ''
-    button_label: frontpage.third_text
-    button_link: frontpage.third_link
-    rule_color: ''
+    #include: ''
+    #button_label: frontpage.third_text
+    #button_link: frontpage.third_link
+    #rule_color: ''
 
 frontpage_goals_grid:
   title: frontpage.heading
