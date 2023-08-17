@@ -101,18 +101,21 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
+    
   - title: frontpage.second_header
     content: frontpage.second_content
     include: ''
-    # button_label: 
-    # button_link: 'https://example.com'
+    button_label: 'frontpage.second_text'
+    button_link: 'frontpage.second_link'
     rule_color: ''
+
   - title: frontpage.third_header
     content: frontpage.third_content
     include: ''
-    # button_label: Read more
-    # button_link: 'https://example.com'
+    button_label: 'frontpage.third_text'
+    button_link: 'frontpage.third_link'
     rule_color: ''
+
 frontpage_goals_grid:
   title: frontpage.heading
   description: frontpage.instructions
@@ -162,6 +165,7 @@ languages:
   - fr
 languages_public: []
 logos: []
+
 map_options:
   # Whether the map should provide a button and form for changing the displayed disaggregation:
   disaggregation_controls: true
