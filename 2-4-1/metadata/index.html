@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230914142236">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230914155052">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -732,7 +732,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "Farm output value per hectare includes both crops and livestock. Land productivity is a measure of agricultural value of outputs obtained on a given area of land. Maintaining or improving the output over time relative to the area of land used is an important aspect in sustainability for a range of reasons. At farm level, the land productivity reflects technology and production processes for given agro-ecological conditions. In a broader sense, an increase in the level of land productivity enables higher production while reducing pressure on increasingly scarce land resources, commonly linked to deforestation and associated losses of ecosystem services and biodiversity. Risk mitigation mechanisms measures whether the farm has the mitigation measures to cope with external shocks: 1. access to or availed credit, 2. access to or availed insurance, 3. on farm diversification (share of a single agricultural commodity not greater than 60% in the total value of production of the holding.");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "Farm output value per hectare includes both crops and livestock. Land productivity is \na measure of agricultural value of outputs obtained on a given area of land. Maintaining \nor improving the output over time relative to the area of land used is an important aspect \nin sustainability for a range of reasons. At farm level, the land productivity reflects \ntechnology and production processes for given agro-ecological conditions. In a broader \nsense, an increase in the level of land productivity enables higher production while \nreducing pressure on increasingly scarce land resources, commonly linked to deforestation \nand associated losses of ecosystem services and biodiversity. \n<br>Risk mitigation mechanisms measures whether the farm has the mitigation measures to \ncope with external shocks: \n<br>1. access to or availed credit \n<br>2. access to or availed insurance\n<br>3. on farm diversification (share of a single agricultural commodity not greater than \n60% in the total value of production of the holding.\n");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -983,12 +983,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230914142236'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230914155052'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230914142236"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230914155052"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
