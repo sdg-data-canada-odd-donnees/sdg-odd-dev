@@ -107,7 +107,7 @@ var translations = {
         
         Indicateur 15.5.1 -
         
-        Indice de la Liste rouge - Indicateurs pour les objectifs de développement durable
+        Indice des espèces canadiennes - Indicateurs pour les objectifs de développement durable
     </title>
 
 
@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230926150555">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230926161426">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -413,7 +413,7 @@ data-event-label="high"
                         
                         Indicateur 15.5.1
                         
-                        <span class="lead-copy">Indice de la Liste rouge</span>
+                        <span class="lead-copy">Indice des espèces canadiennes</span>
                     </h1>
                 </div>
             </div>
@@ -1289,7 +1289,8 @@ data-event-label="Change to Sources tab"
         <th scope="row">Commentaires et limitations </th>
         <td>
           
-            
+            <p>Il s’agit d’un indicateur de substitution. L’indicateur mondial des Nations 
+Unies porte sur l’ « Indice de la Liste roug ».</p>
 
           
         </td>
@@ -1305,7 +1306,12 @@ data-event-label="Change to Sources tab"
         <th scope="row">Méthode de calcul </th>
         <td>
           
-            
+            <p>Le calcul est basé sur la variation proportionnelle de la population des 
+espèces de vertébrés surveillées. Toutes les espèces sont pondérées de manière égale, de
+sorte qu’une espèce dont la population a doublé sera contrebalancée par une espèce qui a 
+diminué de moitié. Un déclin à long terme par rapport au niveau de référence de 1970 semble 
+être continu. Toutefois, des fluctuations à court terme ne devraient pas être interprétées 
+comme une forte indication de récent changement environnemental.</p>
 
           
         </td>
@@ -2307,12 +2313,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230926150555'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230926161426'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230926150555"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230926161426"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

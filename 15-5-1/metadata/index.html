@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230926150555">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20230926161426">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -770,7 +770,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "   ");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "This is a proxy indicator. The UN Global indicator states: \"Red List Index\".\n");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -784,7 +784,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "   ");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "Calculated based on the proportional change in population size for monitored \nvertebrate species. All species are weighted equally, such that a species that doubled in \npopulation would be balanced out by a species that declined by half. A long-term decline \nfrom the 1970 baseline appears to be continuing. However, short-term fluctuations should \nnot be interpreted as strong evidence of recent environmental change.\n");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -995,12 +995,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230926150555'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20230926161426'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230926150555"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20230926161426"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
