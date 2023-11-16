@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231107214924">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231116210750">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -747,7 +747,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "    ");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<strong><p>Definition:</p></strong> <p>Gross disbursements of total ODA from all donors to medical research and basic health sectors.</p> <strong><p>Concepts:</p></strong> <p>ODA: The DAC defines ODA as “those flows to countries and territories on the DAC List of ODA Recipients and to multilateral institutions which are</p> <ol type=\"i\"><li>provided by official agencies, including state and local governments, or by their executive agencies; and</li> <li>each transaction is administered with the promotion of the economic development and welfare of developing countries as its main objective; and is concessional in character and conveys a grant element of at least 25 per cent (calculated at a rate of discount of 10 per cent). (See http://www.oecd.org/dac/stats/officialdevelopmentassistancedefinitionandcoverage.htm)</li></ol> <p>Medical research and basic health sectors are as defined by the DAC. Medical research refers to CRS sector code 12182 and basic health covers all codes in the 122 series (see here: http://www.oecd.org/dac/stats/purposecodessectorclassification.htm)</p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -998,12 +998,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231107214924'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231116210750'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231107214924"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231116210750"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
