@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231117145359">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231122210745">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -517,7 +517,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "Target 1.a: Ensure significant mobilization of resources from\na variety of sources, including through enhanced development cooperation, in order\nto provide adequate and predictable means for developing countries, in particular\nleast developed countries, to implement programmes and policies to end poverty in\nall its dimensions\n");
+        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "Target 1.a: Ensure significant mobilization of resources from a variety\nof sources, including through enhanced development cooperation, in order to provide\nadequate and predictable means for developing countries, in particular least developed\ncountries, to implement programmes and policies to end poverty in all its dimensions.\n");
         var propertyEditor = editor.getEditor('root.SDG_TARGET__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -531,7 +531,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "Indicator 1.a.1: Total official development assistance\n(ODA) grants from all donors that focus on poverty reduction as a share of the recipient\ncountry's gross national income\n");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "Indicator 1.a.1: Total official development assistance\n(ODA) grants from all donors that focus on poverty reduction as a share of the recipient\ncountry's gross national income.\n");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -709,7 +709,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "Indicator 1.a.1: Total official development assistance (ODA)\ngrants from all donors that focus on poverty reduction as a share of the recipient\ncountry's gross national income\n");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "Indicator 1.a.1: Total official development assistance\n(ODA) grants from all donors that focus on poverty reduction as a share of the recipient\ncountry's gross national income.\n");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -821,6 +821,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSMNT'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('COVERAGE', "Canada");
+        var propertyEditor = editor.getEditor('root.COVERAGE');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: COVERAGE');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COVERAGE'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.COMPARABILITY'));
@@ -998,12 +1010,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231117145359'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231122210745'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231117145359"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231122210745"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

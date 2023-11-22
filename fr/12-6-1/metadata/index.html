@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231117145359">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231122210745">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -651,7 +651,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('goal_meta_link', "https://unstats.un.org/sdgs/tierIII-indicators/files/Tier3-12-06-01.pdf");
+        var currentValue = normalizeCurrentValue('goal_meta_link', "https://unstats.un.org/sdgs/metadata/files/Metadata-12-06-01.pdf");
         var propertyEditor = editor.getEditor('root.goal_meta_link');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -747,7 +747,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "   ");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<u>Sustainability Reports:</u><br> <p>For the purposes of this indicator, ‘sustainability reports’ will not be limited to stand-alone sustainability reports produced by companies, but will be considered as ‘reporting sustainability information’ and expanded to other forms of reporting sustainability information, such as publishing sustainability information as part of the company’s annual reports or reporting sustainability information to the national government. This is to ensure that the focus of the indicator is on tracking the publishing of sustainability information, rather than on the practice of publishing stand-alone sustainability reports. It also ensures that the indicator interpretation is aligned with the wording of Target 12.6 which refers to promoting “the integration of sustainability information into the annual reporting cycle of companies”.</p><br><br> <u>Company:</u><br><p>While many companies report at the group level, many of their impacts will be local, and some subsidiaries or franchises produce separate sustainability reports. As a practice that should be encouraged, and one that is useful to monitor, it is therefore proposed to count both the group and subsidiary/franchise level separately, as separate entities. “Company” can therefore apply to either the parent company, or a franchise or subsidiary, depending on their reporting practices.</p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -821,6 +821,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSMNT'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('COVERAGE', "Canada");
+        var propertyEditor = editor.getEditor('root.COVERAGE');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: COVERAGE');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COVERAGE'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.COMPARABILITY'));
@@ -998,12 +1010,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231117145359'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231122210745'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231117145359"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231122210745"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
