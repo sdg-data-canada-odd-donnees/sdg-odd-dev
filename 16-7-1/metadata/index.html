@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231128191330">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231128194434">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -531,7 +531,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 16.7.1: Proportions of positions (by age group, sex, persons with disabilities and population groups) in public institutions (national and local), including (a) <u>the legislatures</u>; (b) the public service; and (c) the judiciary, compared to national distributions.</p>\n<p>This metadata is for sub-component (a) of the indicator, on legislatures.</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 16.7.1:  Proportions of positions in national and local institutions, including (a) the legislatures; \n(b) the public service; and (c) the judiciary, compared to national distributions, by sex, age, persons with \ndisabilities and population groups </p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -709,7 +709,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 16.7.1: Proportions of positions (by age group, sex, persons with disabilities and population groups) in public institutions (national and local), including (a) <u>the legislatures</u>; (b) the public service; and (c) the judiciary, compared to national distributions.</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 16.7.1:  Proportions of positions in national and local institutions, including (a) the legislatures; (b) the public service; and (c) the judiciary, compared to national distributions, by sex, age, persons with disabilities and population groups</p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -747,7 +747,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>This metadata sheet is focused only on the first sub-component of indicator 16.7.1, namely on positions in national legislatures held by individuals of each target population (sex, age, persons with disabilities, and contextually relevant population groups). </p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>The legislative sub-component of indicator 16.7.1 aims to measure how representative of the general population are the individuals occupying key decision-making positions in national legislatures. More specifically, this indicator measures the proportional representation of various demographic groups (women, age groups) in the national population amongst individuals occupying the following positions in national legislatures: (1) Members, (2) Speakers and (3) Chairs of permanent committees in charge of the following portfolios: Foreign Affairs, Defence, Finance, Human Rights and Gender Equality. Furthermore, it looks at the electoral and constitutional provisions adopted by countries to secure representation in national legislatures of persons with disabilities and contextually relevant population groups.</p> <p>The public service sub-component of indicator 16.7.1 measures representation in the public service with respect to the sex, age, disability and population group status of public servants, and assesses how these correspond to the proportion of these groups in society as a whole. More specifically, this indicator measures the proportional representation of various demographic groups (women, youth, persons with disability, and nationally relevant population groups) across various occupational categories as well as across two administrative levels (national and sub-national).</p> <p>The judiciary sub-component of indicator 16.7.1 measures representation in the judiciary with respect to the sex, age, disability and population group status, and assesses how these correspond to the proportion of these groups in society as a whole. More specifically, this indicator measures the proportional representation of various demographic groups (women, youth, persons with disability, and nationally relevant population groups) across two key decision-making positions in the judiciary (judges and registrars) as well as across three ‘levels’ of courts, namely ‘supreme/constitutional courts,’ ‘higher-level courts’ and ‘lower-level courts’.</p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -821,6 +821,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSMNT'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('COVERAGE', "Canada");
+        var propertyEditor = editor.getEditor('root.COVERAGE');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: COVERAGE');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COVERAGE'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.COMPARABILITY'));
@@ -998,12 +1010,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231128191330'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231128194434'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231128191330"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231128194434"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

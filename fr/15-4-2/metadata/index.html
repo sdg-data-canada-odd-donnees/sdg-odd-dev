@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231128191330">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231128194434">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -665,7 +665,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('goal_meta_link_text', "United Nations Sustainable Development Goals Metadata (PDF 384 KB)");
+        var currentValue = normalizeCurrentValue('goal_meta_link_text', "United Nations Sustainable Development Goals Metadata");
         var propertyEditor = editor.getEditor('root.goal_meta_link_text');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -709,7 +709,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 15.4.2: Mountain Green Cover Index</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 15.4.2:: (a) Mountain Green Cover Index and (b) proportion of degraded mountain land</p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -747,7 +747,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<b>The Mountain Green Cover Index (MGCI)</b> is designed to measure the\nextent and the changes of green vegetation in mountain areas - i.e. forest, shrubs,\ntrees, pasture land, cropland, etc. - in order to monitor progress towards\nthe mountain target. MGCI is defined as the percentage of green cover over the total\nsurface of the mountain region of a given country and for given reporting year.\nThe aim of the index is to monitor the evolution of the green cover and thus assess\nthe status of conservation of mountain ecosystems.\n");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "Sub-indicator 15.4.2a, Mountain Green Cover Index (MGCI), is designed to measure the extent and changes \nof green cover - i.e. forest, shrubs, trees, pasture land, cropland, etc. – in mountain areas. MGCI is defined \nas the percentage of green cover over the total surface of the mountain area of a given country and for \ngiven reporting year. The aim of the index is to monitor the evolution of green cover and thus assess the \nstatus of conservation of mountain ecosystems. <br><br> Sub-indicator 15.4.2b, Proportion of degraded mountain land, is designed to monitor the extent of \ndegraded mountain land as a result of land cover change in a given country and for given reporting year. \nSimilarly to sub-indicator ‘‘trends in land cover” under SDG Indicator 15.3.1 (Sims et al. 2021), mountain \necosystem degradation and recovery is assessed based on the definition of land cover type transitions that \nindicate improving, stable or degrading conservation status. The definition of degradation adopted for the \ncomputation of this indicator is the one established Intergovernmental Science-Policy Platform on \nBiodiversity and Ecosystem Services (IPBES).\n");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -821,6 +821,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSMNT'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('COVERAGE', "Canada");
+        var propertyEditor = editor.getEditor('root.COVERAGE');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: COVERAGE');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COVERAGE'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.COMPARABILITY'));
@@ -998,12 +1010,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231128191330'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231128194434'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231128191330"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231128194434"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
