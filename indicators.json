@@ -287,7 +287,7 @@
         },
         {
           "id": "3-3-3",
-          "title": "Malaria incidence per 100,000 population",
+          "title": "Malaria incidence per 1,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-3-3/",
@@ -375,7 +375,7 @@
         },
         {
           "id": "3-8-2",
-          "title": "Proportion of population (individuals) with large household expenditures on select health care items as a share of total after-tax income",
+          "title": "Proportion of population with large household expenditures on health as a share of total household expenditure or income",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/3-8-2/",
@@ -719,7 +719,7 @@
         },
         {
           "id": "6-3-2",
-          "title": "Water quality in Canadian rivers",
+          "title": "Proportion of bodies of water with good ambient water quality",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/6-3-2/",
@@ -1367,7 +1367,7 @@
         },
         {
           "id": "12-4-2",
-          "title": "Percentage of households that disposed of hazardous waste, by type and method of disposal",
+          "title": "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/12-4-2/",
@@ -1791,7 +1791,7 @@
         },
         {
           "id": "16-3-3",
-          "title": "Proportion of the population who have experienced a dispute in the past three years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism",
+          "title": "Proportion of the population who have experienced a dispute in the past two years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/16-3-3/",
