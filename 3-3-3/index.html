@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231206163331">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20231212150903">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -440,6 +440,12 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Malaria incidence per 100,000 population</h2>
+  </div>
+</div>
+
 
   
 
@@ -483,7 +489,7 @@ data-event-label="high"
   data-indicatorid='indicator_3-3-3'
   data-id="3-3-3"
   data-country="Canada"
-  data-charttitle="Malaria incidence per 1,000 population"
+  data-charttitle="Malaria incidence per 100,000 population"
   data-charttitles="[]"
   data-measurementunit="Rate per 100,000 population"
   data-xaxislabel=""
@@ -541,7 +547,7 @@ data-event-label="high"
     
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Malaria incidence per 1,000 population</caption>
+      <caption>Malaria incidence per 100,000 population</caption>
       <thead>
         
         
@@ -802,7 +808,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Malaria incidence per 1,000 population
+            Malaria incidence per 100,000 population
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1245,7 +1251,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Comment and limitations </th>
         <td>
           
-            
+            <p>Note that the national data for indicator 16.3.3 measures malaria incidence per <i>100,000</i> population, where the global indicator measures malaria incidence per <i>1,000</i> population.</p>
 
           
         </td>
@@ -1496,7 +1502,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator </th>
         <td>
           
-            <p>Indicator 3.3.3: Malaria incidence per 100,000 population </p>
+            <p>Indicator 3.3.3: Malaria incidence per 1,000 population </p>
 
           
         </td>
@@ -2346,12 +2352,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231206163331'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20231212150903'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231206163331"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20231212150903"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
