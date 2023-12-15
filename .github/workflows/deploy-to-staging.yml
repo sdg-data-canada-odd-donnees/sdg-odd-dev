@@ -27,6 +27,12 @@ jobs:
     - name: Build the site
       run: |
         gem install bundler
+        gem 'kramdown', '~> 1.17.0'
+        bundle update kramdown
+        gem 'jekyll', '~> 3.8.4'
+        bundle update jekyll
+        bundle outdated
+        bundle update
         bundle config path vendor/bundle
         bundle install
         bundle exec jekyll build --baseurl=/${{ env.GITHUB_REPOSITORY_NAME_PART }}
