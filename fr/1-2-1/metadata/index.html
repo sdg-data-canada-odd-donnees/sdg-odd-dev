@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240220202924">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240220210438">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -747,7 +747,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>The national poverty rate is the percentage of the total population living below the national poverty line. The rural poverty rate is the percentage of the rural population living below the national poverty line (or in cases where a separate, rural poverty line is used, the rural poverty line). Urban poverty rate is the percentage of the urban population living below the national poverty line (or in cases where a separate, urban poverty line is used, the urban poverty line). </p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>This indicator measures the percentage of persons in low income using the Market Basket Measures (MBM), which was adopted as Canada’s Official Poverty Line. According to the MBM, a family lives in poverty if it does not have enough income to purchase a specific basket of goods and services in its community.</p> <p>The Market Basket Measure (MBM) is based on the cost of a specific basket of goods and services representing a modest, basic standard of living. It includes the costs of food, clothing, shelter, transportation and other items for a reference family. These costs are compared to the disposable income of families to determine whether or not they fall below the poverty line.</p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -785,7 +785,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "  ");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "It covers all individuals in Canada, excluding persons living on reserves and other Aboriginal settlements in the provinces, the institutionalized population, and households in extremely remote areas with very low population density. Overall, these exclusions amount to less than 2 percent of the population.");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -799,7 +799,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "  ");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "Data were readily available to report to this indicator as specified by the metadata. Please refer to the sources to access additional information on the metadata or source.");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -821,18 +821,6 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSMNT'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('COVERAGE', "Canada, Geographical region of Canada, Province or territory, Census metropolitan area");
-        var propertyEditor = editor.getEditor('root.COVERAGE');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: COVERAGE');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COVERAGE'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.COMPARABILITY'));
@@ -1010,12 +998,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240220202924'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240220210438'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240220202924"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240220210438"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

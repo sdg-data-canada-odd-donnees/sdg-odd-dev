@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240220202924">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240220210438">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -503,7 +503,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('computation_units', "Percentage");
+        var currentValue = normalizeCurrentValue('computation_units', "");
         var propertyEditor = editor.getEditor('root.computation_units');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -547,7 +547,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_notice_class', "");
+        var currentValue = normalizeCurrentValue('data_notice_class', "success");
         var propertyEditor = editor.getEditor('root.data_notice_class');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -561,7 +561,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_notice_heading', "");
+        var currentValue = normalizeCurrentValue('data_notice_heading', "Exploring data sources");
         var propertyEditor = editor.getEditor('root.data_notice_heading');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -575,7 +575,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_notice_text', "");
+        var currentValue = normalizeCurrentValue('data_notice_text', "Statistics Canada has not yet found any suitable data sources to report on this indicator. \n<br>Please <a href=\"mailto:statcan.sdg-odd.statcan@statcan.gc.ca\">contact us</a> if you have any suggestions.\n");
         var propertyEditor = editor.getEditor('root.data_notice_text');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -587,23 +587,11 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_notice_text'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('data_show_map', true);
-        var propertyEditor = editor.getEditor('root.data_show_map');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: data_show_map');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_show_map'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_start_values', [{"field":"Geography","value":"Newfoundland and Labrador"},{"field":"Geography","value":"Nova Scotia"},{"field":"Geography","value":"New Brunswick"},{"field":"Geography","value":"Ontario"},{"field":"Geography","value":"British Columbia"},{"field":"Geography","value":"Yukon"},{"field":"Geography","value":"Northwest Territories"},{"field":"Geography","value":"Nunavut"},{"field":"Area","value":"Total"},{"field":"Gender","value":"Total"}]);
+        var currentValue = normalizeCurrentValue('data_start_values', []);
         var propertyEditor = editor.getEditor('root.data_start_values');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -687,7 +675,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('expected_disaggregations', ["Geography","Area","Gender"]);
+        var currentValue = normalizeCurrentValue('expected_disaggregations', []);
         var propertyEditor = editor.getEditor('root.expected_disaggregations');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -823,7 +811,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_geographical_coverage', "Canada, rural or urban part of Canada, province or territory, rural or urban part of province or territory, and census subdivision (CSD)");
+        var currentValue = normalizeCurrentValue('national_geographical_coverage', "");
         var propertyEditor = editor.getEditor('root.national_geographical_coverage');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -879,6 +867,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.precision'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('progress_status', "not_available");
+        var propertyEditor = editor.getEditor('root.progress_status');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: progress_status');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.progress_status'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.proxy'));
@@ -891,7 +891,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('reporting_status', "complete");
+        var currentValue = normalizeCurrentValue('reporting_status', "notstarted");
         var propertyEditor = editor.getEditor('root.reporting_status');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1100,12 +1100,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240220202924'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240220210438'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240220202924"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240220210438"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

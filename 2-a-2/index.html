@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240220202924">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240220210438">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -472,7 +472,7 @@ data-event-label="high"
   data-country="Canada"
   data-charttitle="Total official flows (official development assistance plus other official flows) to the agriculture sector"
   data-charttitles="[]"
-  data-measurementunit="USD (millions)"
+  data-measurementunit="Constant US dollar, Millions, at 2021 prices"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -670,13 +670,13 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
-    <p>Source: <a href="https://www.oecd.org/"> Organisation for Economic Co-operation and Development (OECD) </a></p>
+    <p>Source: Organisation for Economic Co-operation and Development (OECD)</p>
     
     
     <p>Geographical Area: Canada</p>
     
     
-    <p>Unit of Measurement: USD (millions)</p>
+    <p>Unit of Measurement: Constant US dollar, Millions, at 2021 prices</p>
     
     
     <p>Footnote: </p>
@@ -786,7 +786,7 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Source:</dt>
-        <dd><a href="https://www.oecd.org/"> Organisation for Economic Co-operation and Development (OECD) </a></dd>
+        <dd>Organisation for Economic Co-operation and Development (OECD)</dd>
         
 
         
@@ -861,7 +861,7 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Source:</dt>
-        <dd><a href="https://www.oecd.org/"> Organisation for Economic Co-operation and Development (OECD) </a></dd>
+        <dd>Organisation for Economic Co-operation and Development (OECD)</dd>
         
 
         
@@ -1132,7 +1132,15 @@ data-event-label="Change to Sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            <p>Gross disbursements of total ODA and other official flows from all donors to the agriculture sector.</p>
+            <p><strong>Definition:</strong> &lt;p&gt;Gross disbursements of total ODA and other official flows from Canada to the agriculture sector.&lt;/p&gt;
+<br />
+<strong>Concepts</strong> &lt;p&gt;ODA: The DAC defines ODA as “those flows to countries and territories on the DAC List of ODA Recipients and to multilateral institutions which are&lt;/p&gt;<br /></p>
+<p>i) provided by official agencies, including state and local governments, or by their executive agencies; and</p>
+<p>ii) each transaction is administered with the promotion of the economic development and welfare of developing countries as its main objective; and is concessional in character and conveys a grant element of at least 25 per cent (calculated at a rate of discount of 10 per cent). (See http://www.oecd.org/dac/stats/officialdevelopmentassistancedefinitionandcoverage.htm)</p>
+<p><br /></p>
+<p>Other official flows (OOF): Other official flows (excluding officially supported export credits) are defined as transactions by the official sector which do not meet the conditions for eligibility as ODA, either because they are not primarily aimed at development, or because they are not sufficiently concessional. (See http://www.oecd.org/dac/stats/documentupload/DCDDAC(2016)3FINAL.pdf, Para 24).</p>
+<p><br /></p>
+<p>The agriculture sector is as defined by the DAC and comprises all CRS sector codes in the 311 series (see here: http://www.oecd.org/dac/stats/purposecodessectorclassification.htm)</p>
 
           
         </td>
@@ -1224,7 +1232,11 @@ data-event-label="Change to Sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            
+            <p>Data were readily available to report to this indicator as specified by the metadata. Please refer to the sources to access additional information on the metadata or source.</p>
+<p>To access the data through the original data source, go to the OECD's website and follow these steps:</p>
+<p>   1. Browse by topic and select Official Development Assistance (ODA) </p>
+<p>   2. In filters, select Canada as donor and Agriculture as sector </p>
+<p>   3. Select "Bilateral ODA commitments" and "Bilateral Other Official Flows (OOF)" as measure </p>
 
           
         </td>
@@ -1260,19 +1272,8 @@ data-event-label="Change to Sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Data availability and disaggregation </th>
-        <td>
-          
-            <p>Canada</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -1985,7 +1986,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p><a href="https://www.oecd.org/"> Organisation for Economic Co-operation and Development (OECD) </a></p>
+            <p>Organisation for Economic Co-operation and Development (OECD)</p>
 
           
         </td>
@@ -2043,7 +2044,7 @@ data-event-label="Change to Sources tab"
             
             
             
-              <a href="https://stats.oecd.org/Index.aspx?DataSetCode=CRS1" target="_blank">
+              <a href="https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CDevelopment%23DEV%23%7COfficial%20Development%20Assistance%20%28ODA%29%23DEV_ODA%23&fs[1]=Donor%2C0%7CCanada%23CAN%23&fs[2]=Sector%2C4%7CAll%20sectors%231000%23%7CSector%20allocable%23450%23%7CProduction%20sectors%23300%23%7CAgriculture&pg=0&fc=Sector&snb=1&vw=tb&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_DAC1%40DF_DAC5&df[ag]=OECD.DCD.FSD&df[vs]=1.0&pd=%2C&dq=CAN.530%2B528....Q.311&ly[rw]=SECTOR&ly[cl]=TIME_PERIOD&to[TIME_PERIOD]=false&lo=5&lom=LASTNPERIODS" target="_blank">
                 OECD - Creditor Reporting System (CRS) <span class="visuallyhidden">opens in a new window</span>
               </a>
             
@@ -2309,12 +2310,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240220202924'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240220210438'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240220202924"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240220210438"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
