@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240222220615">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240222222536">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -440,6 +440,12 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Proportion of births in hospital</h2>
+  </div>
+</div>
+
 
   
 
@@ -470,7 +476,7 @@ data-event-label="high"
   data-indicatorid='indicator_3-1-2'
   data-id="3-1-2"
   data-country="Canada"
-  data-charttitle="Proportion of births attended by skilled health personnel"
+  data-charttitle="Proportion of births in hospital"
   data-charttitles="[]"
   data-measurementunit="Percentage"
   data-xaxislabel=""
@@ -486,7 +492,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Yukon&quot;,&quot;Northwest Territories&quot;,&quot;Nunavut&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -528,7 +534,7 @@ data-event-label="high"
     
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Proportion of births attended by skilled health personnel</caption>
+      <caption>Proportion of births in hospital</caption>
       <thead>
         
         
@@ -536,7 +542,11 @@ data-event-label="high"
         
         
         
-        <th scope="col" class="table-value">Value</th>
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col" class="table-value">GeoCode</th>
         
         
       </thead>
@@ -545,47 +555,15 @@ data-event-label="high"
         <tr>
           
           
-          <td>2011</td>
+          <td>2015</td>
           
           
           
-          <td class="table-value">98.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
+          <td>97.8</td>
           
           
           
-          <td class="table-value">98.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td class="table-value">98.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td class="table-value">97.9</td>
+          <td class="table-value"></td>
           
           
         </tr>
@@ -597,7 +575,27 @@ data-event-label="high"
           
           
           
-          <td class="table-value">97.9</td>
+          <td>97.9</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>90.8</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -609,7 +607,43 @@ data-event-label="high"
           
           
           
-          <td class="table-value">97.9</td>
+          <td>97.8</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>97.8</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>90.9</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -621,7 +655,43 @@ data-event-label="high"
           
           
           
-          <td class="table-value">98.0</td>
+          <td>97.9</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>97.9</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>91.8</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -633,7 +703,43 @@ data-event-label="high"
           
           
           
-          <td class="table-value">98.0</td>
+          <td>97.9</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>98.0</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>91.4</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -645,7 +751,43 @@ data-event-label="high"
           
           
           
-          <td class="table-value">98.2</td>
+          <td>98.0</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>98.1</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>94.0</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -657,7 +799,43 @@ data-event-label="high"
           
           
           
-          <td class="table-value">97.9</td>
+          <td>97.7</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>97.7</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>92.8</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -669,7 +847,91 @@ data-event-label="high"
           
           
           
-          <td class="table-value">97.6</td>
+          <td>97.6</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>97.6</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>92.9</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>97.7</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>97.8</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>91.6</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -777,7 +1039,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Proportion of births attended by skilled health personnel
+            Proportion of births in hospital
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1068,7 +1330,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator </th>
         <td>
           
-            <p>Indicator 3.1.2: Proportion of births attended by skilled health personnel </p>
+            <p>Indicator 3.1.2: Proportion of births in hospital </p>
 
           
         </td>
@@ -1144,7 +1406,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            <p>Proportion of births attended by skilled health personnel (generally doctors, nurses or midwives but can refer to other health professionals providing childbirth care) is the proportion of childbirths attended by professional health personnel. According to the current definition (1) these are competent maternal and newborn health (MNH) professionals educated, trained and regulated to national and international standards. They are competent to: (i) provide and promote evidence-based, human-rights based, quality, socio-culturally sensitive and dignified care to women and newborns; (ii) facilitate physiological processes during labour and delivery to ensure a clean and positive childbirth experience; and (iii) identify and manage or refer women and/or newborns with complications.</p>
+            <p>Proportion of births attended by skilled health personnel (generally doctors, nurses or midwives but can refer to other health professionals providing childbirth care) is the proportion of childbirths attended by professional health personnel. According to the current definition (1) these are competent maternal and newborn health (MNH) professionals educated, trained and regulated to national and international standards. They are competent to: (i) provide and promote evidence-based, human-rights based, quality, socio-culturally sensitive and dignified care to women and newborns; (ii) facilitate physiological processes during labour and delivery to ensure a clean and positive childbirth experience; and (iii) identify and manage or refer women and/or newborns with complications. <br /></p>
 
           
         </td>
@@ -1220,7 +1482,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Comment and limitations </th>
         <td>
           
-            
+            <p>The proportion of births in hospital includes live births and fetal deaths (stillbirths). <br /> Prior to April 30, 2015, three forms - a medical certificate of stillbirth, a notice of livebirth or stillbirth and a statement of stillbirth - were required in order to register a stillbirth in Ontario. As of April 30, 2015, registration can occur in the absence of one or two of the forms, thus contributing to the increase observed between 2011 and 2012. <br /> Due to improvements in methodology and timeliness, the duration of data collection has been shortened compared to previous years. As a result, there may have been fewer births and stillbirths captured by the time of the release. The 2022 data are considered preliminary. <br /> As a result of delays with birth and stillbirth registrations, fewer births and stillbirths have been captured, to date, for Manitoba in 2022. There were also fewer births captured for Nova Scotia in 2021 due to coverage issues. <br /> 2017 to 2022 data for Yukon are not available.</p>
 
           
         </td>
@@ -1236,7 +1498,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            <p>All births - % of non-hospital births</p>
+            <p>Data were readily available to report to this indicator as specified by the metadata. Please refer to the sources to access additional information on the metadata or source.</p>
 
           
         </td>
@@ -2044,8 +2306,8 @@ data-event-label="Change to Sources tab"
             
             
             
-              <a href="https://www150.statcan.gc.ca/n1/daily-quotidien/220928/cg-d002-eng.htm" target="_blank">
-                Statistics Canada. Births, 2021. Chart 2. Percentage of non-hospital births, Canada, 2011 to 2021
+              <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310042901" target="_blank">
+                Statistics Canada. Table 13-10-0429-01  Live births and fetal deaths (stillbirths), by place of birth (hospital or non-hospital)
  <span class="visuallyhidden">opens in a new window</span>
               </a>
             
@@ -2311,12 +2573,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240222220615'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240222222536'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240222220615"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240222222536"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
