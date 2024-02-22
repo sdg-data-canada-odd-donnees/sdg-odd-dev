@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240221215226">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240222220615">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -709,7 +709,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 3.1.2: Proportion of births attended by skilled health personnel </p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 3.1.2: Proportion of births in hospital </p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -747,7 +747,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "Proportion of births attended by skilled health personnel (generally doctors, nurses or midwives but can refer to other health professionals providing childbirth care) is the proportion of childbirths attended by professional health personnel. According to the current definition (1) these are competent maternal and newborn health (MNH) professionals educated, trained and regulated to national and international standards. They are competent to: (i) provide and promote evidence-based, human-rights based, quality, socio-culturally sensitive and dignified care to women and newborns; (ii) facilitate physiological processes during labour and delivery to ensure a clean and positive childbirth experience; and (iii) identify and manage or refer women and/or newborns with complications.");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "Proportion of births attended by skilled health personnel (generally doctors, nurses or midwives but can refer to other health professionals providing childbirth care) is the proportion of childbirths attended by professional health personnel. According to the current definition (1) these are competent maternal and newborn health (MNH) professionals educated, trained and regulated to national and international standards. They are competent to: (i) provide and promote evidence-based, human-rights based, quality, socio-culturally sensitive and dignified care to women and newborns; (ii) facilitate physiological processes during labour and delivery to ensure a clean and positive childbirth experience; and (iii) identify and manage or refer women and/or newborns with complications. <br> ");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -785,7 +785,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "   ");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "The proportion of births in hospital includes live births and fetal deaths (stillbirths). <br> Prior to April 30, 2015, three forms - a medical certificate of stillbirth, a notice of livebirth or stillbirth and a statement of stillbirth - were required in order to register a stillbirth in Ontario. As of April 30, 2015, registration can occur in the absence of one or two of the forms, thus contributing to the increase observed between 2011 and 2012. <br> Due to improvements in methodology and timeliness, the duration of data collection has been shortened compared to previous years. As a result, there may have been fewer births and stillbirths captured by the time of the release. The 2022 data are considered preliminary. <br> As a result of delays with birth and stillbirth registrations, fewer births and stillbirths have been captured, to date, for Manitoba in 2022. There were also fewer births captured for Nova Scotia in 2021 due to coverage issues. <br> 2017 to 2022 data for Yukon are not available.");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -799,7 +799,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "All births - % of non-hospital births");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "Data were readily available to report to this indicator as specified by the metadata. Please refer to the sources to access additional information on the metadata or source.");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -998,12 +998,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240221215226'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240222220615'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240221215226"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240222220615"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

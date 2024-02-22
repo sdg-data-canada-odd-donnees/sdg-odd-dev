@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240221215226">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240222220615">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -785,7 +785,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "Note that the national data for indicator 3.3.3 measures malaria incidence per <i>100,000</i> population, where the global indicator measures malaria incidence per <i>1,000</i> population.");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "Note that the national data for indicator 3.3.3 measures malaria incidence per 100,000 population rather than the rate per 1,000 population as specified in the metadata.");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -799,7 +799,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "Rate per 100,000 population");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "Data were readily available to report to this indicator as specified by the metadata. Please refer to the sources to access additional information on the metadata or source.");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -998,12 +998,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240221215226'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240222220615'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240221215226"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240222220615"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
