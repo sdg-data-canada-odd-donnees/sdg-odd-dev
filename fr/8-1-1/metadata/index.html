@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240227221031">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240228142019">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -747,7 +747,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>this indicator measures the annual growth rate of real GDP per capita.</p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>This indicator measures the annual growth rate of real GDP per capita.</p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -785,7 +785,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "   ");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "GDP data for this indicator is calculated using 2017 chained Canadian dollars as opposed to 2015 US dollars as stated in the global metadata.");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -799,7 +799,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "Annual growth rate of real Gross Domestic Product (GDP) per capita is calculated as the percentage change in the real GDP per capita between two consecutive years. Real GDP per capita is calculated by dividing GDP at constant prices by the population of the country or region.");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "Real GDP per capita in time t = Real GDP in time t / total population in time <br><br> Annual growth rate of real GPD per capita (in %) = (((Real GDP per capita at time t)-(Real GDP per capita at time t-1))/(Real GDP per capita at time t-1))x100");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -998,12 +998,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240227221031'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240228142019'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240227221031"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240228142019"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240227221031">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240228142019">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -472,7 +472,7 @@ data-event-label="high"
   data-country="Canada"
   data-charttitle="Change in water-use efficiency over time"
   data-charttitles="[]"
-  data-measurementunit="USD$ per cubic meter"
+  data-measurementunit="United States dollars per cubic meter (USD/m<sup>3</sup>)"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -486,7 +486,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Location&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Services (ISIC4 G to T)&quot;,&quot;Industries&quot;,&quot;Agriculture (ISIC4 A01 A0210 A0322)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Location&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Economic activity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Services (ISIC4 G to T)&quot;,&quot;Industries&quot;,&quot;Agriculture (ISIC4 A01 A0210 A0322)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Economic activity&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -736,7 +736,7 @@ data-event-label="high"
     <p>Geographical Area: Canada</p>
     
     
-    <p>Unit of Measurement: USD$ per cubic meter</p>
+    <p>Unit of Measurement: United States dollars per cubic meter (USD/m<sup>3</sup>)</p>
     
     
     <p>Footnote: </p>
@@ -1192,7 +1192,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            <p>Change in water use efficiency over time (CWUE): The change in the ratio of the value added to the volume of water use, over time.</p>
+            <p>Change in water use efficiency over time (CWUE): The change in the ratio of the value added to the volume of water use, over time. <br /> <br /> Water Use Efficiency (WUE) is defined as the value added of a given major sector divided by the volume of water used. <br /> <br /> Following the United Nations International Standard Industrial Classification of All Economic Activities ISIC 4 coding, sectors are defined as: <br /> 1. agriculture; forestry; fishing (ISIC A), hereinafter “agriculture”; <br /> 2. mining and quarrying; manufacturing; electricity, gas, steam and air conditioning supply; constructions (ISIC B, C, D and F), hereinafter “MIMEC”; <br /> 3. all the service sectors (ISIC E and ISIC G-T), hereinafter “services</p>
 
           
         </td>
@@ -1284,7 +1284,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            
+            <p>Data were readily available to report to this indicator as specified by the metadata. Please refer to the sources to access additional information on the metadata or source.</p>
 
           
         </td>
@@ -2093,7 +2093,7 @@ data-event-label="Change to Sources tab"
             
             
               <a href="https://sdg6data.org/en/tables" target="_blank">
-                Food and Agriculture Organization of the United Nations (FAO). FAO AQUASTAT. <span class="visuallyhidden">opens in a new window</span>
+                UN Water <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -2358,12 +2358,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240227221031'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240228142019'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240227221031"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240228142019"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
