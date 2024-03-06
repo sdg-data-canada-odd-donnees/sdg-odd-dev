@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240228222354">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240306153757">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -488,9 +488,9 @@ data-event-label="high"
   data-indicatorid='indicator_8-8-1'
   data-id="8-8-1"
   data-country="Canada"
-  data-charttitle="proxy.8-8-1-title"
-  data-charttitles="[]"
-  data-measurementunit="Nombre"
+  data-charttitle="Nombre d’accidents du travail mortels et non mortels par 100 000 travailleurs, par sexe et statut au regard de l’immigration"
+  data-charttitles="[{&quot;series&quot;:&quot;Fatality claims&quot;,&quot;title&quot;:&quot;Fatality claims&quot;},{&quot;series&quot;:&quot;Lost time claims&quot;,&quot;title&quot;:&quot;Lost time claims&quot;}]"
+  data-measurementunit="Number of claims"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -504,7 +504,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Nombre de demandes d’indemnisation pour décès, selon le sexe&quot;,&quot;Nombre de réclamations avec perte de temps, selon le sexe&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unités&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Homme&quot;,&quot;Femme&quot;,&quot;Total&quot;,&quot;Unknown&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sexe&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Fatality claims&quot;,&quot;Lost time claims&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Homme&quot;,&quot;Femme&quot;,&quot;Total&quot;,&quot;Unknown&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sexe&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy="proxy"
@@ -629,7 +629,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            proxy.8-8-1-title
+            Fatality claims
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -2162,12 +2162,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240228222354'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240306153757'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240228222354"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240306153757"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
