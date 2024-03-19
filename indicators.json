@@ -163,7 +163,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/2-3-1/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "2-3-2",
@@ -171,7 +171,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/2-3-2/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "2-4-1",
@@ -1743,7 +1743,7 @@
         },
         {
           "id": "16-1-4",
-          "title": "Proportion of population that feel safe walking alone around the area they live",
+          "title": "Proportion of population that feel safe walking alone around the area they live after dark",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/16-1-4/",
@@ -1755,7 +1755,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/16-2-1/",
-          "status": "notapplicable"
+          "status": "complete"
         },
         {
           "id": "16-2-2",
