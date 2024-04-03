@@ -28,7 +28,7 @@ country:
   name: Canada
   adjective: Canadian
 create_goals:
-  layout: goal-with-progress
+  layout: goal-by-target-vertical #goal-with-progress
   previous_next_links: true
   goals: []
 create_indicators:
@@ -225,47 +225,60 @@ metadata_tabs: []
 news:
   category_links: false
 non_global_metadata: indicator.national_metadata
-progress_status:
-    status_heading: Progress status
-    status_types:
-#      - value: not_available
-#        label: status.progress_not_available
-#        image: assets/img/progress/not-available.png
-#        alt: status.progress_not_available
-      - value: target_achieved
-        label: status.progress_target_achieved
-        image: assets/img/progress/target-achieved-gauge.png
-        alt: status.progress_target_achieved
-      - value: substantial_progress
-        label: status.substantial_progress
-        image: assets/img/progress/green-gauge.png
-        alt: status.substantial_progress
-      - value: moderate_progress
-        label: status.moderate_progress
-        image: assets/img/progress/yellow-gauge.png
-        alt: status.moderate_progress
-      - value: negligible_progress
-        label: status.negligible_progress
-        image: assets/img/progress/orange-gauge.png
-        alt: status.negligible_progress
-      - value: deterioration
-        label: status.deterioration
-        image: assets/img/progress/red-gauge.png
-        alt: status.deterioration
-      - value: moderate_deterioration
-        label: status.moderate_deterioration
-        image: assets/img/progress/orange-gauge.png
-        alt: status.moderate_deterioration
-      - value: significant_deterioration
-        label: status.significant_deterioration
-        image: assets/img/progress/red-gauge.png
-        alt: status.significant_deterioration
+#progress_status:
+#    status_heading: Progress status
+#    status_types:
+##      - value: not_available
+##        label: status.progress_not_available
+##        image: assets/img/progress/not-available.png
+##        alt: status.progress_not_available
+#      - value: target_achieved
+#        label: status.progress_target_achieved
+#        image: assets/img/progress/target-achieved-gauge.png
+#        alt: status.progress_target_achieved
+#      - value: substantial_progress
+#        label: status.substantial_progress
+#        image: assets/img/progress/green-gauge.png
+#        alt: status.substantial_progress
+#      - value: moderate_progress
+#        label: status.moderate_progress
+#        image: assets/img/progress/yellow-gauge.png
+#        alt: status.moderate_progress
+#      - value: negligible_progress
+#        label: status.negligible_progress
+#        image: assets/img/progress/orange-gauge.png
+#        alt: status.negligible_progress
+#      - value: deterioration
+#        label: status.deterioration
+#        image: assets/img/progress/red-gauge.png
+#        alt: status.deterioration
+#      - value: moderate_deterioration
+#        label: status.moderate_deterioration
+#        image: assets/img/progress/orange-gauge.png
+#        alt: status.moderate_deterioration
+#      - value: significant_deterioration
+#        label: status.significant_deterioration
+#        image: assets/img/progress/red-gauge.png
+#        alt: status.significant_deterioration
         
 remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
 reporting_status:
   title: status.reporting_status
   description: status.description
   disaggregation_tabs: false
+  status_types:
+    - value: notstarted
+      label: status.exploring_data_sources
+      hide_on_goal_pages: false
+    - value: complete
+      label: status.reported_online
+      hide_on_goal_pages: false
+    - value: notapplicable
+      label: status.not_applicable
+      hide_on_goal_pages: false
+    - value: notavailable
+      label: status.not_available
+      hide_on_goal_pages: false
 repository_url_data: 'https://github.com/open-sdg/open-sdg-data-starter'
 repository_url_site: ''
 search_index_boost: []
