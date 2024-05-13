@@ -55,7 +55,7 @@
         },
         {
           "id": "1-5-1",
-          "title": "Nombre de personnes décédées, disparues ou directement touchées lors de catastrophes, par 100 000 personnes",
+          "title": "Nombre de personnes décédées, disparues ou directement touchées lors de catastrophes, pour 100 000 personnes",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/1-5-1/",
@@ -279,7 +279,7 @@
         },
         {
           "id": "3-3-2",
-          "title": "Incidence de la tuberculose par 100 000 habitants",
+          "title": "Incidence de la tuberculose pour 100 000 habitants",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/3-3-2/",
@@ -295,7 +295,7 @@
         },
         {
           "id": "3-3-4",
-          "title": "Incidence de l’hépatite B par 100 000 habitants",
+          "title": "Incidence de l’hépatite B pour 100 000 habitants",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/3-3-4/",
@@ -943,7 +943,7 @@
         },
         {
           "id": "8-10-1",
-          "title": "a) Nombre de succursales de banques commerciales par 100 000 adultes et b) nombre de distributeurs automatiques de billets par 100 000 adultes",
+          "title": "a) Nombre de succursales de banques commerciales pour 100 000 adultes et b) nombre de distributeurs automatiques de billets pour 100 000 adultes",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/8-10-1/",
@@ -1247,7 +1247,7 @@
         },
         {
           "id": "11-5-1",
-          "title": "Nombre de personnes décédées, disparues ou directement touchées lors de catastrophes, par 100 000 personnes",
+          "title": "Nombre de personnes décédées, disparues ou directement touchées lors de catastrophes, pour 100 000 personnes",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/11-5-1/",
@@ -1439,7 +1439,7 @@
         
         {
           "id": "13-1-1",
-          "title": "Nombre de personnes décédées, disparues ou directement touchées lors de catastrophes, par 100 000 personnes",
+          "title": "Nombre de personnes décédées, disparues ou directement touchées lors de catastrophes, pour 100 000 personnes",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/13-1-1/",
@@ -1719,7 +1719,7 @@
         
         {
           "id": "16-1-1",
-          "title": "Nombre de victimes d’homicide volontaire par 100 000 habitants, par sexe et âge",
+          "title": "Nombre de victimes d’homicide volontaire pour 100 000 habitants, par sexe et âge",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/16-1-1/",
@@ -1727,7 +1727,7 @@
         },
         {
           "id": "16-1-2",
-          "title": "Nombre de décès liés à des conflits par 100 000 habitants, par sexe, âge et cause",
+          "title": "Nombre de décès liés à des conflits pour 100 000 habitants, par sexe, âge et cause",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/16-1-2/",
@@ -1759,7 +1759,7 @@
         },
         {
           "id": "16-2-2",
-          "title": "Nombre de victimes de la traite d’êtres humains par 100 000 habitants, par sexe, âge et forme d’exploitation",
+          "title": "Nombre de victimes de la traite d’êtres humains pour 100 000 habitants, par sexe, âge et forme d’exploitation",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/16-2-2/",
@@ -1975,7 +1975,7 @@
         },
         {
           "id": "17-6-1",
-          "title": "Abonnements à une connexion à Internet à haut débit fixe par 100 habitants, par vitesse de connexion",
+          "title": "Abonnements à une connexion à Internet à haut débit fixe pour 100 habitants, par vitesse de connexion",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/17-6-1/",
