@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240910160326">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240910171538">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -288,8 +288,26 @@ layout-indicator-iframe
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Local governments that adopted and implemented local disaster risk reduction strategies in line with national disaster risk reduction strategies</h2>
+  </div>
+</div>
+
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.
+  </div>
+</div>
+
 
   
 
@@ -298,7 +316,7 @@ layout-indicator-iframe
 <div class="row" id="page-content">
   <div class="col-xs-12">
     <p><strong>Non-statistical indicator</strong></p>
-<p>We have identified the following to be relevant for reporting on this indicator - <a href="https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/mrgncy-mngmnt-strtgy/index-en.aspx">Emergency Management Strategy for Canada: Toward a Resilient 2030</a>. <br /> <br />In October 2018, British Columbia adopted the <i>UN Sendai Framework for Disaster Risk Reduction (2015-2030) (Sendai Framework)</i> to align and improve its approach to all phases of emergency management. <br /> <br />Québec adopted the 2014-2024 Québec Emergency Management Policy as well as a National Action Plan, directly inspired by the priority actions of the Hyogo Framework, the predecessor of the <i>Sendai Framework</i>.</p>
+<p>We have identified the following to be relevant for reporting on this indicator: <br /> <br />In October 2018, British Columbia adopted the <a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/emergency-management/legislation-and-regulations"><i>UN Sendai Framework for Disaster Risk Reduction (2015-2030) (Sendai Framework)</i></a> to align and improve its approach to all phases of emergency management. <br /> <br />Québec adopted the <a href="https://www.quebec.ca/gouvernement/ministere/securite-publique/publications/politique-quebecoise-securite-civile-2014-2024">2014-2024 Québec Emergency Management Policy</a> as well as a National Action Plan, directly inspired by the priority actions of the Hyogo Framework, the predecessor of the <i>Sendai Framework</i>.</p>
 
   </div>
 </div>
@@ -313,7 +331,7 @@ layout-indicator-iframe
   data-indicatorid='indicator_11-b-2'
   data-id="11-b-2"
   data-country="Canada"
-  data-charttitle="Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies"
+  data-charttitle="Local governments that adopted and implemented local disaster risk reduction strategies in line with national disaster risk reduction strategies"
   data-charttitles="[]"
   data-measurementunit=""
   data-xaxislabel=""
@@ -332,7 +350,7 @@ layout-indicator-iframe
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
+  data-proxy="proxy"
   data-proxyseries="null"
 >
   
@@ -475,7 +493,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator </th>
         <td>
           
-            <p>Indicator 11.b.2: Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies </p>
+            <p>Indicator 11.b.2: Local governments that adopted and implemented local disaster risk reduction strategies in line with national disaster risk reduction strategies</p>
 
           
         </td>
@@ -551,7 +569,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            <p>This indicator measures the proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies.</p>
+            <p>This indicator informs on local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies.</p>
 
           
         </td>
@@ -1396,7 +1414,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>Public Safety Canada</p>
+            <p>Government of British Columbia</p>
 
           
         </td>
@@ -1422,7 +1440,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>Canada</p>
+            <p>British Columbia</p>
 
           
         </td>
@@ -1443,8 +1461,8 @@ data-event-label="Change to Sources tab"
             
             
             
-              <a href="https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/mrgncy-mngmnt-strtgy/index-en.aspx" target="_blank">
-                Public Safety Canada. Emergency Management Strategy for Canada: Toward a Resilient 2030
+              <a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/emergency-management/legislation-and-regulations" target="_blank">
+                Government of British Columbia. Modernizing BC’s Emergency Management Legislation (English Only)
  <span class="visuallyhidden">opens in a new window</span>
               </a>
             
@@ -1697,7 +1715,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>Government of British Columbia</p>
+            <p>Gouvernement of Quebec</p>
 
           
         </td>
@@ -1723,7 +1741,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>British Columbia</p>
+            <p>Quebec</p>
 
           
         </td>
@@ -1744,8 +1762,8 @@ data-event-label="Change to Sources tab"
             
             
             
-              <a href="hhttps://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/modernizing_bcs_emergencymanagement_legislation.pdf" target="_blank">
-                Government of British Columbia. Modernizing BC’s Emergency Management Legislation
+              <a href="https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/mrgncy-mngmnt-strtgy/index-en.aspx" target="_blank">
+                Gouvernement of Quebec. Politique québécoise de sécurité civile 2014-2024 (French Only)
  <span class="visuallyhidden">opens in a new window</span>
               </a>
             
@@ -1905,12 +1923,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240910160326'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240910171538'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240910160326"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240910171538"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
