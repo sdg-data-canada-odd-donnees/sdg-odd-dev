@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240906122816">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20240910160326">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -288,8 +288,27 @@ layout-indicator-iframe
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Stratégies nationales de réduction des risques de catastrophe conformes au Cadre d'action de Sendai pour la réduction des risques de catastrophe (2015-2030) qui ont été adoptées et implémentées
+</h2>
+  </div>
+</div>
+
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    Cet indicateur contient des données alternatives à celles spécifiées par les Nations Unies (ONU). Cet indicateur est la meilleure correspondance actuellement disponible.
+  </div>
+</div>
+
 
   
 
@@ -314,7 +333,8 @@ layout-indicator-iframe
   data-indicatorid='indicator_11-b-1'
   data-id="11-b-1"
   data-country="Canada"
-  data-charttitle="Nombre de pays ayant adopté et mis en place des stratégies nationales de réduction des risques de catastrophe, conformément au Cadre de Sendai pour la réduction des risques de catastrophe (2015‐2030)"
+  data-charttitle="Stratégies nationales de réduction des risques de catastrophe conformes au Cadre d'action de Sendai pour la réduction des risques de catastrophe (2015-2030) qui ont été adoptées et implémentées
+"
   data-charttitles="[]"
   data-measurementunit=""
   data-xaxislabel=""
@@ -333,7 +353,7 @@ layout-indicator-iframe
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
+  data-proxy="proxy"
   data-proxyseries="null"
 >
   
@@ -476,7 +496,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicateur </th>
         <td>
           
-            <p>Indicateur 11.b.1 : Nombre de pays ayant adopté et mis en place des stratégies nationales de réduction des risques de catastrophe, conformément au Cadre de Sendai pour la réduction des risques de catastrophe (2015‐2030)</p>
+            <p>Indicateur 11.b.1 : Stratégies nationales de réduction des risques de catastrophe conformes au Cadre d’action de Sendai pour la réduction des risques de catastrophe (2015-2030) qui ont été adoptées et implémentées</p>
 
           
         </td>
@@ -552,7 +572,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Définition et concepts </th>
         <td>
           
-            
+            <p>Cet indicateur renseigne sur l’adoption et la mise en œuvre de stratégies nationales de réduction des risques de catastrophe en conformité avec le Cadre d’action de Sendai pour la réduction des risques de catastrophe 2015-2030.</p>
 
           
         </td>
@@ -1397,7 +1417,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>Public Safety Canada</p>
+            <p>Sécurité publique Canada</p>
 
           
         </td>
@@ -1444,8 +1464,8 @@ data-event-label="Change to Sources tab"
             
             
             
-              <a href="https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/mrgncy-mngmnt-strtgy/index-en.aspx" target="_blank">
-                Public Safety Canada. Emergency Management Strategy for Canada: Toward a Resilient 2030
+              <a href="https://www.securitepublique.gc.ca/cnt/rsrcs/pblctns/mrgncy-mngmnt-strtgy/index-fr.aspx" target="_blank">
+                Sécurité publique Canada. Stratégie de sécurité civile pour le Canada : Vers un 2030 marqué par la résilience
  <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
@@ -1617,12 +1637,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240906122816'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20240910160326'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240906122816"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20240910160326"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
