@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241011191845">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241028155649">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -679,7 +679,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_GOAL', "Goal 2: End hunger, achieve food security and improved nutrition and promote sustainable agriculture\n");
+        var currentValue = normalizeCurrentValue('SDG_GOAL', "Goal 2: End hunger, achieve food security and improved nutrition and promote sustainable agriculture");
         var propertyEditor = editor.getEditor('root.SDG_GOAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -745,7 +745,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "The levels of food security are defined as: <br>1- Food secure: No indication of difficulty with income-related food access; <br>2- Food insecure: Includes marginal, moderate and severe food insecurity; <br>3- Marginally food insecure: Exactly one indication of difficulty with income-related food access; <br>4- Moderately food insecure: Indication of compromise in quality and/or quantity of food consumed; <br>5- Severely food insecure: Indication of reduced food intake and disrupted eating patterns.\n");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>The levels of food security are defined as:</p> <ol> <li>Food secure: No indication of difficulty with income-related food access;</li> <li>Food insecure: Includes marginal, moderate and severe food insecurity;</li> <li>Marginally food insecure: Exactly one indication of difficulty with income-related food access;</li> <li>Moderately food insecure: Indication of compromise in quality and/or quantity of food consumed;</li> <li>Severely food insecure: Indication of reduced food intake and disrupted eating patterns.</li> </ol>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -783,7 +783,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "This is a proxy indicator. The UN Global indicator states: \"Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)\". \nThe survey is conducted nationwide, in both the provinces and\nthe territories. It covers all individuals in Canada, excluding persons living on\nreserves and other Indigenous settlements in the provinces, the institutionalized\npopulation, and households in extremely remote areas with very low population density.\nOverall, these exclusions amount to less than two percent of the population. \n");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "This is a proxy indicator. The UN Global indicator states: \"Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)\". <br><br> The survey is conducted nationwide, in both the provinces and the territories. It covers all individuals in Canada, excluding persons living on reserves and other Indigenous settlements in the provinces, the institutionalized population, and households in extremely remote areas with very low population density. Overall, these exclusions amount to less than two per cent of the population. ");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -995,12 +995,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241011191845'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241028155649'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241011191845"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241028155649"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241011191845">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241028155649">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -290,6 +290,18 @@ layout-indicator-iframe
   
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    Cet indicateur contient des données alternatives à celles spécifiées par les Nations Unies (ONU). Cet indicateur est la meilleure correspondance actuellement disponible.
+  </div>
+</div>
+
 
   
 
@@ -324,8 +336,8 @@ layout-indicator-iframe
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Empreinte matérielle&quot;,&quot;Empreinte matérielle par habitant&quot;,&quot;Empreinte matérielle par PIB&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Tonnes (million)&quot;,&quot;Tonnes par habitant&quot;,&quot;Tonnes par dollar&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unités&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
-  data-proxyseries="null"
+  data-proxy="both"
+  data-proxyseries="[&quot;Empreinte matérielle par PIB&quot;]"
 >
   
   <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
@@ -1595,7 +1607,7 @@ layout-indicator-iframe
   
   <div id="datatableFooter">
     
-    <p>Source: ONU programme pour l'environnement</p>
+    <p>Source: Programme des Nations Unies pour l’environnement</p>
     
     
     <p>Zone géographique: Canada</p>
@@ -1711,7 +1723,7 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Source:</dt>
-        <dd>ONU programme pour l'environnement, Statistique Canada</dd>
+        <dd>Programme des Nations Unies pour l’environnement, Statistique Canada</dd>
         
 
         
@@ -1787,7 +1799,7 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Source:</dt>
-        <dd>ONU programme pour l'environnement, Statistique Canada</dd>
+        <dd>Programme des Nations Unies pour l’environnement, Statistique Canada</dd>
         
 
         
@@ -2951,7 +2963,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>ONU programme pour l’environnement</p>
+            <p>Programme des Nations Unies pour l’environnement</p>
 
           
         </td>
@@ -3010,7 +3022,7 @@ data-event-label="Change to Sources tab"
             
             
               <a href="https://www.unep.org/fr" target="_blank">
-                ONU programme pour l'environnement. Totalisation personnalisée.
+                Programme des Nations Unies pour l’environnement. Totalisation personnalisée.
  <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
@@ -3852,12 +3864,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241011191845'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241028155649'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241011191845"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241028155649"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
