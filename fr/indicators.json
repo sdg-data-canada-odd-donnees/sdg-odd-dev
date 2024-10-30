@@ -855,7 +855,7 @@
         },
         {
           "id": "8-2-1",
-          "title": "Taux de croissance annuelle du PIB réel par personne pourvue d’un emplo",
+          "title": "Taux de croissance annuelle du PIB réel par personne pourvue d’un emploi",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/8-2-1/",
@@ -971,7 +971,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/8-b-1/",
-          "status": "complete"
+          "status": "notstarted"
         }]
     }
   },
