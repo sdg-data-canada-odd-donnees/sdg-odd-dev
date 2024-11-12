@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241108223840">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241112192935">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -327,14 +327,14 @@ layout-indicator-iframe
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Activité économique&quot;,&quot;value&quot;:&quot;Ensemble&quot;}]"
+  data-startvalues="[]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)&quot;,&quot;Efficacité de l'utilisation des ressources en eau (USD par mètre cube)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Variation en pourcentage (%)&quot;,&quot;Dollars américains par mètre cube&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unités&quot;},{&quot;name&quot;:&quot;Economic activity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ensemble&quot;,&quot;Services&quot;,&quot;Industrie&quot;,&quot;Agriculture, sylviculture et pêche&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Activité économique&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)&quot;,&quot;Efficacité de l'utilisation des ressources en eau (USD par mètre cube)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Variation en pourcentage (%)&quot;,&quot;Dollars américains par mètre cube&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unités&quot;},{&quot;name&quot;:&quot;Economic activity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Services&quot;,&quot;Industrie&quot;,&quot;Agriculture, sylviculture et pêche&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Activité économique&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -369,15 +369,677 @@ layout-indicator-iframe
   <div id="datatables">
 
     
+    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/fr/headline/6-4-1.csv" class="btn btn-primary btn-download" download="indicator_6-4-1.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
+    
     <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/fr/data/6-4-1.csv" class="btn btn-primary btn-download" download='indicator_6-4-1.csv' tabindex='0' role='button'>Télécharger Source CSV</a>
 
     <p class="no-js-disaggregation-hint">Télécharger le CSV source pour les désagrégations</p>
 
     
-    <h3>Aucune donnée principale disponible</h3>
+    <h3>Données d'en-tête</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Variation de l’efficacité de l’utilisation des ressources en eau</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>2.026</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>4.522</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>0.073</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>-1.264</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>6.177</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>4.432</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>5.246</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>6.079</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>2.916</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>-0.717</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>1.366</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>5.45</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>3.968</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>-2.535</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>4.634</td>
+          
+          
+          
+          <td>Variation en pourcentage (%)</td>
+          
+          
+          
+          <td class="table-value">Variation de l'efficacité de l'utilisation des ressources en eau en pourcentage (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>30.159</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>30.77</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>32.162</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>32.185</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>31.778</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>33.742</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>35.237</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>37.086</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>39.34</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>40.487</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>40.197</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>40.746</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>42.967</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>44.672</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>43.54</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>45.557</td>
+          
+          
+          
+          <td>Dollars américains par mètre cube</td>
+          
+          
+          
+          <td class="table-value">Efficacité de l'utilisation des ressources en eau (USD par mètre cube)</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source: ONU-Eau</p>
+    
+    
+    <p>Zone géographique: Canada</p>
+    
+    
+    <p>Unité de mesure: </p>
+    
+    
+    <p>note de bas de page: </p>
+    
+  </div>
   
 
 </div>
@@ -1974,12 +2636,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241108223840'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241112192935'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241108223840"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241112192935"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
