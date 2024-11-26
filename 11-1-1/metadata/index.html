@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241126202536">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241126210618">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -745,7 +745,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>This indicator measures the proportion of urban population in core housing need. The urban population is defined as the population living in \"large urban population centres\" as defined by the Canadian Housing Survey. <br><br> A household is said to be in \"core housing need\" if its housing falls below at least one of the adequacy, affordability or suitability standards and it would have to spend 30% or more of its total before-tax income to pay the median rent of alternative local housing that is acceptable (meets all three housing standards). <br><br> Housing standards are defined as follows:</p> <ul> <li>Adequate housing is reported by their residents as not requiring any major repairs.</li> <li>Affordable housing has shelter costs equal to less than 30% of total before-tax household income.</li> <li>Suitable housing has enough bedrooms for the size and composition of resident households according to National Occupancy Standard (NOS) requirements.</li> </ul>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p>This indicator measures the proportion of urban population in core housing need. The urban population is defined as the population living in large urban population centres as defined by the Canadian Housing Survey. <br><br> A household is said to be in \"core housing need\" if its housing falls below at least one of the adequacy, affordability or suitability standards and it would have to spend 30% or more of its total before-tax income to pay the median rent of alternative local housing that is acceptable (meets all three housing standards). <br><br> Housing standards are defined as follows:</p> <ul> <li>Adequate housing is reported by their residents as not requiring any major repairs.</li> <li>Affordable housing has shelter costs equal to less than 30% of total before-tax household income.</li> <li>Suitable housing has enough bedrooms for the size and composition of resident households according to National Occupancy Standard (NOS) requirements.</li> </ul>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -783,7 +783,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "This is a proxy indicator. The UN Global indicator states: \"Proportion of urban population living in slums, informal settlements or inadequate housing\". <br><br> Only private, non-farm, non-reserve and owner- or renter-households with incomes greater than zero and shelter-cost-to-income ratios less than 100% are assessed for \"core housing need.\" Non-family households with at least one maintainer aged 15 to 29 attending school are considered not to be in \"core housing need\" regardless of their housing circumstances. Attending school is considered a transitional phase, and low incomes earned by student households are viewed as being a temporary condition.");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "This is a proxy indicator. The UN Global indicator states: \"Proportion of urban population living in slums, informal settlements or inadequate housing\". <br><br> Only private, non-farm, non-reserve and owner- or renter-households with incomes greater than zero and shelter-cost-to-income ratios less than 100% are assessed for core housing need. Non-family households with at least one maintainer aged 15 to 29 attending school are considered not to be in core housing need regardless of their housing circumstances. Attending school is considered a transitional phase, and low incomes earned by student households are viewed as being a temporary condition.");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -995,12 +995,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241126202536'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241126210618'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241126202536"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241126210618"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
