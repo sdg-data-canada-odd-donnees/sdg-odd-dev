@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241218162739">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241218163604">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -323,7 +323,7 @@ layout-indicator-iframe
   data-indicatorid='indicator_16-2-2'
   data-id="16-2-2"
   data-country="Canada"
-  data-charttitle="Number of victims of human trafficking per 100,000 population"
+  data-charttitle="Number of human trafficking incidents reported per 100,000 population"
   data-charttitles="[]"
   data-measurementunit="Rate per 100,000 population"
   data-xaxislabel=""
@@ -383,7 +383,7 @@ layout-indicator-iframe
     
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Number of victims of human trafficking per 100,000 population</caption>
+      <caption>Number of human trafficking incidents reported per 100,000 population</caption>
       <thead>
         
         
@@ -488,7 +488,19 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">1.355965075</td>
+          <td class="table-value">1.53328799</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td class="table-value">1.422032077</td>
           
           
         </tr>
@@ -596,7 +608,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Number of victims of human trafficking per 100,000 population
+            Number of human trafficking incidents reported per 100,000 population
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1037,9 +1049,11 @@ data-event-label="Change to Sources tab"
         <th scope="row">Comment and limitations </th>
         <td>
           
-            <p>“Total Human Trafficking” is comprised of two violation codes, 1525 “Trafficking in Persons” (S.279.01, 279.011, 279.02, 279.03 of the Criminal Code) and 6510 “Human Trafficking” from S.117 of the Immigration and Refugee Protection Act.<br /><br />
-Human trafficking incidents reported to the Uniform Crime Reporting (UCR) Survey may be undercounted due to differences in police reporting practices for this violation. <br /><br />
-This is a proxy indicator measuring the number of human trafficking incidents reported rather than the number of victims of human trafficking as specified by the metadata.</p>
+            <p>“Total Human Trafficking” is comprised of two violation codes, 1525 “Trafficking in Persons” (S.279.01, 279.011, 279.02, 279.03 of the Criminal Code) and 6510 “Human Trafficking” from S.117 of the Immigration and Refugee Protection Act.
+<br /><br />
+Human trafficking incidents reported to the Uniform Crime Reporting (UCR) Survey may be undercounted due to differences in police reporting practices for this violation.
+<br /><br />
+This is a proxy indicator measuring the number of human trafficking incidents reported rather than the number of victims of human trafficking as specified by the UN global metadata.</p>
 
           
         </td>
@@ -1055,7 +1069,7 @@ This is a proxy indicator measuring the number of human trafficking incidents re
         <th scope="row">Method of computation </th>
         <td>
           
-            <p>Number of human trafficking incidents reported per 100,000 population = (Number of human trafficking incidents reported / Total population) x 100,000</p>
+            <p>Number of human trafficking incidents reported per 100,000 population = (Number of human trafficking incidents reported / Total population) × 100,000</p>
 
           
         </td>
@@ -1514,7 +1528,7 @@ This is a proxy indicator measuring the number of human trafficking incidents re
         <th scope="row">UN designated tier </th>
         <td>
           
-            <p>Tier II</p>
+            <p>Tier I</p>
 
           
         </td>
@@ -1530,7 +1544,7 @@ This is a proxy indicator measuring the number of human trafficking incidents re
         <th scope="row">UN custodian agency </th>
         <td>
           
-            <p>United Nations Office on Drugs and Crime (United Nations Office for Disarmament Affairs (UNODC))</p>
+            <p>United Nations Office on Drugs and Crime (UNODC)</p>
 
           
         </td>
@@ -1915,8 +1929,7 @@ This is a proxy indicator measuring the number of human trafficking incidents re
             
             
               <a href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=3302" target="_blank">
-                Statistics Canada. Canadian Centre for Justice and Community Safety Statistics, Uniform Crime Reporting Survey - Custom tabulation.
- <span class="visuallyhidden">opens in a new window</span>
+                Statistics Canada. Canadian Centre for Justice and Community Safety Statistics, Uniform Crime Reporting Survey - Custom tabulation. <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -2251,7 +2264,7 @@ This is a proxy indicator measuring the number of human trafficking incidents re
             
             
               <a href="https://doi.org/10.25318/1710000501-eng" target="_blank">
-                Table 17-10-0005-01  Population estimates on July 1st, by age and sex <span class="visuallyhidden">opens in a new window</span>
+                Statistics Canada. Table 17-10-0005-01  Population estimates on July 1, by age and gender <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -2434,12 +2447,12 @@ This is a proxy indicator measuring the number of human trafficking incidents re
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241218162739'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241218163604'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241218162739"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241218163604"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
