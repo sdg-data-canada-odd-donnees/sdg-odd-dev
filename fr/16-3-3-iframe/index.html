@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241223133325">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20241223213451">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -288,8 +288,26 @@ layout-indicator-iframe
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Proportion de la population ayant connu un différend au cours des trois dernières années, avec saisine d’un mécanisme formel ou informel de règlement des différends</h2>
+  </div>
+</div>
+
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    Cet indicateur contient des données alternatives à celles spécifiées par les Nations Unies (ONU). Cet indicateur est la meilleure correspondance actuellement disponible.
+  </div>
+</div>
+
 
   
 
@@ -305,7 +323,7 @@ layout-indicator-iframe
   data-indicatorid='indicator_16-3-3'
   data-id="16-3-3"
   data-country="Canada"
-  data-charttitle="Proportion of the population who have experienced a dispute in the past three years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism"
+  data-charttitle="Proportion de la population ayant connu un différend au cours des trois dernières années, avec saisine d’un mécanisme formel ou informel de règlement des différends"
   data-charttitles="[]"
   data-measurementunit="Pourcentage (%)"
   data-xaxislabel=""
@@ -324,7 +342,7 @@ layout-indicator-iframe
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Resolution mechanism&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Communiquez avec un avocat, un parajuriste ou un étudiant en droit&quot;,&quot;Communiquer avec une cour ou un tribunal&quot;,&quot;Communiquez avec un organisme communautaire&quot;,&quot;Communiquer avec un ministère ou un organisme gouvernemental&quot;,&quot;Communiquer avec un syndicat&quot;,&quot;Autres mesures pour résoudre le problème&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Mécanisme de résolution&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
+  data-proxy="proxy"
   data-proxyseries="null"
 >
   
@@ -365,7 +383,7 @@ layout-indicator-iframe
     
     <h3>Données d'en-tête</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Proportion of the population who have experienced a dispute in the past three years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism</caption>
+      <caption>Proportion de la population ayant connu un différend au cours des trois dernières années, avec saisine d’un mécanisme formel ou informel de règlement des différends</caption>
       <thead>
         
         
@@ -494,7 +512,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Proportion of the population who have experienced a dispute in the past three years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism
+            Proportion de la population ayant connu un différend au cours des trois dernières années, avec saisine d’un mécanisme formel ou informel de règlement des différends
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -751,7 +769,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Objectif </th>
         <td>
           
-            <p>Objectif 16 : Promouvoir l’avènement de sociétés pacifiques et inclusives aux fins du développement durable, assurer l’accès de tous à la justice et mettre en place, à tous les niveaux, des institutions efficaces, responsables et ouvertes à tous</p>
+            <p>Objectif 16 : Promouvoir l’avènement de sociétés pacifiques et inclusives aux fins du développement durable, assurer l’accès de tous à la justice et mettre en place, à tous les niveaux, des institutions efficaces, responsables et ouvertes à tous</p>
 
           
         </td>
@@ -783,7 +801,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicateur </th>
         <td>
           
-            <p>Indicateur 16.3.3 : Proportion de la population ayant connu un différend au cours des trois dernières années, avec saisine d’un mécanisme formel ou informel de règlement des différends, par type de mécanisme de jugement</p>
+            <p>Indicateur 16.3.3 : Proportion de la population ayant connu un différend au cours des trois dernières années, avec saisine d’un mécanisme formel ou informel de règlement des différends</p>
 
           
         </td>
@@ -859,7 +877,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Définition et concepts </th>
         <td>
           
-            
+            <p>Nombre de personnes ayant connu un différend au cours des trois dernières années et ayant eu recours à un mécanisme formel ou informel de résolution des différends, en pourcentage de toutes les personnes ayant connu un litige au cours des trois dernières années, par type de mécanisme.</p>
 
           
         </td>
@@ -935,7 +953,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Commentaires et limitations </th>
         <td>
           
-            
+            <p>Cet indicateur est un indicateur de substitution. Les données nationales pour l’indicateur 16.3.3 mesurent la population ayant eu un litige au cours des trois dernières années et non au cours des deux dernières années comme l’indique l’indicateur global.</p>
 
           
         </td>
@@ -951,7 +969,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Méthode de calcul </th>
         <td>
           
-            
+            <p>Les données ont été tabulées pour rendre compte de cet indicateur comme spécifié par les métadonnées. Veuillez vous référer aux sources pour obtenir des informations supplémentaires sur les métadonnées ou la source.</p>
 
           
         </td>
@@ -1167,7 +1185,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Objectif </th>
         <td>
           
-            <p>Objectif 16 : Promouvoir l’avènement de sociétés pacifiques et inclusives aux fins du développement durable, assurer l’accès de tous à la justice et mettre en place, à tous les niveaux, des institutions efficaces, responsables et ouvertes à tous</p>
+            <p>Objectif 16 : Promouvoir l’avènement de sociétés pacifiques et inclusives aux fins du développement durable, assurer l’accès de tous à la justice et mettre en place, à tous les niveaux, des institutions efficaces, responsables et ouvertes à tous</p>
 
           
         </td>
@@ -1410,7 +1428,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Niveau désigné par les Nations Unies </th>
         <td>
           
-            <p>Niveau I</p>
+            <p>Niveau II</p>
 
           
         </td>
@@ -1426,7 +1444,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Agence dépositaire des Nations Unies </th>
         <td>
           
-            <p>Office des Nations Unies contre la drogue et le crime (ONUDC)</p>
+            <p>Programme des Nations Unies pour le développement (PNUD), Office des Nations Unies contre la drogue et le crime (ONUDC), Organisation de coopération et de développement économiques (OCDE)</p>
 
           
         </td>
@@ -2007,12 +2025,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241223133325'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20241223213451'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241223133325"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20241223213451"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
