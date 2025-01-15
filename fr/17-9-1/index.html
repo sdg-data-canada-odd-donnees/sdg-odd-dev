@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250114204124">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250115200947">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -436,12 +436,38 @@ data-event-label="high"
 </div>
 <div id="main-content" class="container goal-17" role="main">
   
+<div class="row alert success" id="data-notice">
+  <div class="col-xs-2 col-sm-1">
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+  </div>
+  <div class="col-xs-10 col-sm-11 data-notice">
+    <div class="notice-heading" role="alert"><p>Explore les sources de données</p>
+</div>
+    <div><p><br />Statistique Canada n’a pas encore trouvé de sources de données appropriées pour rendre compte de cet indicateur. 
+<br />N’hésitez pas à <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">communiquer avec nous</a> pour nous faire part de vos suggestions.</p>
+</div>
+  </div>
+</div>
+
 
   
 
   
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -457,9 +483,9 @@ data-event-label="high"
   data-country="Canada"
   data-charttitle="Valeur en dollars de l’aide financière et technique promise aux pays en développement (notamment dans le cadre de la coopération Nord-Sud et Sud-Sud et de la coopération triangulaire)"
   data-charttitles="[]"
-  data-measurementunit="Millions de dollars US constants de 2015"
+  data-measurementunit=""
   data-xaxislabel=""
-  data-showdata="true"
+  data-showdata="false"
   data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -478,329 +504,7 @@ data-event-label="high"
   data-proxyseries="null"
 >
   
-  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
-  <span role="status" class="visually-hidden" id="indicator-data-unit-status"></span>
-  <span role="status" class="visually-hidden" id="indicator-data-series-status"></span>
-  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
-    <div id="serieses"></div>
-<div id="units"></div>
-<div id="toolbar">
-  <span id="series-help">
-    <h4>Sous-catégories</h4>
-    <p>Choisissez des catégories dans les listes déroulantes ci-dessous pour voir différentes répartitions des données. Certaines ne seront pas disponibles jusqu&#39;à ce qu&#39;un niveau supérieur soit choisi.</p>
-  </span>
-  <div id="fields">
-    <p class="async-loading" data-img="/sdg-odd-dev/assets/img/loading-small.gif"></p>
-  </div>
-</div>
-
-  </div>
-  <div id="indicator-main" class="indicator-main col-md-9">
-    
-
-
-
-
-<div id="headlineTable">
-
-  <div id="datatables">
-
-    
-    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/fr/headline/17-9-1.csv" class="btn btn-primary btn-download" download="indicator_17-9-1.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
-    
-    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/fr/data/17-9-1.csv" class="btn btn-primary btn-download" download='indicator_17-9-1.csv' tabindex='0' role='button'>Télécharger Source CSV</a>
-
-    <p class="no-js-disaggregation-hint">Télécharger le CSV source pour les désagrégations</p>
-
-    
-    <h3>Données d'en-tête</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Valeur en dollars de l’aide financière et technique promise aux pays en développement (notamment dans le cadre de la coopération Nord-Sud et Sud-Sud et de la coopération triangulaire)</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">289.82</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">353.4</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
-    
-  </div>
-
-  
-  <div id="datatableFooter">
-    
-    <p>Source: Organisation de coopération et de développement économiques (OCDE)</p>
-    
-    
-    <p>Zone géographique: </p>
-    
-    
-    <p>Unité de mesure: Millions de dollars US constants de 2015</p>
-    
-    
-    <p>note de bas de page: </p>
-    
-  </div>
-  
-
-</div>
-
-
-<section>
-
-  <p class="async-loading" data-img="/sdg-odd-dev/assets/img/loading-small.gif"></p>
-
-  <div class="async-loaded mt-4" style="display:none;">
-
-    <div style="display: none;">
-    <span id="table-alternative">Pour une alternative aux données tabulaires, voir l’onglet Tableau.</span>
-  </div>
-  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
-    
-    <li role="presentation"
-      class="
-        nav-item
-        
-        
-      ">
-      <button
-        class="nav-link active"
-        data-bs-toggle="tab"
-        role="tab"
-        type="button"
-        
-          id="tab-chartview"
-          data-bs-target="#chartview"
-          aria-controls="chartview"
-          aria-describedby="table-alternative"
-          data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Chart tab"
-
-        
-      >Graphique</button>
-    </li>
-    
-    <li role="presentation"
-      class="
-        nav-item
-        
-        
-      ">
-      <button
-        class="nav-link "
-        data-bs-toggle="tab"
-        role="tab"
-        type="button"
-        
-          id="tab-tableview"
-          data-bs-target="#tableview"
-          aria-controls="tableview"
-          data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Table tab"
-
-        
-      >Table</button>
-    </li>
-    
-  </ul>
-  
-    <div class="tab-content data-view">
-    
-      
-        <div role="tabpanel" class="tab-pane active" id="chartview">
-          
-
-    <div id="dataset-size-warning" style="display:none" role="alert">
-      <i class="fa fa-bolt"><span class="sr-only">Avertissement :</span></i>
-      Il y a trop de jeux de données à afficher sur le graphique. Tout ne sera pas affiché jusqu&#39;à ce que vous supprimiez certaines sélections.
-    </div>
-
-    
-    <div id="selectionsChart">
-      <figure role="group">
-        <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">
-            Valeur en dollars de l’aide financière et technique promise aux pays en développement (notamment dans le cadre de la coopération Nord-Sud et Sud-Sud et de la coopération triangulaire)
-          </h4>
-          <div id="chart" class="plot-container">
-            <canvas
-    role="img"
-    aria-labelledby="chart-heading"
-    aria-describedby="table-alternative chart-annotations"
-    tabindex="0"
- ></canvas>
-
-          </div>
-          <div id="plotLegend"></div>
-          
-
-
-
-<div id="selectionChartFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-        <dt>Source:</dt>
-        <dd>Organisation de coopération et de développement économiques (OCDE)</dd>
-        
-
-        
-
-        <dt class="data-controlled-footer-field unit-from-data">Unité de mesure:</dt>
-        <dd class="data-controlled-footer-field unit-from-data"></dd>
-
-        
-
-        
-
-        
-
-        
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        >note de bas de page:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        ></dd>
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        >Dernière mise à jour des données:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        ></dd>
-        
-        
-    </dl>
-    
-</div>
-
-        </div>
-      </figure>
-      <div id="chartSelectionDownload" class="clearfix">
-        <button
-          id="btnSave"
-          title="Télécharger le graphique en image"
-          aria-label="Télécharger le graphique en image"
-          class='btn btn-primary btn-download'>
-          Télécharger l'image graphique
-        </button><!--
-   --></div>
-    </div>
-
-
-
-        </div>
-      
-    
-      
-        <div role="tabpanel" class="tab-pane " id="tableview">
-          <div style="display: none;">
-            <span id="column-sort-info">Cliquez pour trier par cette colonne</span>
-          </div>
-          <div id="selectionsTable"></div>
-<dl id="tableTargetLines" class="clearfix"></dl>
-
-
-
-
-<div id="selectionTableFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-        <dt>Source:</dt>
-        <dd>Organisation de coopération et de développement économiques (OCDE)</dd>
-        
-
-        
-
-        <dt class="data-controlled-footer-field unit-from-data">Unité de mesure:</dt>
-        <dd class="data-controlled-footer-field unit-from-data"></dd>
-
-        
-
-        
-
-        
-
-        
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        >note de bas de page:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        ></dd>
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        >Dernière mise à jour des données:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        ></dd>
-        
-        
-    </dl>
-    
-</div>
-
-<div id="tableSelectionDownload" class="clearfix"></div>
-
-        </div>
-      
-    
-  </div>
-  
-
-  </div>
-
-</section>
-
+  <div id="indicator-main" class="indicator-main col-md-12">
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -1019,7 +723,15 @@ data-event-label="Change to Sources tab"
         <th scope="row">Définition et concepts </th>
         <td>
           
-            
+            <p><strong>Définition :</strong><br />
+Décaissements bruts du total de l’aide publique au développement (APD) et des autres flux officiels provenant de tous les donateurs pour le renforcement des capacités et la planification nationale. <br /><br /></p>
+
+<p><strong>Concepts</strong> 
+<br />APD : Le CAD définit l’APD comme « les flux destinés aux pays et territoires figurant sur la liste des bénéficiaires de l’APD du CAD et aux institutions multilatérales qui sont <br /><br />
+i) fournis par des agences officielles, y compris les gouvernements nationaux et locaux, ou par leurs agences exécutives ; et <br />
+ii) chaque transaction est administrée avec pour objectif principal la promotion du développement économique et du bien-être des pays en développement ; et sont de nature concessionnelle et comportent un élément de don d’au moins 25 pour cent (calculé à un taux d’escompte de 10 pour cent). (Voir <a href="https://www.oecd.org/fr/topics/sub-issues/oda-eligibility-and-conditions/official-development-assistance--definition-and-coverage.html">https://www.oecd.org/fr/topics/sub-issues/oda-eligibility-and-conditions/official-development-assistance–definition-and-coverage.html</a>) <br /><br />
+Autres flux officiels (OOF) : Les autres flux officiels (à l’exclusion des crédits à l’exportation bénéficiant d’un soutien public) sont définis comme des transactions effectuées par le secteur officiel qui ne remplissent pas les conditions d’éligibilité à l’APD, soit parce qu’elles ne sont pas principalement destinées au développement, soit parce qu’elles ne sont pas suffisamment concessionnelles. (Voir <a href="https://web-archive.oecd.org/2016-06-02/239150-DCDDAC%282016%293FINAL.pdf">https://web-archive.oecd.org/2016-06-02/239150-DCDDAC%282016%293FINAL.pdf</a>, paragraphe 24, en anglais seulement). <br /><br />
+Le secteur de l’agriculture est défini par le CAD et comprend tous les codes sectoriels du CRS dans la série 311 (voir ici : <a href="https://web-archive.oecd.org/temp/2019-03-28/80638-purposecodessectorclassification.htm">https://web-archive.oecd.org/temp/2019-03-28/80638-purposecodessectorclassification.htm</a>, en anglais seulement).</p>
 
           
         </td>
@@ -1800,334 +1512,6 @@ data-event-label="Change to Sources tab"
 
 
 
-  <div class="row">
-  
-    
-    
-    <div class="col-md-6">
-      
-        <h4 class="sr-only">Source 1</h4>
-      
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Organisation de coopération et de développement économiques (OCDE)</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Fréquence </th>
-        <td>
-          
-            <p>Annuelle</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Couverture géographique </th>
-        <td>
-          
-            <p>Canada</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Lien vers la source de données </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://stats.oecd.org/?lang=fr&SubSessionId=368e563f-b9c2-48d3-97ed-0ebd17019f8b&themetreeid=-200" target="_blank">
-                OCDE Statistiques
- <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-  </div>
-
 
 </div>
     
@@ -2260,12 +1644,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250114204124'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250115200947'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250114204124"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250115200947"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
