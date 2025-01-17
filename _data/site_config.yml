@@ -264,7 +264,7 @@ non_global_metadata: indicator.national_metadata
 remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
 reporting_status:
   title: status.reporting_status
-  description: status.description
+  description: status.status_description
   disaggregation_tabs: false
   status_types:
     - value: notstarted
