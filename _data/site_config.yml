@@ -77,19 +77,19 @@ footer_language_toggle: none
 footer_menu:
   - path: mailto:statcan.sdg-odd.statcan@statcan.gc.ca
     translation_key: menu.contact_us
-  - path: https://www.facebook.com/StatisticsCanada/
+  - path: general.facebook_link
     translation_key: general.facebook
-  - path: https://instagram.com/statcan_eng/
+  - path: general.instagram_link
     translation_key: general.instagram
-  - path: https://ca.linkedin.com/company/statcan
+  - path: general.linkedin_link
     translation_key: general.linkedin
-  - path: https://www.reddit.com/user/StatCanada/
+  - path: general.reddit_link
     translation_key: general.reddit
-  - path: https://twitter.com/statcan_eng
+  - path: general.twitter_link
     translation_key: general.twitter
-  - path: https://www.youtube.com/statisticscanada
+  - path: general.youtube_link
     translation_key: general.youtube
-  - path: https://www.statcan.gc.ca/
+  - path: general.statcan_link
     translation_key: general.statcan
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
@@ -264,7 +264,7 @@ non_global_metadata: indicator.national_metadata
 remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
 reporting_status:
   title: status.reporting_status
-  description: status.description
+  description: status.status_description
   disaggregation_tabs: false
   status_types:
     - value: notstarted
