@@ -17,10 +17,10 @@ breadcrumbs:
     - path: /goals
       label: general.goals
   post:
-    - path: /
-      label: general.home
-    - path: /news
-      label: menu.updates
+    - label: general.home
+      path: /
+ #   - label: menu.updates
+ #     path: /news
 contrast_type: default
 cookie_consent_form:
   enabled: false
