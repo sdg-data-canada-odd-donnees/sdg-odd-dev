@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="fr" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -10,7 +10,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/en',
+  remoteDataBaseUrl: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/fr',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -41,7 +41,7 @@ var opensdg = {
   // Disaggregations which should be ignored on indicator pages.
   ignoredDisaggregations: null,
 
-  language: 'en',
+  language: 'fr',
 
   mapColors: {
     "default": [
@@ -116,7 +116,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>News &amp; Events - Indicators For The Sustainable Development Goals</title>
+    <title>Produits connexes - Indicateurs pour les objectifs de développement durable</title>
 
 
 
@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250120192126">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250121214036">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -160,17 +160,17 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-fr
 layout-news
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Beta","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a website in development. We welcome your <a href=\"mailto:statcan.sdg-odd.statcan@statcan.gc.ca\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Beta","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site en développement. Nous apprécions vos <a href=\"mailto:statcan.sdg-odd.statcan@statcan.gc.ca\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","hide_menu":"Cacher le menu de navigation","high_contrast":"contraste élevé","internet_explorer_message":"Nous avons détecté que vous utilisez Internet Explorer pour visiter ce site. Internet Explorer est en train d'être abandonné par Microsoft. Par conséquent, ce site Web ne prend plus en charge aucune version d'Internet Explorer. Certaines fonctionnalités de ce site ne fonctionneront pas. Vous devez utiliser un navigateur moderne tel que Edge, Chrome, Firefox ou Safari. Si vous avez des difficultés à installer ou à accéder à un autre navigateur, veuillez contacter votre équipe d'assistance informatique.","internet_explorer_message_title":"Ce navigateur Internet n'est plus pris en charge","logo_title":"Aller à la page d'accueil","show_menu":"Afficher le menu de navigation","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
 <div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title">This internet browser is no longer supported</h2>
-    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.</p>
+    <h2 class="internet-explorer-message-title">Ce navigateur Internet n'est plus pris en charge</h2>
+    <p class="internet-explorer-message-body">Nous avons détecté que vous utilisez Internet Explorer pour visiter ce site. Internet Explorer est en train d'être abandonné par Microsoft. Par conséquent, ce site Web ne prend plus en charge aucune version d'Internet Explorer. Certaines fonctionnalités de ce site ne fonctionneront pas. Vous devez utiliser un navigateur moderne tel que Edge, Chrome, Firefox ou Safari. Si vous avez des difficultés à installer ou à accéder à un autre navigateur, veuillez contacter votre équipe d'assistance informatique.</p>
 </div>
 <div id="disclaimer">
     
@@ -178,7 +178,7 @@ layout-news
   <div class="disclaimer-alert">
     <strong class="phase-tag">Beta</strong>
     
-    This is a website in development. We welcome your <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">feedback</a>.
+    Ceci est un site en développement. Nous apprécions vos <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">commentaires</a>.
     
   </div>
 </div>
@@ -188,40 +188,38 @@ layout-news
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/sdg-odd-dev/" id="home" aria-label="Go to homepage" title="Go to homepage">
-    <img src="/sdg-odd-dev/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+            <a class="navbar-brand" href="/sdg-odd-dev/fr/" id="home" aria-label="Aller à la page d'accueil" title="Aller à la page d'accueil">
+    <img src="/sdg-odd-dev/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Afficher le menu de navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-odd-dev/goals">Goals</a>
+    <a class="nav-link" href="/sdg-odd-dev/fr/goals">Objectifs</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-odd-dev/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/sdg-odd-dev/fr/reporting-status">Statut de rapport</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-odd-dev/about">About</a>
+    <a class="nav-link" href="/sdg-odd-dev/fr/about">À propos</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-odd-dev/faq">FAQ</a>
+    <a class="nav-link" href="/sdg-odd-dev/fr/faq">FAQ</a>
 </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-more-info" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    More Information
+                    Plus d'information
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-more-info"><li class=" active">
-    <a class="dropdown-item" href="/sdg-odd-dev/news">Related Products</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/sdg-odd-dev/methodology">Progress Measurement Methodology</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-more-info"><li class=" ">
+    <a class="dropdown-item" href="/sdg-odd-dev/fr/related-products">Produits connexes</a>
 </li></ul>
             </li></ul>
     
                 </div>
                 <div class="header-search-bar">
-                    <form class="align-self-lg-end" id="search" action="/sdg-odd-dev/search/">
+                    <form class="align-self-lg-end" id="search" action="/sdg-odd-dev/fr/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Chercher</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Chercher">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Recherche sur le site" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -240,11 +238,11 @@ layout-news
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      English
+      Français
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/sdg-odd-dev/fr/news/">
-              Français
+            <a class="dropdown-item" href="/sdg-odd-dev/related-products/">
+              English
             </a>
           </li></ul>
   </div>
@@ -254,12 +252,12 @@ layout-news
 
                     <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
     <i class="fa fa-globe language-toggle-globe-links"></i>
-    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-fr list-inline-item">
-            <a class="language-toggle-link" href="/sdg-odd-dev/fr/news/">
-                Français
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/sdg-odd-dev/related-products/">
+                English
             </a>
         </li></ul>
-</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
+</div></span><a title="Activer le contraste élevé" aria-label="Activer le contraste élevé"
     data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -278,9 +276,9 @@ data-event-label="high"
   <nav>
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         <li class="breadcrumb-item" >
-            <a href="/sdg-odd-dev/">Home</a>
+            <a href="/sdg-odd-dev/fr/">Accueil</a>
         </li>
-        <li class="breadcrumb-item active">News & Events</li>
+        <li class="breadcrumb-item active">Produits connexes</li>
     </ol>
 </nav>
 </div>
@@ -288,13 +286,14 @@ data-event-label="high"
   <div class="row">
     <div class="col-md-12">
       
-      <h1>News & Events</h1>
+      <h1>Produits connexes</h1>
       
       
 
 
-    <h2 id="news-and-events">News and Events</h2>
-<p>Check this page for news regarding the reporting of our statistics for global indicators and opportunities to contribute to measuring achievement of the sustainable development goals</p>
+    <p>À l’approche de 2030, Statistique Canada, en collaboration avec les principaux partenaires et intervenants, continuera de jouer un rôle essentiel en veillant à ce que les décideurs, la société civile, le secteur privé et les Canadiens disposent de renseignements de grande qualité pour la surveillance des données du Canada relatives aux indicateurs des objectifs de développement durable (ODD). La clé du succès pour mesurer la trajectoire du Canada vers les ODD est de demeurer concentré sur l’utilisation de données statistiquement solides.</p>
+
+<p>Cette page contient de l’information sur une variété de produits connexes au développement durable.</p>
 
 
 
@@ -302,17 +301,51 @@ data-event-label="high"
       
         <article class="post-listing">
     <h2 class="post-title">
-        <a href="/sdg-odd-dev/test-post-1/">Test Post 1</a>
+        <a href="/sdg-odd-dev/fr/sdg-fact-sheets/">Feuillets d'information sur les ODD</a>
     </h2>
     <div class="post-excerpt">
-        <p>Maecenas vulputate eget magna nec vestibulum. Cras tincidunt, purus vel egestas dapibus, ex tellus gravida lectus, condimentum placerat orci arcu aliquet sem. Nulla commodo sodales arcu. Vestibulum maximus lacinia volutpat. Nulla eu ipsum erat. Nam eu augue sapien. Integer odio ante, elementum ac mauris eget, luctus sodales ipsum.</p>
+        <p>Les feuillets d’information contiennent des statistiques et des renseignements brefs et spécifiques liés à chaque ODD, ainsi qu’un encadré spécial, « Pleins feux sur la collectivité » qui met en valeur le travail effectué par les organismes sans but lucratif et les organisations caritatives du Canada.</p>
 
     </div>
     <div class="post-date small-text">
-        <time datetime="2020-01-10T00:00:00+00:00">Jan 10, 2020</time>
+        <time datetime="2020-10-20T00:00:00+00:00">Oct 20, 2020</time>
     </div>
     
-    <ul class="post-categories small-text"><li>International</li></ul>
+    <ul class="post-categories small-text"><li>ODD</li><li>Infographie</li></ul>
+    
+</article>
+
+      
+        <article class="post-listing">
+    <h2 class="post-title">
+        <a href="/sdg-odd-dev/fr/sdg-data-hub/">Carrefour de données ODD</a>
+    </h2>
+    <div class="post-excerpt">
+        <p>Le Carrefour de données liées aux objectifs de développement durable (ODD) a été développé pour être un guichet unique en ligne contenant des renseignements et des statistiques qui permettent aux Canadiens de suivre les progrès accomplis à l’égard des objectifs et des cibles du Programme 2030.</p>
+
+    </div>
+    <div class="post-date small-text">
+        <time datetime="2018-05-16T00:00:00+00:00">Mai 16, 2018</time>
+    </div>
+    
+    <ul class="post-categories small-text"><li>ODD</li><li>Carrefour de données</li></ul>
+    
+</article>
+
+      
+        <article class="post-listing">
+    <h2 class="post-title">
+        <a href="/sdg-odd-dev/fr/human-activity-and-the-environment/">L'activité humaine et l'environnement</a>
+    </h2>
+    <div class="post-excerpt">
+        <p><em>L’activité humaine et l’environnement</em> est une publication annuelle qui porte sur une question environnementale de l’heure. L’information et les statistiques les plus récentes sont recueillies auprès de nombreuses sources pour produire un article analytique détaillé.</p>
+
+    </div>
+    <div class="post-date small-text">
+        <time datetime="2018-03-14T00:00:00+00:00">Mar 14, 2018</time>
+    </div>
+    
+    <ul class="post-categories small-text"><li>Analyse</li></ul>
     
 </article>
 
@@ -329,22 +362,22 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Built using Open SDG</a>
+                            <a href="https://open-sdg.org">Construit en utilisant Open SDG (en anglais seulement)</a>
                         </li>
                         
                         <li>
                             
-                            <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca" target="_blank">Contact us</a>
+                            <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca" target="_blank">Contactez-nous</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://www.facebook.com/StatisticsCanada/" target="_blank">Facebook</a>
+                            <a href="https://www.facebook.com/statistiquecanada/" target="_blank">Facebook</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://instagram.com/statcan_eng/" target="_blank">Instagram</a>
+                            <a href="https://www.instagram.com/statcan_fra/" target="_blank">Instagram</a>
                             
                         </li>
                         <li>
@@ -359,28 +392,28 @@ data-event-label="high"
                         </li>
                         <li>
                             
-                            <a href="https://x.com/StatCan_eng" target="_blank">X (formerly Twitter)</a>
+                            <a href="https://x.com/StatCan_fra" target="_blank">X (anciennement Twitter)</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://www.youtube.com/statisticscanada" target="_blank">YouTube</a>
+                            <a href="https://www.youtube.com/StatistiqueCanada" target="_blank">YouTube</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://www.statcan.gc.ca/en/start" target="_blank">Statistics Canada</a>
+                            <a href="https://www.statcan.gc.ca/fr/debut" target="_blank">Statistique Canada</a>
                             
                         </li>
                         <li>
-                            <a href="/sdg-odd-dev/about/cookies-and-privacy/">Cookies</a>
+                            <a href="/sdg-odd-dev/fr/about/cookies-and-privacy/">Témoins (en anglais seulement)</a>
                             
                         </li>
                         
                         
                         
                         <li>
-                            <a href="/sdg-odd-dev/config">Configuration</a>
+                            <a href="/sdg-odd-dev/fr/config">Configuration</a>
                         </li>
                         </ul>
                 </div>
@@ -410,17 +443,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'masquer';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250120192126'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250121214036'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250120192126"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250121214036"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
