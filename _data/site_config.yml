@@ -215,8 +215,8 @@ menu:
     dropdown:
       - path: /related-products
         translation_key: menu.related-products
-      - path: /methodology
-        translation_key: menu.methodology
+#      - path: /methodology
+#        translation_key: menu.methodology
 #  - path: /news
 #    translation_key: menu.updates
 #    dropdown: []
