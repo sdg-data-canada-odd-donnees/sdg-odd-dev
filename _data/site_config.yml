@@ -17,10 +17,10 @@ breadcrumbs:
     - path: /goals
       label: general.goals
   post:
-    - path: /
-      label: general.home
-    - path: /news
-      label: menu.updates
+    - label: general.home
+      path: /
+ #   - label: menu.updates
+ #     path: /news
 contrast_type: default
 cookie_consent_form:
   enabled: false
@@ -128,7 +128,7 @@ goal_image_base: 'https://open-sdg.org/sdg-translations/assets/img/goals'
 goal_image_extension: ''
 goals_page:
   title: general.goals
-  description: goal.description
+  description: general.goal_description
 graph_color_headline: '#004466'
 graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: accessible
@@ -213,10 +213,10 @@ menu:
     dropdown: []
   - translation_key: menu.more_info
     dropdown:
-      - path: /news
+      - path: /related-products
         translation_key: menu.related-products
-      - path: /methodology
-        translation_key: menu.methodology
+#      - path: /methodology
+#        translation_key: menu.methodology
 #  - path: /news
 #    translation_key: menu.updates
 #    dropdown: []

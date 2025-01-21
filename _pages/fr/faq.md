@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions (FAQ)
+title: Foire aux questions (FAQ)
 language: fr
 permalink: /fr/faq/
 layout: page
