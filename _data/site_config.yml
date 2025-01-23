@@ -164,7 +164,13 @@ languages:
   - en
   - fr
 languages_public: []
-logos: []
+logos: 
+  - language: en
+    src: assets/img/EN_SDG_logo_transparent.png
+    alt: Go to home page
+  - language: fr
+    src: assets/img/fr/FR_SDG_logo_transparent.png
+    alt: Aller à la page d'accueil
 
 map_options:
   # Whether the map should provide a button and form for changing the displayed disaggregation:
