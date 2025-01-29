@@ -231,6 +231,15 @@ metadata_tabs: []
 news:
   category_links: false
 non_global_metadata: indicator.national_metadata
+observation_attributes:
+  - field: COMMENT_OBS
+    label: ''
+  - field: COMMENT_OBS_0
+    label: ''
+  - field: COMMENT_OBS_1
+    label: ''
+  - field: COMMENT_OBS_2
+    label: ''
 #progress_status:
 #    status_heading: Progress status
 #    status_types:
