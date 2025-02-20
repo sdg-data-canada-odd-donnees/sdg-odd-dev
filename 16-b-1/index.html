@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250218220630">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250220184516">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -483,7 +483,7 @@ data-event-label="high"
   data-startvalues="[{&quot;series&quot;:&quot;Proportion of population reporting to have experienced discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Experienced discrimination or unfair treatment in Canada&quot;},{&quot;series&quot;:&quot;Proportion of population reporting to have experienced discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;series&quot;:&quot;Proportion of population reporting to have experienced discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Gender&quot;,&quot;value&quot;:&quot;Total&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who report experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who report experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Gender&quot;,&quot;value&quot;:&quot;Total&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who report experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination at work&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who report experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination at school&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who report experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination on the Internet&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who report experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination when interacting with the healthcare system&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who report experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination in public areas, a store, bank or restaurant&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who report experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination by or among friends or family&quot;}]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
-  data-graphannotations="[]"
+  data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
@@ -621,6 +621,26 @@ data-event-label="high"
           
           
           <td>30.9</td>
+          
+          
+          
+          <td>Proportion of population reporting to have experienced discrimination or unfair treatment</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024 Q4</td>
+          
+          
+          
+          <td>26.0</td>
           
           
           
@@ -2752,8 +2772,6 @@ The sub-indicators in the secondary series, “Proportion of individuals within 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js" integrity="sha384-kdgUFNEbslNOEAQ/zFH9wjDORAbvN0KUYOpfJIJYPdjtzLXkZsMJAXU9HPpi5B5c" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
-
 
 <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js" integrity="sha384-UoOJihpMWjjOEde9tqFMIPdkE6udKvAgqrdYzF21wsliO5dM2R+noPeGfcQweSto" crossorigin="anonymous"></script>
@@ -2780,12 +2798,12 @@ The sub-indicators in the secondary series, “Proportion of individuals within 
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250218220630'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250220184516'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250218220630"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250220184516"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
