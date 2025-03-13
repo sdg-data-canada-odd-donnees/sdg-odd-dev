@@ -227,7 +227,16 @@ menu:
 #    translation_key: menu.updates
 #    dropdown: []
 metadata_edit_url: ''
-metadata_tabs: []
+metadata_tabs:
+  - scope: national
+    title: indicator.national_metadata
+    description: ''
+  - scope: sources_alt
+    title: indicator.sources
+    description: ''
+  - scope: global
+    title: indicator.global_metadata
+    description: ''
 news:
   category_links: false
 non_global_metadata: indicator.national_metadata
