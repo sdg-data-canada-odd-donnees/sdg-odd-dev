@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250313161542">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250314172717">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -536,70 +536,30 @@ Nous avons identifié les éléments suivants comme étant pertinents pour cet i
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
     
-    
-        
-        
-        
-        
         <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link active"
-                data-bs-toggle="tab"
-                id="tab-national"
-                data-bs-target="#national"
-                aria-controls="national"
-                role="tab"
-                data-on="click"
+    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
-data-event-label="Change to indicator.national_metadata tab"
+data-event-label="Change to National Metadata tab"
+>Métadonnées nationales</button>
+</li>
 
-            >Métadonnées nationales</button>
-        </li>
-    
-        
-        
-        
-        
-        <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link "
-                data-bs-toggle="tab"
-                id="tab-sources_alt"
-                data-bs-target="#sources_alt"
-                aria-controls="sources_alt"
-                role="tab"
-                data-on="click"
+<li role="presentation" class="nav-item">
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
-data-event-label="Change to indicator.sources tab"
+data-event-label="Change to Global Metadata tab"
+>Métadonnées globales</button>
+</li>
 
-            >Sources</button>
-        </li>
-    
-        
-        
-        
-        
-        <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link "
-                data-bs-toggle="tab"
-                id="tab-global"
-                data-bs-target="#global"
-                aria-controls="global"
-                role="tab"
-                data-on="click"
+<li role="presentation" class="nav-item">
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
-data-event-label="Change to indicator.global_metadata tab"
-
-            >Métadonnées globales</button>
-        </li>
-    
+data-event-label="Change to Sources tab"
+>Sources</button>
+</li>
+  
     
     
         <li role="presentation" class="nav-item">
@@ -610,19 +570,16 @@ data-event-label="Change to indicator.global_metadata tab"
 
 <div class="tab-content">
     
-        
-        
-        
-        
-        
-        
-        
-        
-        
         <div role="tabpanel" class="tab-pane active" id="national">
-            <article>
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
                 
-                <table class="table metadata-content">
+                
+                La section ci-dessous fournit de l'information sur l’indicateur.
+            </p>
+            <table class="table metadata-content">
   <tbody>
   
   
@@ -1137,732 +1094,15 @@ data-event-label="Change to indicator.global_metadata tab"
   </tbody>
 </table>
 
-            </article>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div role="tabpanel" class="tab-pane " id="sources_alt">
-            <article>
-                
-                
-
-
-
-
-
-<div class="row">
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 1</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Sécurité publique Canada</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Canada</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www.securitepublique.gc.ca/cnt/rsrcs/pblctns/2024-ems-ctn-rs/index-fr.aspx">Avancer la Stratégie de sécurité civile fédérale, provinciale et territoriale : Axes d’intervention</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
+        </article>
     </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 2</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement de la Colombie-Britannique</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Colombie-Britannique</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/emergency-management/legislation-and-regulations">Emergency management legislation (en anglais seulement)</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 3</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement de l’Alberta</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Alberta</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://open.alberta.ca/publications/alberta-emergency-plan">Alberta emergency plan 2022 (en anglais seulement)</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 4</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Agence de sécurité publique de la Saskatchewan (ASPS)</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Saskatchewan</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www.saskpublicsafety.ca/communities/emergency-declaration-and-management-planning">Déclaration d'urgence et planification de la Gestion</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 5</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement du Manitoba</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Manitoba</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www.gov.mb.ca/emo/about/index.fr.html">Organisation de gestion des situations d'urgence</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 6</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement de l’Ontario</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Ontario</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www.ontario.ca/fr/page/un-ontario-securitaire-entraine-et-prepare">Un Ontario sécuritaire, entraîné et préparé</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 7</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement du Québec</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Québec</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www.quebec.ca/gouvernement/ministere/securite-publique/publications/politique-quebecoise-securite-civile-2014-2024">Politique québécoise de sécurité civile 2014-2024 (en français seulement)</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 8</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement du Nouveau-Brunswick</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Nouveau-Brunswick</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www2.gnb.ca/content/gnb/fr/ministeres/omu/pnac.html">Organisation des mesures d'urgence</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 9</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement de la Nouvelle-Écosse</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Nouvelle-Écosse</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://beta.novascotia.ca/fr/government/emergency-management-office">Ministère de la Gestion des urgences</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 10</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement de l’Île-du-Prince-Édouard</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Île-du-Prince-Édouard</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www.princeedwardisland.ca/fr/information/justice-et-securite-publique/organisation-mesures-durgence">Organisation des mesures d’urgence</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 11</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement de Terre-Neuve-et-Labrador</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Terre-Neuve-et-Labrador</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www.gov.nl.ca/jps/files/publications-pemp-plan.pdf">Provincial Emergency Management Plan (en anglais seulement)</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 12</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement du Yukon</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Yukon</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://yukon.ca/sites/default/files/2025-01/Health%20and%20Social%20Services%20Emergency%20Management%20Plan%20-%20FINAL.pdf">Emergency Management Plan (en anglais seulement)</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 13</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement des Territoires du Nord-Ouest</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Territoires du Nord-Ouest</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www.maca.gov.nt.ca/fr/services/gestion-des-urgences-aux-tno">Gestion des urgences aux TNO</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
-    <div class="col-md-6">
-        
-        
-        <h4>Source 14</h4>
-        
-        <table class="table indicator-source-table">
-            
-            
-            
-            <tr>
-                <th scope="row">Organisation</th>
-                <td>Gouvernement du Nunavut</td>
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Couverture géographique</th>
-                <td>Nunavut</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-                <th scope="row">Lien vers la source de données</th>
-                
-                <td><a href="https://www.gov.nu.ca/fr/public-safety-and-emergencies/gestion-des-urgences-au-nunavut">Gestion des urgences au Nunavut</a></td>
-                
-            </tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </table>
-    </div>
-
 </div>
-
-
-            </article>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div role="tabpanel" class="tab-pane " id="global">
-            <article>
-                
-                <table class="table metadata-content">
+<div role="tabpanel" class="tab-pane" id="global">
+    <!-- Global Metadata -->
+    <div>
+        <article>
+            <p>Ce tableau fournit des informations sur les métadonnées pour les indicateurs SDG définis par la Commission de statistique des Nations Unies. <a href="https://unstats.un.org/sdgs/metadata/">Les métadonnées globales complètes</a> sont fournies par la Division de statistique de l&#39;ONU.</p>
+            <table class="table metadata-content">
   <tbody>
   
       
@@ -2402,9 +1642,17 @@ data-event-label="Change to indicator.global_metadata tab"
   </tbody>
 </table>
 
-            </article>
-        </div>
-        
+        </article>
+    </div>
+</div>
+<div role="tabpanel" class="tab-pane" id="sources">
+    <!-- Count the non-empty sources (up to 5) -->
+
+
+
+
+
+</div>
     
     
         <div role="tabpanel" class="tab-pane" id="edit">
@@ -2535,12 +1783,12 @@ data-event-label="Change to indicator.global_metadata tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250313161542'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250314172717'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250313161542"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250314172717"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
