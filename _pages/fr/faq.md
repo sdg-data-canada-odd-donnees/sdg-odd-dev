@@ -33,24 +33,6 @@ La <a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/prog
 Le Cadre d’indicateurs canadien et le carrefour de données constituent des outils de mesure et de diffusion nécessaires afin d’assurer la responsabilité et la transparence. Ils sont cruciaux dans le suivi du progrès vers la réalisation des 17 objectifs et 33 des ambitions canadiennes.
 
 
-## Quelle est la différence entre le Cadre d’indicateurs canadien et le Cadre de qualité de vie ?
-
-L’objectif des Objectifs de développement durable de ne « laisser personne de côté » est un appel critique à l’action à toutes les nations et personne. Cet appel demandera l’effort et la participation de tous les paliers de gouvernement, des membres de la société civile et des individus.  
-
-Afin de complémenter la <a href= "https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html">Stratégie nationale du Canada pour le Programme 2030 : Aller de l’avant ensemble</a> et le Cadre d’indicateurs canadien, le Budget de 2021 a introduit le nouveau <a href="https://www160.statcan.gc.ca/index-fra.htm?HPA=1">Cadre de qualité de vie</a>, conçu pour mieux intégrer les mesures de qualité de vie telles que la prospérité, la santé, l’environnement, la cohésion sociale et une saine gouvernance dans la budgétisation et le développement de politiques du gouvernement fédéral. Le cadre met également l’emphase sur la distribution des résultats à travers différent sous-groupes de la population tout en s’assurant que ces résultats seront durables dans le temps.
-
-Le Cadre de qualité de vie est dérivé d’évidence sur les différents déterminants du bien-être, plutôt que de mettre une emphase spécifique sur les Objectifs de développement durable et les défis mondiaux pour un futur meilleur et plus durable pour tous. Les deux cadres partagent ultimement un dessein commun : encourager un changement social, économique et environnemental transformationnel afin d’atteindre une amélioration de la qualité de vie et du bien-être.
-
-Les deux cadres se renforcent mutuellement. Cela implique que le CIC et le Cadre de qualité de vie partagent plusieurs indicateurs en commun. En tandem, ils peuvent aider à façonner les conversations futures à propos des éléments importants à mesurer et des façons d’améliorer la vie des Canadiens.
-
-
-## Quelle est la différence entre le Cadre d’indicateurs canadien et le programme des Indicateurs canadiens de durabilité de l’environnement ?
-
-Les objectifs de développement durable et les cadres d’indicateurs mondial et canadien sont conçus pour fournir des mesures aux trois piliers de la durabilité – société, économie et environnement – tandis que le programme des Indicateurs canadiens de durabilité de l’environnement (ICDE) fournit des données et des renseignements qui permettent d’effectuer un suivi du rendement du Canada à l’égard d’enjeux clés en matière de durabilité de l’environnement comme les changements climatiques et la qualité de l’air, la qualité de l’eau et sa disponibilité, et la protection de la nature.
-  
-Les indicateurs du cadre des ICDE sont le principal instrument permettant de mesurer les progrès de la Stratégie fédérale de développement durable et répondent à l’engagement d’Environnement et Changement climatique Canada de rendre compte à la population canadienne de l’état de l’environnement, conformément à la Loi canadienne sur la protection de l’environnement et à la Loi sur le ministère de l’Environnement. Plusieurs des indicateurs environnementaux du Cadre d’indicateurs canadien proviennent des ICDE, puisque ces cadres sont complémentaires.
-
-
 ## À quel point le site est-il accessible ?
 
 Nous visons à rendre ce site web le plus accessible et utilisable que possible. La plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) a récemment atteinte le niveau AA de standard des [Règles pour l'accessibilité des contenus Web (WCAG 2.1)](https://www.w3.org/WAI/standards-guidelines/wcag/fr).

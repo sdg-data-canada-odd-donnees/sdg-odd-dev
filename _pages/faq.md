@@ -33,24 +33,6 @@ The Global Indicators are part of the 2030 Agenda for Sustainable Development, w
 The Canadian Indicator Framework and the Data hub provide the measurement and reporting necessary to ensure accountability and transparency crucial to monitor progress towards the achievement of the 17 Goals and 33 Canadian ambitions.
 
 
-## What is the difference between the Canadian Indicator Framework and the Quality of Life Framework?
-
-The goal of the SDGs of “leaving no one behind” is a critical call to action for all nations and peoples that will take the effort and contributions of all levels of governments, civil society and individuals. 
-
-To complement <a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">Canada’s 2030 Agenda National Strategy: Moving Forward Together</a> and the Canadian Indicator Framework, Budget 2021 introduced Canada’s new <a href="https://www160.statcan.gc.ca/index-eng.htm?HPA=1">Quality of Life Framework</a>, designed to better incorporate quality of life measurements including prosperity, health, environment, social cohesion and good governance into the federal government’s budgeting and policy development. The framework also focuses on how outcomes are distributed across population subgroups and on ensuring outcomes are sustainable over time.
-
-While the Quality of Life Framework is derived from evidence on the determinants of well-being, rather than a specific focus on the sustainable development goals and the global challenges for a better and more sustainable future for all, the two frameworks ultimately share a common aim: to encourage transformational social, economic and environmental change to achieve increased quality of life and well-being.
-
-These two frameworks are mutually reinforcing. This means the CIF and the Quality of Life Framework share many common indicators. Jointly, they can help shape future conversations about measuring what matters and taking action to improve the lives of Canadians.
-
-
-## What is the difference between the Canadian Indicator Framework and the Canadian Environmental Sustainability Indicators program?
-
-The Sustainable Development Goals and the Global and Canadian Indicator Frameworks are designed to provide measures of the three pillars of sustainability – society, economy and environment. On the other hand, the Canadian Environmental Sustainability Indicators (CESI) program provides data and information to track Canada's performance on key environmental sustainability issues including climate change and air quality, water quality and availability, and protecting nature.
-
-CESI indicators are the prime instrument to measure progress on the Federal Sustainable Development Strategy and responds to Environment and Climate Change Canada's commitments under the Canadian Environmental Protection Act and the Department of the Environment Act to report to Canadians on the state of the environment. As a such, several of the environmental indicators in the CIF come from the CESI, as these frameworks are complementary.
-
-
 ## How accessible is this website?
 
 Our aim is to make this website as accessible and usable as possible for every user. The <a href="https://open-sdg.org/">Open SDG platform</a> has recently achieved the AA level standard of the [Web Content Accessibility Guidelines (WCAG 2.1)](https://www.w3.org/WAI/standards-guidelines/wcag/).
