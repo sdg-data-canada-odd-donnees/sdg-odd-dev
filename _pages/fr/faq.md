@@ -22,6 +22,8 @@ Les indicateurs mondiaux font partie du Programme de développement durable à l
 
 ## Quel est le lien entre le Cadre d’indicateurs canadien et la Stratégie nationale du Canada pour le Programme 2030 ?
 
+La Stratégie nationale du Canada pour l'Agenda 2030 s'aligne sur le Cadre mondial d'indicateurs des Nations unies pour suivre et faire progresser la mise en œuvre des objectifs de développement durable. Alors que le Cadre mondial d'indicateurs propose 231 indicateurs universels pour évaluer le progrès dans la réalisation des 17 Objectifs de développement durable (ODD), la Stratégie nationale du Canada personnalise ces indicateurs pour mieux les adapter au contexte national.
+
 La <a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html">Stratégie nationale du Canada pour le Programme 2030 : Aller de l’avant ensemble</a> établit une approche pour accélérer les progrès en vue d’atteindre les objectifs de développement durable (ODD) au Canada et contribuer à les atteindre à l’échelle internationale. Pour promouvoir l’engagement et l’action, les cinq objectifs fondamentaux suivants ont été établis :
 
 1.	Encourager le leadership, la gouvernance et la cohérence des politiques
@@ -30,7 +32,7 @@ La <a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/prog
 4.	Réconciliation avec les peuples autochtones et Programme 2030
 5.	Investissement dans les ODD
 
-Le Cadre d’indicateurs canadien et le carrefour de données constituent des outils de mesure et de diffusion nécessaires afin d’assurer la responsabilité et la transparence. Ils sont cruciaux dans le suivi du progrès vers la réalisation des 17 objectifs et 33 des ambitions canadiennes.
+Avec le cadre d'indicateurs mondiaux et le centre de données, le Canada fournit les mesures et les rapports nécessaires pour assurer la responsabilité et la transparence qui sont essentielles pour suivre le progrès dans la réalisation des 17 objectifs et des indicateurs mondiaux qui y sont associés.
 
 
 ## À quel point le site est-il accessible ?

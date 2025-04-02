@@ -22,6 +22,8 @@ The Global Indicators are part of the 2030 Agenda for Sustainable Development, w
 
 ## What is the relation between the Canadian Indicator Framework and Canada’s 2030 Agenda National Strategy?
 
+Canada's 2030 Agenda National Strategy aligns with the United Nations' Global Indicator Framework to monitor and advance the implementation of sustainable development goals. While the Global Indicator Framework offers 231 universal indicators for assessing progress on the 17 Sustainable Development Goals (SDGs), Canada's National Strategy customizes these indicators to better fit the national context.
+
 <a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">Moving forward together: Canada’s 2030 Agenda National Strategy</a> sets out an approach to accelerate progress towards meeting the Sustainable Development Goals (SDGs) in Canada, and contribute to their achievement internationally. To promote engagement and action, the following five core objectives have been identified:
 
 1.	Fostering leadership, governance and policy coherence
@@ -30,7 +32,7 @@ The Global Indicators are part of the 2030 Agenda for Sustainable Development, w
 4.	Reconciliation with Indigenous Peoples and the 2030 Agenda
 5.	Investing in the SDGs 
 
-The Canadian Indicator Framework and the Data hub provide the measurement and reporting necessary to ensure accountability and transparency crucial to monitor progress towards the achievement of the 17 Goals and 33 Canadian ambitions.
+Through the Global Indicator Frame and the Data Hub, Canada provides the measurement and reporting necessary to ensure accountability and transparency crucial to monitor progress towards the achievement of the 17 Goals and associated global indicators.
 
 
 ## How accessible is this website?
