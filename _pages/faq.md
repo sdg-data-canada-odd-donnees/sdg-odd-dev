@@ -20,7 +20,7 @@ New data will be added as soon as it has been sourced and validated. This includ
 The Global Indicators are part of the 2030 Agenda for Sustainable Development, which was adopted by all United Nations Member States in 2015. These indicators measure progress globally towards 169 targets covering various aspects of society. On the other hand, the Canadian Indicator Framework was developed to measure progress on a series of Canadian priorities related to sustainable development.
 
 
-## What is the relation between the Canadian Indicator Framework and Canada’s 2030 Agenda National Strategy?
+## What is the relation between the Global Indicator Framework and Canada’s 2030 Agenda National Strategy?
 
 Canada's 2030 Agenda National Strategy aligns with the United Nations' Global Indicator Framework to monitor and advance the implementation of sustainable development goals. While the Global Indicator Framework offers 231 universal indicators for assessing progress on the 17 Sustainable Development Goals (SDGs), Canada's National Strategy customizes these indicators to better fit the national context.
 
