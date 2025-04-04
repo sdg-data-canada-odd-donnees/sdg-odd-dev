@@ -32,7 +32,7 @@ Canada's 2030 Agenda National Strategy aligns with the United Nations' Global In
 4.	Reconciliation with Indigenous Peoples and the 2030 Agenda
 5.	Investing in the SDGs 
 
-Through the Global Indicator Frame and the Data Hub, Canada provides the measurement and reporting necessary to ensure accountability and transparency crucial to monitor progress towards the achievement of the 17 Goals and associated global indicators.
+Through the Global Indicator Framework and the data hub, Canada provides the measurement and reporting necessary to ensure accountability and transparency crucial to monitor progress towards the achievement of the 17 Goals and associated global indicators.
 
 
 ## How accessible is this website?
