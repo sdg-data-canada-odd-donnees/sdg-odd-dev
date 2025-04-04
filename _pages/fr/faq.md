@@ -20,7 +20,7 @@ De nouvelles données seront ajoutées dès qu’elles auront été recueillies 
 Les indicateurs mondiaux font partie du Programme de développement durable à l’horizon 2030 qui a été adopté par tous les États membres des Nations unies en 2015. Ces indicateurs mesurent les progrès réalisés à l'échelle mondiale vers 169 cibles couvrant divers aspects de la société. D'autre part, le Cadre d'indicateurs canadien a été élaboré pour mesurer les progrès réalisés sur une série de priorités canadiennes liées au développement durable.
 
 
-## Quel est le lien entre le Cadre d’indicateurs canadien et la Stratégie nationale du Canada pour le Programme 2030 ?
+## Quel est le lien entre le Cadre mondial d’indicateurs et la Stratégie nationale du Canada pour le Programme 2030 ?
 
 La Stratégie nationale du Canada pour l'Agenda 2030 s'aligne sur le Cadre mondial d'indicateurs des Nations unies pour suivre et faire progresser la mise en œuvre des objectifs de développement durable. Alors que le Cadre mondial d'indicateurs propose 231 indicateurs universels pour évaluer le progrès dans la réalisation des 17 Objectifs de développement durable (ODD), la Stratégie nationale du Canada personnalise ces indicateurs pour mieux les adapter au contexte national.
 
