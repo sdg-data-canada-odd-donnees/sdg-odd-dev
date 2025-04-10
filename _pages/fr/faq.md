@@ -15,25 +15,41 @@ Si vous avez de la rétroaction à propos du carrefour de données, veuillez <a 
 De nouvelles données seront ajoutées dès qu’elles auront été recueillies et validées. Cela inclut les nouvelles données ainsi que les dernières mises à jour aux données déjà publiées. Nous allons continuer d’incorporer des données de sources existantes lorsque possible.
 
 
-## Quel est le lien entre les indicateurs mondiaux et ceux du Cadre d’indicateurs canadien ?
+## Que signifie l'état des rapports ?
 
-Les indicateurs mondiaux font partie du Programme de développement durable à l’horizon 2030 qui a été adopté par tous les États membres des Nations unies en 2015. Ces indicateurs mesurent les progrès réalisés à l'échelle mondiale vers 169 cibles couvrant divers aspects de la société. D'autre part, le Cadre d'indicateurs canadien a été élaboré pour mesurer les progrès réalisés sur une série de priorités canadiennes liées au développement durable.
+Nous utilisons actuellement quatre types d'état des rapports : 
+
+* **Diffusé en ligne:** Les données ou les informations sont disponibles pour rendre compte de cet indicateur. Toutefois, il se peut que les données ne soient pas disponibles pour toutes les désagrégations demandées pour le moment.
+* **En recherche de sources de données:** Statistique Canada n’a pas encore trouvé de sources de données appropriées pour rendre compte de cet indicateur. N’hésitez pas à [communiquer avec nous](mailto:statcan.sdg-odd.statcan@statcan.gc.ca) pour nous faire part de vos suggestions.
+* **Non disponible:** Aucune donnée n'est disponible pour rendre compte de cet indicateur.
+* **Non applicable:** Cet indicateur n'est pas applicable dans le contexte canadien.
 
 
-## Quel est le lien entre le Cadre mondial d’indicateurs et la Stratégie nationale du Canada pour le Programme 2030 ?
+## Pourquoi certains indicateurs sont-ils classifiés en tant qu'indicateurs de substitution ?
 
-La Stratégie nationale du Canada pour l'Agenda 2030 s'aligne sur le Cadre mondial d'indicateurs des Nations unies pour suivre et faire progresser la mise en œuvre des objectifs de développement durable. Alors que le Cadre mondial d'indicateurs propose 231 indicateurs universels pour évaluer le progrès vers la réalisation des 17 Objectifs de développement durable (ODD), la Stratégie nationale du Canada personnalise ces indicateurs pour mieux les adapter au contexte national.
+Un indicateur est classifié comme indicateur de substitution lorsqu'il contient des données ou une méthodologie alternatives à celles spécifiées par les Nations Unies (NU). L'indicateur qui est présenté est celui qui correspond le mieux à ce qui est disponible actuellement. Les informations détaillées portant sur les différences entre un indicateur de substitution et l'indicateur correspondant des Nations unies sont disponibles sur la page de l'indicateur en question.
 
-La <a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html">Stratégie nationale du Canada pour le Programme 2030 : Aller de l’avant ensemble</a> établit une approche pour accélérer les progrès en vue d’atteindre les objectifs de développement durable (ODD) au Canada et contribuer à les atteindre à l’échelle internationale. Pour promouvoir l’engagement et l’action, les cinq objectifs fondamentaux suivants ont été établis :
 
-1.	Encourager le leadership, la gouvernance et la cohérence des politiques
-2.	Accroître la sensibilisation, la mobilisation et les partenariats
-3.	Responsabilisation, transparence, mesure et production de rapports
-4.	Réconciliation avec les peuples autochtones et Programme 2030
-5.	Investissement dans les ODD
+## Quels sont les types de désagrégation des données disponibles ?
 
-Avec le Cadre mondial d'indicateurs et le carrefour de données, le Canada fournit les mesures et les rapports nécessaires pour assurer la responsabilité et la transparence cruciales pour suivre le progrès vers la réalisation des 17 objectifs et des indicateurs mondiaux qui y sont associés.
+Statistique Canada vise à fournir une image complète du progrès en utilisant des données désagrégées, si disponibles. Ainsi, les sources de données sont évaluées et sélectionnées en fonction de leur pertinence pour rendre compte de chaque indicateur et de leur capacité à fournir un rapport de niveau granulaire.
 
+Par exemple, les indicateurs socio-économiques sont généralement désagrégés par zone géographique et par caractéristiques sociodémographiques telles que l'âge, le sexe et d'autres caractéristiques de la population là où elles sont disponibles. Si les données le permettent et si cela est pertinent pour le rapport, les indicateurs sont également désagrégés en fonction de caractéristiques telles que les caractéristiques du ménage, l'identité autochtone, le statut d'immigrant et les groupes racialisés, entre autres.
+
+En revanche, les indicateurs environnementaux et économiques sont généralement désagrégés en fonction de la géographie, du type d'activité économique, des caractéristiques de l'entreprise ou de l'industrie, par exemple.
+
+
+## Quelle est la classification par niveau des indicateurs mondiaux et que signifie chacun des niveaux ?
+
+Pour faciliter la mise en œuvre du Cadre mondial d'indicateurs, tous les indicateurs sont classés en trois niveaux en fonction de leur niveau de développement méthodologique et de la disponibilité des données au niveau mondial.
+
+Chaque indicateur ODD est assigné à un (ou plusieurs) des niveaux suivants :
+
+* **Niveau I:** L'indicateur est clair sur le plan conceptuel, sa méthodologie est établie au niveau international, des normes sont disponibles et des données sont régulièrement produites par les pays pour au moins 50 % des pays et de la population dans chaque région où l'indicateur est pertinent.
+* **Niveau II:** L'indicateur est conceptuellement clair, sa méthodologie est établie au niveau international et des normes sont disponibles, mais les données ne sont pas produites régulièrement par les pays.
+* **Niveau III:** Il n'existe pas encore de méthodologie ou de normes établies au niveau international pour cet indicateur, mais des méthodologies/normes sont (ou seront) en développement ou testées.
+
+Pour plus d'informations, veuillez consulter la [classification par niveau des indicateurs mondiaux de l'IAEG-ODD (en anglais seulement)](https://unstats.un.org/sdgs/iaeg-sdgs/tier-classification/).
 
 ## À quel point le site est-il accessible ?
 
