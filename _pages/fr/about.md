@@ -11,19 +11,22 @@ layout: page
 Tous les membres des Nations Unies ont adopté le <a href="https://sdgs.un.org/fr/2030agenda">Programme de développement durable à l’horizon 2030</a> en 2015, un cadre de référence pour améliorer les résultats des dimensions sociales, économiques et environnementales du développement durable.
 
 Les 17 objectifs de développement durable (ODD) sont un appel universel à l’action pour :
+
 * mettre fin à la pauvreté,
 * protéger la planète,
 * et veiller à ce que toutes les personnes jouissent de la paix et de la prospérité.
 
 Les objectifs s’appuient sur un cadre d’indicateurs globaux qui permettent au Canada et aux autres pays de mesurer le progrès et d’en faire rapport. Ils couvrent un large éventail de questions sociales, environnementales et économiques, y compris, mais sans s’y limiter, la pauvreté, la faim, la santé, l’éducation, l’égalité sociale, l’innovation, le changement climatique, la biodiversité et la justice, en mettant l’accent sur les plus vulnérables et en s’engageant à « ne laisser personne de côté ». Les pays sont aussi encouragés à élaborer un plan national de mise en œuvre qui peut inclure des indicateurs qu’ils ont élaborés pour répondre aux contextes et aux priorités nationales spécifiques pour atteindre les ODD.
 
-## L’implémentation nationale du Programme de développement durable à l’horizon 2030 au Canada
-Afin de soutenir la mise en œuvre nationale des ODD à laquelle le Gouvernement du Canada s’est engagé, une stratégie nationale (<a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html">Stratégie nationale du Canada pour le Programme 2030 : Aller de l’avant ensemble</a>) a été développée.
+## Le rôle de Statistique Canada dans les ODD
+Statistique Canada est un producteur reconnu de renseignements statistiques robustes et impartiaux de grande qualité appuyant les ODD, travaillant en partenariat avec les ministères, le secteur privé, les ONG et les organisations internationales.
 
-Le Cadre mondial d’indicateurs (CMI) est le principal mécanisme pour surveiller et rendre compte des ODD à l’échelle internationale. Il comprend 169 cibles et
-231 indicateurs uniques. En accord avec l’implémentation nationale du Programme de développement durable à l’horizon 2030 au Canada, Statistique Canada a développé le carrefour de données pour le Cadre mondial d’indicateurs pour mesurer et rendre compte le progrès du pays vers la réalisation des ODD.
+Dans ce rôle, Statistique Canada est responsable des tâches suivantes :
 
-Afin de complémenter le Cadre mondial d'indicateurs, le Cadre d'indicateurs canadien (CIC) a été développé en collaboration avec les ministères et agences fédérales. Ce cadre d'indicator propre au Canada a été l’occasion d’élaborer un ensemble d’indicateurs qui s’harmonisent plus étroitement avec les priorités nationales en matière de développement durable. Le Cadre d’indicateurs canadien (CIC) englobe les 17 objectifs et y ajoute 33 ambitions canadiennes qui ont été élaborées par les ministères fédéraux. Afin de rendre compte du progrès envers ces ambitions, Statistique Canada a élaboré 86 indicateurs qui permettent de suivre les progrès réalisés à l’égard des ambitions et des cibles nationales. Les progrès du Canada envers le CIC peuvent être observés en consultant le <a href="https://sdgcif-data-canada-oddcic-donnee.github.io/fr/">carrefour de données pour le Cadre d’indicateurs canadien lié aux objectifs de développement durable</a>.
+* Mesurer, rendre compte et diffuser le progrès du Canada vers les Objectifs de développement durable ;
+* Maintenir et améliorer les carrefours de données du Cadre mondial d'indicateurs et du <a href="https://sdgcif-data-canada-oddcic-donnee.github.io/fr/">Cadre d'indicateurs canadiens</a> ;
+* Explorer de nouvelles façons de travailler avec les partenaires traditionnels et non traditionnels, examiner de nouvelles sources de données et élaborer des façons nouvelles et novatrices de répondre aux besoins des utilisateurs de données en offrant une orientation et des outils liés à la création de renseignements de grande qualité ;
+* Établir et renforcer les partenariats avec les collègues gouvernementaux, les ONG, les groupes de la société civile et le secteur privé.
 
 ## À propos de ce carrefour de données
 Statistique Canada est le point focal pour la diffusion des données et des statistiques portant sur les indicateurs des ODD canadiens et mondiaux. Alors, Statistique Canada a développé ce carrefour de données interactif en utilisant la plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) afin de diffuser les données présentant les progrès du Canada envers les Objectifs de développement durable.

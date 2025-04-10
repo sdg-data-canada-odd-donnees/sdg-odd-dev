@@ -11,18 +11,22 @@ layout: page
 The <a href="https://sdgs.un.org/2030agenda">2030 Agenda for Sustainable Development</a>, adopted by all United Nations Member States in 2015, provides a blueprint for improving outcomes in the economy, society and the environment. 
 
 At its heart are the 17 Sustainable Development Goals (SDGs), a universal call to action to:
+
 * end poverty,
 * protect the planet,
 * and ensure that all people enjoy peace and prosperity.
 
 The goals are underpinned by a framework of global indicators that allow Canada and other countries to monitor and report on progress. They cover a broad range of social, environmental and economic issues, including but not limited to poverty, hunger, health, education, social equality, innovation, climate change, biodiversity and justice, with a focus on the most vulnerable and a commitment to “leave no one behind.” Countries are also encouraged to develop a national implementation plan that can include country-developed indicators to address specific national contexts and priorities to achieving the SDGs.
 
-## Canada’s National Implementation of the 2030 Agenda for Sustainable Development
-To support Canada’s domestic implementation of the SDGs that the Government of Canada has committed to, a national strategy (<a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">Moving forward together: Canada’s 2030 Agenda National Strategy</a>) was developed.
+## Statistics Canada's Role in The SDGs
+Statistics Canada is a trusted producer of high-quality, robust, impartial statistical information to support SDGs. Working in partnership with government departments, the private sector, NGOs and international organizations, we have been actively engaged internationally and domestically to support the measurement of SDGs.
 
-The Global Indicator Framework (GIF) serves as the primary mechanism for monitoring and reporting on the Sustainable Development Goals at the international level. It includes 169 targets and 231 unique indicators. In alignment with Canada’s national implementation of the 2030 Agenda for sustainable development, Statistics Canada has developed the Global Indicator Framework data hub to measure and report on the country's progress towards the SDGs.
+In this role, Statistics Canada is responsible for the following:
 
-To complement the Global Indicator Framework, the Canadian Indicator Framework (CIF) was developed in collaboration with federal departments and agencies. This Canada-specific indicator framework was an opportunity to elaborate a set of indicators that aligns more closely with Canada’s domestic priorities related to sustainable development. The CIF encompasses the 17 goals and adds 33 Canadian ambitions which have been elaborated by federal departments. To report on progress towards these ambitions, Statistics Canada developed 86 indicators that monitor progress on the national ambitions and targets. Canada’s progress on the CIF can be consulted through the <a href="https://sdgcif-data-canada-oddcic-donnee.github.io/">Canadian Indicator Framework for the Sustainable Development Goals data hub</a>.
+* Measuring, reporting, and disseminating Canada’s progress towards the Sustainable Development Goals;
+* Maintaining and improving the Global Indicator Framework and <a href="https://sdgcif-data-canada-oddcic-donnee.github.io/">Canadian Indicator Framework data hubs</a>;
+* Exploring new ways to work with traditional and non-traditional partners, to examine new sources of data, and to develop new and innovative ways to meet data users' needs through the provision of tools and guidance related to the development of high-quality information;
+* Building and strengthening partnerships with governmental colleagues, NGOs, civil-society groups, and the private sector, and international organizations to identify and address data gaps.
 
 ## About This Data Hub
 Statistics Canada is the central focal point for reporting the data and statistics for both the Canadian and the Global SDG indicators. As such, Statistics Canada developed this interactive data hub using the <a href="https://open-sdg.org/">Open SDG platform</a> to disseminate Canada’s progress towards the Sustainable Development Goals.
