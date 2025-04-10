@@ -17,10 +17,10 @@ breadcrumbs:
     - path: /goals
       label: general.goals
   post:
-    - path: /
-      label: general.home
-    - path: /news
-      label: menu.updates
+    - label: general.home
+      path: /
+ #   - label: menu.updates
+ #     path: /news
 contrast_type: default
 cookie_consent_form:
   enabled: false
@@ -77,19 +77,19 @@ footer_language_toggle: none
 footer_menu:
   - path: mailto:statcan.sdg-odd.statcan@statcan.gc.ca
     translation_key: menu.contact_us
-  - path: https://www.facebook.com/StatisticsCanada/
+  - path: general.facebook_link
     translation_key: general.facebook
-  - path: https://instagram.com/statcan_eng/
+  - path: general.instagram_link
     translation_key: general.instagram
-  - path: https://ca.linkedin.com/company/statcan
+  - path: general.linkedin_link
     translation_key: general.linkedin
-  - path: https://www.reddit.com/user/StatCanada/
+  - path: general.reddit_link
     translation_key: general.reddit
-  - path: https://twitter.com/statcan_eng
+  - path: general.twitter_link
     translation_key: general.twitter
-  - path: https://www.youtube.com/statisticscanada
+  - path: general.youtube_link
     translation_key: general.youtube
-  - path: https://www.statcan.gc.ca/
+  - path: general.statcan_link
     translation_key: general.statcan
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
@@ -128,7 +128,7 @@ goal_image_base: 'https://open-sdg.org/sdg-translations/assets/img/goals'
 goal_image_extension: ''
 goals_page:
   title: general.goals
-  description: goal.description
+  description: general.goal_description
 graph_color_headline: '#004466'
 graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: accessible
@@ -164,7 +164,13 @@ languages:
   - en
   - fr
 languages_public: []
-logos: []
+logos: 
+  - language: en
+    src: assets/img/EN_SDG_logo_transparent.png
+    alt: Go to home page
+  - language: fr
+    src: assets/img/fr/FR_SDG_logo_transparent.png
+    alt: Aller à la page d'accueil
 
 map_options:
   # Whether the map should provide a button and form for changing the displayed disaggregation:
@@ -213,18 +219,36 @@ menu:
     dropdown: []
   - translation_key: menu.more_info
     dropdown:
-      - path: /news
+      - path: /related-products
         translation_key: menu.related-products
-      - path: /methodology
-        translation_key: menu.methodology
+#      - path: /methodology
+#        translation_key: menu.methodology
 #  - path: /news
 #    translation_key: menu.updates
 #    dropdown: []
 metadata_edit_url: ''
 metadata_tabs: []
+#  - scope: national
+#    title: indicator.national_metadata
+#    description: ''
+#  - scope: sources_alt
+#    title: indicator.sources
+#    description: ''
+#  - scope: global
+#    title: indicator.global_metadata
+#    description: ''
 news:
   category_links: false
 non_global_metadata: indicator.national_metadata
+observation_attributes:
+  - field: COMMENT_OBS
+    label: ''
+  - field: COMMENT_OBS_0
+    label: ''
+  - field: COMMENT_OBS_1
+    label: ''
+  - field: COMMENT_OBS_2
+    label: ''
 #progress_status:
 #    status_heading: Progress status
 #    status_types:
@@ -264,7 +288,7 @@ non_global_metadata: indicator.national_metadata
 remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
 reporting_status:
   title: status.reporting_status
-  description: status.description
+  description: status.status_description
   disaggregation_tabs: false
   status_types:
     - value: notstarted
