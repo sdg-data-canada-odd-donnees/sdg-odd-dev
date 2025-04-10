@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250409210942">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250410160541">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -295,25 +295,42 @@ data-event-label="high"
 
 <p>New data will be added as soon as it has been sourced and validated. This includes new data as well as updates to data already published. We will continue to incorporate data from existing sources whenever possible.</p>
 
-<h2 id="what-is-the-relation-between-the-global-indicators-and-the-canadian-indicator-framework">What is the relation between the Global Indicators and the Canadian Indicator Framework?</h2>
+<h2 id="what-does-the-reporting-status-mean">What does the reporting status mean?</h2>
 
-<p>The Global Indicators are part of the 2030 Agenda for Sustainable Development, which was adopted by all United Nations Member States in 2015. These indicators measure progress globally towards 169 targets covering various aspects of society. On the other hand, the Canadian Indicator Framework was developed to measure progress on a series of Canadian priorities related to sustainable development.</p>
+<p>We currently use four types of reporting status:</p>
 
-<h2 id="what-is-the-relation-between-the-global-indicator-framework-and-canadas-2030-agenda-national-strategy">What is the relation between the Global Indicator Framework and Canada’s 2030 Agenda National Strategy?</h2>
+<ul>
+  <li><strong>Reported online:</strong> Data or information are available to report on this indicator. However, data may not be available for all requested disaggregation at this time.</li>
+  <li><strong>Exploring data sources:</strong> Statistics Canada has not yet found any suitable data sources to report on this indicator. Please <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">contact us</a> if you have any suggestions.</li>
+  <li><strong>Not available:</strong> No data is available to report on this indicator.</li>
+  <li><strong>Not applicable:</strong> This indicator is not applicable within the Canadian context.</li>
+</ul>
 
-<p>Canada’s 2030 Agenda National Strategy aligns with the United Nations’ Global Indicator Framework to monitor and advance the implementation of sustainable development goals. While the Global Indicator Framework offers 231 universal indicators for assessing progress on the 17 Sustainable Development Goals (SDGs), Canada’s National Strategy customizes these indicators to better fit the national context.</p>
+<h2 id="why-are-some-indicators-classified-as-proxies">Why are some indicators classified as proxies?</h2>
 
-<p><a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">Moving forward together: Canada’s 2030 Agenda National Strategy</a> sets out an approach to accelerate progress towards meeting the Sustainable Development Goals (SDGs) in Canada, and contribute to their achievement internationally. To promote engagement and action, the following five core objectives have been identified:</p>
+<p>An indicator is classified as a proxy when it contains some alternative data or methodology to those specified by the United Nations (UN). The indicator presented is the most suitable match currently available. Detailed information regarding the differences between a proxy indicator and its corresponding United Nations indicator can be found in the respective indicator’s page.</p>
 
-<ol>
-  <li>Fostering leadership, governance and policy coherence</li>
-  <li>Raising awareness, engagement and partnerships</li>
-  <li>Accountability, transparency, measurement and reporting</li>
-  <li>Reconciliation with Indigenous Peoples and the 2030 Agenda</li>
-  <li>Investing in the SDGs</li>
-</ol>
+<h2 id="what-types-of-data-disaggregation-are-available">What types of data disaggregation are available?</h2>
 
-<p>Through the Global Indicator Framework and the data hub, Canada provides the measurement and reporting necessary to ensure accountability and transparency crucial to monitor progress towards the achievement of the 17 Goals and associated global indicators.</p>
+<p>Statistics Canada strives to provide a comprehensive picture of progress by leveraging disaggregated data, where available. As such, data sources are evaluated and selected based on their suitability to report on each indicator and their potential to provide a granular level reporting.</p>
+
+<p>For example, socioeconomic indicators are typically disaggregated by geography and sociodemographic characteristics such as age, sex, and other population characteristics where available. If data permit and it is relevant for the reporting, indicators are also disaggregated by characteristics such as household characteristics, Indigenous identity, immigrant status and racialized groups, to name a few.</p>
+
+<p>On the other hand, environmental and economic indicators are typically disaggregated by geography, type of economic activity, business characteristics or industry, for example.</p>
+
+<h2 id="what-is-the-tier-classification-for-the-global-indicators-and-what-does-each-of-the-tiers-mean">What is the tier classification for the global indicators and what does each of the tiers mean?</h2>
+
+<p>To facilitate the implementation of the global indicator framework, all indicators are classified into three tiers based on their level of methodological development and the availability of data at the global level.</p>
+
+<p>Each SDG indicators are assigned to one (or more) of the following tiers:</p>
+
+<ul>
+  <li><strong>Tier I:</strong> Indicator is conceptually clear, has an internationally established methodology and standards are available, and data are regularly produced by countries for at least 50 per cent of countries and of the population in every region where the indicator is relevant.</li>
+  <li><strong>Tier II:</strong> Indicator is conceptually clear, has an internationally established methodology and standards are available, but data are not regularly produced by countries.</li>
+  <li><strong>Tier III:</strong> No internationally established methodology or standards are yet available for the indicator, but methodology/standards are being (or will be) developed or tested.</li>
+</ul>
+
+<p>For more information, please consult the <a href="https://unstats.un.org/sdgs/iaeg-sdgs/tier-classification/">IAEG-SDG Tier Classification for Global Indicators</a>.</p>
 
 <h2 id="how-accessible-is-this-website">How accessible is this website?</h2>
 
@@ -427,12 +444,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250409210942'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250410160541'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250409210942"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250410160541"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
