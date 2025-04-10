@@ -46,7 +46,7 @@ Pour faciliter la mise en œuvre du Cadre mondial d'indicateurs, tous les indica
 Chaque indicateur ODD est assigné à un (ou plusieurs) des niveaux suivants :
 
 * **Niveau I:** L'indicateur est clair sur le plan conceptuel, sa méthodologie est établie au niveau international, des normes sont disponibles et des données sont régulièrement produites par les pays pour au moins 50 % des pays et de la population dans chaque région où l'indicateur est pertinent.
-* **Niveau II:** L'indicateur est conceptuellement clair, sa méthodologie est établie au niveau international et des normes sont disponibles, mais les données ne sont pas produites régulièrement par les pays.
+* **Niveau II:** L'indicateur est clair sur le plan conceptuel, sa méthodologie est établie au niveau international et des normes sont disponibles, mais les données ne sont pas produites régulièrement par les pays.
 * **Niveau III:** Il n'existe pas encore de méthodologie ou de normes établies au niveau international pour cet indicateur, mais des méthodologies/normes sont (ou seront) en développement ou testées.
 
 Pour plus d'informations, veuillez consulter la [classification par niveau des indicateurs mondiaux de l'IAEG-ODD (en anglais seulement)](https://unstats.un.org/sdgs/iaeg-sdgs/tier-classification/).
