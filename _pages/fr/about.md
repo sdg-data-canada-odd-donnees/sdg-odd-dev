@@ -29,9 +29,9 @@ Dans ce rôle, Statistique Canada est responsable des tâches suivantes :
 * Établir et renforcer les partenariats avec les collègues gouvernementaux, les ONG, les groupes de la société civile, le secteur privé et les organismes internationaux afin d’identifier et adresser les manques de données.
 
 ## À propos de ce carrefour de données
-Statistique Canada est le point focal pour la diffusion des données et des statistiques portant sur les indicateurs des ODD canadiens et mondiaux. Statistique Canada a développé ce carrefour de données interactif en utilisant la plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) afin de diffuser les données présentant les progrès du Canada envers les Objectifs de développement durable.
+Statistique Canada est le point focal pour la diffusion des données et des statistiques portant sur les indicateurs des ODD. Alors, Statistique Canada a développé ce carrefour de données interactif en utilisant la plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) afin de diffuser les données présentant les progrès du Canada envers les Objectifs de développement durable.
 
-Statistique Canada continue d’examiner les sources de données qui pourraient être utiles pour le rapport des indicateurs et continuera d’ajouter plus de données désagrégées, de statistiques et d’outils de visualisation afin d’améliorer l’expérience des utilisateurs.
+Statistique Canada continue d’examiner les sources de données qui pourraient être utiles pour rendre compte des indicateurs et continuera d’ajouter plus de données désagrégées, de statistiques et d’outils de visualisation afin d’améliorer l’expérience des utilisateurs.
 
 <em>L’équipe des ODD de Statistique Canada tient à remercier tous ceux qui ont participé à l’assurance de la qualité, qui ont fait des suggestions d’amélioration ou qui ont contribué de toute autre façon à la création de ce carrefour de données.</em>
 
