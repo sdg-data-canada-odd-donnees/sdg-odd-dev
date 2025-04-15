@@ -29,7 +29,7 @@ In this role, Statistics Canada is responsible for the following:
 * Building and strengthening partnerships with governmental colleagues, NGOs, civil-society groups, the private sector, and international organizations to identify and address data gaps.
 
 ## About This Data Hub
-Statistics Canada is the central focal point for reporting the data and statistics for SDG indicators. As such, Statistics Canada developed this interactive data hub using the <a href="https://open-sdg.org/">Open SDG platform</a> to disseminate Canada’s progress towards the Sustainable Development Goals.
+Statistics Canada is the focal point for measuring and reporting Canada's progress on the Sustainable Development Goals for the Government of Canada. As such, Statistics Canada developed this interactive data hub using the <a href="https://open-sdg.org/">Open SDG platform</a> to disseminate Canada’s progress towards the Sustainable Development Goals.
 
 Statistics Canada continues to examine data sources that may be useful for reporting on the indicators and will continue to add further data disaggregation, statistics, and data visualization features to enhance the experience of users over time.
 
