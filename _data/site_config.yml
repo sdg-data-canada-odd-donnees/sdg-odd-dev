@@ -166,10 +166,10 @@ languages:
 languages_public: []
 logos: 
   - language: en
-    src: assets/img/EN_SDG_logo_transparent.svg
+    src: assets/img/EN_SDG_logo_transparent.png
     alt: Go to home page
   - language: fr
-    src: assets/img/fr/FR_SDG_logo_transparent.svg
+    src: assets/img/fr/FR_SDG_logo_transparent.png
     alt: Aller à la page d'accueil
 
 map_options:
