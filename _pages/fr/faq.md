@@ -34,7 +34,7 @@ Un indicateur est classé en tant qu'indicateur de substitution lorsqu'il contie
 
 Statistique Canada vise à fournir une image complète des progrès réalisés en utilisant des données désagrégées, là où elles sont disponibles. Ainsi, les sources de données sont évaluées et sélectionnées en fonction de leur pertinence pour rendre compte de chaque indicateur et de leur capacité à fournir un rapport de niveau granulaire.
 
-Par exemple, les indicateurs socio-économiques sont généralement désagrégés par zone géographique et par caractéristiques sociodémographiques telles que l'âge, le sexe et d'autres caractéristiques de la population là où elles sont disponibles. Si les données le permettent et si cela est pertinent pour le rapport, les indicateurs sont également désagrégés en fonction de caractéristiques telles que les caractéristiques du ménage, l'identité autochtone, le statut d'immigrant et les groupes racialisés, entre autres.
+Par exemple, les indicateurs socio-économiques sont généralement désagrégés par la géographie et par les caractéristiques sociodémographiques telles que l'âge, le sexe et d'autres caractéristiques de la population là où elles sont disponibles. Si les données le permettent et si cela est pertinent pour le rapport, les indicateurs sont également désagrégés en fonction de caractéristiques telles que les caractéristiques du ménage, l'identité autochtone, le statut d'immigrant et les groupes racialisés, pour n'en citer que quelques-unes.
 
 D'autre part, les indicateurs environnementaux et économiques sont généralement désagrégés en fonction de la géographie, du type d'activité économique, des caractéristiques de l'entreprise ou de l'industrie, par exemple.
 
