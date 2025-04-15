@@ -217,6 +217,9 @@ menu:
   - path: /faq
     translation_key: menu.faq
     dropdown: []
+  - path: menu.cif_hub_url
+    translation_key: menu.cif_hub
+    dropdown: []
   - translation_key: menu.more_info
     dropdown:
       - path: /related-products
