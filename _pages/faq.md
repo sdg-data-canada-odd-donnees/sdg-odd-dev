@@ -41,7 +41,7 @@ On the other hand, environmental and economic indicators are typically disaggreg
 
 ## What is the tier classification for the global indicators and what does each of the tiers mean?
 
-To facilitate the implementation of the global indicator framework, all indicators are classified into three tiers based on their level of methodological development and the availability of data at the global level.
+To facilitate the implementation of the Global Indicator Framework, all indicators are classified into three tiers based on their level of methodological development and the availability of data at the global level.
 
 Each SDG indicators are assigned to one (or more) of the following tiers:
 

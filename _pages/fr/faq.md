@@ -17,7 +17,7 @@ De nouvelles données seront ajoutées dès qu’elles auront été recueillies 
 
 ## Que signifie l'état des rapports ?
 
-Nous utilisons actuellement quatre types d'état des rapports : 
+Nous utilisons actuellement quatre types d'états des rapports : 
 
 * **Diffusé en ligne:** Les données ou les informations sont disponibles pour rendre compte de cet indicateur. Toutefois, il se peut que les données ne soient pas disponibles pour toutes les désagrégations demandées pour le moment.
 * **En recherche de sources de données:** Statistique Canada n’a pas encore trouvé de sources de données appropriées pour rendre compte de cet indicateur. N’hésitez pas à [communiquer avec nous](mailto:statcan.sdg-odd.statcan@statcan.gc.ca) pour nous faire part de vos suggestions.
@@ -25,18 +25,18 @@ Nous utilisons actuellement quatre types d'état des rapports :
 * **Non applicable:** Cet indicateur n'est pas applicable dans le contexte canadien.
 
 
-## Pourquoi certains indicateurs sont-ils classifiés en tant qu'indicateurs de substitution ?
+## Pourquoi certains indicateurs sont-ils classés en tant qu'indicateurs de substitution ?
 
-Un indicateur est classifié comme indicateur de substitution lorsqu'il contient des données ou une méthodologie alternatives à celles spécifiées par les Nations Unies (NU). L'indicateur qui est présenté est celui qui correspond le mieux à ce qui est disponible actuellement. Les informations détaillées portant sur les différences entre un indicateur de substitution et l'indicateur correspondant des Nations unies sont disponibles sur la page de l'indicateur en question.
+Un indicateur est classé en tant qu'indicateur de substitution lorsqu'il contient des données ou une méthodologie alternatives à celles spécifiées par les Nations Unies (ONU). L'indicateur qui est présenté est la meilleure correspondance actuellement disponible. Les informations détaillées concernant les différences entre un indicateur de substitution et l'indicateur des Nations Unies correspondant sont disponibles sur la page de l'indicateur en question.
 
 
 ## Quels sont les types de désagrégation des données disponibles ?
 
-Statistique Canada vise à fournir une image complète du progrès en utilisant des données désagrégées, si disponibles. Ainsi, les sources de données sont évaluées et sélectionnées en fonction de leur pertinence pour rendre compte de chaque indicateur et de leur capacité à fournir un rapport de niveau granulaire.
+Statistique Canada vise à fournir une image complète des progrès réalisés en utilisant des données désagrégées, là où elles sont disponibles. Ainsi, les sources de données sont évaluées et sélectionnées en fonction de leur pertinence pour rendre compte de chaque indicateur et de leur capacité à fournir un rapport de niveau granulaire.
 
 Par exemple, les indicateurs socio-économiques sont généralement désagrégés par zone géographique et par caractéristiques sociodémographiques telles que l'âge, le sexe et d'autres caractéristiques de la population là où elles sont disponibles. Si les données le permettent et si cela est pertinent pour le rapport, les indicateurs sont également désagrégés en fonction de caractéristiques telles que les caractéristiques du ménage, l'identité autochtone, le statut d'immigrant et les groupes racialisés, entre autres.
 
-En revanche, les indicateurs environnementaux et économiques sont généralement désagrégés en fonction de la géographie, du type d'activité économique, des caractéristiques de l'entreprise ou de l'industrie, par exemple.
+D'autre part, les indicateurs environnementaux et économiques sont généralement désagrégés en fonction de la géographie, du type d'activité économique, des caractéristiques de l'entreprise ou de l'industrie, par exemple.
 
 
 ## Quelle est la classification par niveau des indicateurs mondiaux et que signifie chacun des niveaux ?
