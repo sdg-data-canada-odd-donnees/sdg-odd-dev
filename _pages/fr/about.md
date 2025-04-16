@@ -8,9 +8,9 @@ layout: page
 #### Veuillez noter que ce site est présentement au stage Beta, ce qui signifie que c’est un produit en développement.
 
 ## Programme de développement durable à l’horizon 2030
-Tous les membres des Nations Unies ont adopté le <a href="https://sdgs.un.org/fr/2030agenda">Programme de développement durable à l’horizon 2030</a> en 2015, un cadre de référence pour améliorer les résultats des dimensions sociales, économiques et environnementales du développement durable.
+Le <a href="https://sdgs.un.org/fr/2030agenda">Programme de développement durable à l’horizon 2030</a>, adopté par tous les États membres des Nations unies en 2015, fournit un plan directeur pour améliorer la situation de l'économie, de la société et de l'environnement.
 
-Les 17 objectifs de développement durable (ODD) sont un appel universel à l’action pour :
+Au cœur de ce programme se trouvent les 17 objectifs de développement durable (ODD), un appel universel à l'action pour :
 
 * mettre fin à la pauvreté,
 * protéger la planète,
@@ -29,7 +29,7 @@ Dans ce rôle, Statistique Canada est responsable des tâches suivantes :
 * Établir et renforcer les partenariats avec les collègues gouvernementaux, les ONG, les groupes de la société civile, le secteur privé et les organismes internationaux afin d’identifier et adresser les manques de données.
 
 ## À propos de ce carrefour de données
-Statistique Canada est le point focal pour la diffusion des données et des statistiques portant sur les indicateurs des ODD. Alors, Statistique Canada a développé ce carrefour de données interactif en utilisant la plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) afin de diffuser les données présentant les progrès du Canada envers les Objectifs de développement durable.
+Statistique Canada est l'organisme central chargé de mesurer et de rendre compte des progrès réalisés par le Canada en matière d'objectifs de développement durable pour le gouvernement du Canada. Ainsi, Statistique Canada a développé ce carrefour de données interactif en utilisant la plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) afin de diffuser les données présentant le progrès du Canada envers les Objectifs de développement durable.
 
 Statistique Canada continue d’examiner les sources de données qui pourraient être utiles pour rendre compte des indicateurs et continuera d’ajouter plus de données désagrégées, de statistiques et d’outils de visualisation afin d’améliorer l’expérience des utilisateurs.
 

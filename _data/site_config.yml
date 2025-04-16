@@ -177,8 +177,11 @@ map_options:
   disaggregation_controls: true
   minZoom: 2
   maxZoom: 6
-  tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+  tileURL: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
   tileOptions:
+    id: ''
+    accessToken: ''
+    attribution: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
@@ -217,6 +220,9 @@ menu:
   - path: /faq
     translation_key: menu.faq
     dropdown: []
+  # - path: menu.cif_hub_url
+  #   translation_key: menu.cif_hub
+  #   dropdown: []
   - translation_key: menu.more_info
     dropdown:
       - path: /related-products
