@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250423182721">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250505151738">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -286,22 +286,28 @@ layout-indicator-iframe
 </div>
 <div id="main-content" class="container goal-10" role="main">
   
-<div class="row alert success" id="data-notice">
-  <div class="col-xs-2 col-sm-1">
-    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-  </div>
-  <div class="col-xs-10 col-sm-11 data-notice">
-    <div class="notice-heading" role="alert"><p>Exploring data sources</p>
-</div>
-    <div><p>Statistics Canada has not yet found any suitable data sources to report on this indicator.<br />Please <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">contact us</a> if you have any suggestions.</p>
-</div>
+
+  
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Proportion of population reporting to have experienced discrimination or unfair treatment in the past 5 years</h2>
   </div>
 </div>
 
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.
+  </div>
+</div>
 
-  
 
   
 
@@ -318,29 +324,534 @@ layout-indicator-iframe
   data-id="10-3-1"
   data-country="Canada"
   data-charttitle="Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law"
-  data-charttitles="[]"
-  data-measurementunit=""
+  data-charttitles="[{&quot;series&quot;:&quot;Proportion of population reporting to have experienced discrimination or unfair treatment&quot;,&quot;title&quot;:&quot;Proportion of population reporting to have experienced discrimination or unfair treatment in the past 5 years&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;title&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment in the past 5 years&quot;}]"
+  data-measurementunit="Percentage (%)"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
-  data-showmap="false"
-  data-startvalues="[]"
+  data-showmap="true"
+  data-startvalues="[{&quot;series&quot;:&quot;Proportion of population reporting to have experienced discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Experienced discrimination or unfair treatment in Canada&quot;},{&quot;series&quot;:&quot;Proportion of population reporting to have experienced discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;series&quot;:&quot;Proportion of population reporting to have experienced discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Gender&quot;,&quot;value&quot;:&quot;Total&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Gender&quot;,&quot;value&quot;:&quot;Total&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination at work&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination at school&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination on the Internet&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination when interacting with the healthcare system&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination in public areas, a store, bank or restaurant&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination by or among friends or family&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination while using public transit&quot;},{&quot;series&quot;:&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;field&quot;:&quot;Discrimination indicators&quot;,&quot;value&quot;:&quot;Discrimination in any other situation&quot;}]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
-  data-graphannotations="[]"
+  data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Discrimination indicators&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Did not experience discrimination or unfair treatment in Canada&quot;,&quot;Experienced discrimination or unfair treatment in Canada&quot;,&quot;Discrimination at work&quot;,&quot;Discrimination at school&quot;,&quot;Discrimination on the Internet&quot;,&quot;Discrimination when interacting with the healthcare system&quot;,&quot;Discrimination in public areas, a store, bank or restaurant&quot;,&quot;Discrimination by or among friends or family&quot;,&quot;Discrimination while using public transit&quot;,&quot;Discrimination in any other situation&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Discrimination indicators&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Proportion of population reporting to have experienced discrimination or unfair treatment&quot;,&quot;Proportion of individuals within a population who reported experiencing discrimination or unfair treatment&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;Gender&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total&quot;,&quot;Men&quot;,&quot;Women&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Gender&quot;},{&quot;name&quot;:&quot;Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;15 to 24 years&quot;,&quot;25 to 54 years&quot;,&quot;25 to 34 years&quot;,&quot;35 to 44 years&quot;,&quot;45 to 54 years&quot;,&quot;55 to 64 years&quot;,&quot;65 years and over&quot;,&quot;65 to 74 years&quot;,&quot;75 years and over&quot;,&quot;Total, 15 years and over&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age group&quot;},{&quot;name&quot;:&quot;Immigrant status&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Non-immigrants&quot;,&quot;Immigrants&quot;,&quot;Immigrants, 10 years or less in Canada&quot;,&quot;Immigrants, more than 10 years in Canada&quot;,&quot;Non-permanent residents&quot;,&quot;Total, by immigrant status&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Immigrant status&quot;},{&quot;name&quot;:&quot;Visible minority&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Visible minority population&quot;,&quot;South Asian&quot;,&quot;Chinese&quot;,&quot;Black&quot;,&quot;Filipino&quot;,&quot;Arab&quot;,&quot;Latin American&quot;,&quot;Southeast Asian&quot;,&quot;West Asian&quot;,&quot;Korean&quot;,&quot;Multiple visible minorities&quot;,&quot;Not a visible minority&quot;,&quot;Total, by visible minority group&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Visible minority&quot;},{&quot;name&quot;:&quot;Indigenous identity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Indigenous identity&quot;,&quot;Single Indigenous identity&quot;,&quot;First Nations&quot;,&quot;Métis&quot;,&quot;Non-Indigenous identity&quot;,&quot;Total, by Indigenous identity&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Indigenous identity&quot;},{&quot;name&quot;:&quot;Disability&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Persons with a disability, difficulty or long-term condition&quot;,&quot;Persons without a disability, difficulty or long-term condition&quot;,&quot;Total, persons with and without a disability, difficulty or long-term condition&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Disability&quot;},{&quot;name&quot;:&quot;LGBTQ2+&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;LGBTQ2+ people&quot;,&quot;Non-LGBTQ2+ people&quot;,&quot;Total, LGBTQ2+ and non-LGBTQ2+ people&quot;,&quot;&quot;]},&quot;title&quot;:&quot;LGBTQ2+&quot;},{&quot;name&quot;:&quot;Highest level of education&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;No certificate, diploma or degree&quot;,&quot;Secondary (high) school diploma or equivalency certificate&quot;,&quot;Postsecondary certificate, diploma or degree&quot;,&quot;Postsecondary certificate or diploma below bachelor level&quot;,&quot;Apprenticeship or trades certificate or diploma&quot;,&quot;College, CEGEP or other non-university certificate or diploma&quot;,&quot;University certificate or diploma below bachelor level&quot;,&quot;Bachelor's degree or higher&quot;,&quot;Bachelor's degree&quot;,&quot;University certificate, diploma or degree above bachelor level&quot;,&quot;Total, highest certificate, diploma or degree&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Highest level of education&quot;},{&quot;name&quot;:&quot;Main activity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Working at a paid job or business&quot;,&quot;Retired&quot;,&quot;Other activity&quot;,&quot;Total, by main activity&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Main activity&quot;},{&quot;name&quot;:&quot;Area&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Urban areas&quot;,&quot;Rural areas&quot;,&quot;Total, urban and rural areas&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Area&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
+  data-proxy="proxy"
   data-proxyseries="null"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-unit-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-series-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Sub-categories</h4>
+    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-odd-dev/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/en/headline/10-3-1.csv" class="btn btn-primary btn-download" download="indicator_10-3-1.csv" tabindex="0" role="button">Download Headline CSV</a>
+    
+    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/en/data/10-3-1.csv" class="btn btn-primary btn-download" download='indicator_10-3-1.csv' tabindex='0' role='button'>Download All Data (CSV)</a>
+
+    <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
+
+    
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Series</th>
+        
+        
+        
+        <th scope="col" class="table-value">GeoCode</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2023 Q1</td>
+          
+          
+          
+          <td>35.9</td>
+          
+          
+          
+          <td>Proportion of population reporting to have experienced discrimination or unfair treatment</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024 Q1</td>
+          
+          
+          
+          <td>35.9</td>
+          
+          
+          
+          <td>Proportion of population reporting to have experienced discrimination or unfair treatment</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024 Q2</td>
+          
+          
+          
+          <td>36.9</td>
+          
+          
+          
+          <td>Proportion of population reporting to have experienced discrimination or unfair treatment</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024 Q3</td>
+          
+          
+          
+          <td>30.9</td>
+          
+          
+          
+          <td>Proportion of population reporting to have experienced discrimination or unfair treatment</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024 Q4</td>
+          
+          
+          
+          <td>26.0</td>
+          
+          
+          
+          <td>Proportion of population reporting to have experienced discrimination or unfair treatment</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    <p>Source: Statistics Canada</p>
+    
+    
+    <p>Geographical Area: Canada</p>
+    
+    
+    <p>Unit of Measurement: Percentage (%)</p>
+    
+    
+    <p>Note: </p>
+    
+  </div>
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-odd-dev/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">For tabular data alternative see Table tab.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Chart</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Table</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        map
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-mapview"
+          data-bs-target="#mapview"
+          aria-controls="mapview"
+          data-no-disagg="true"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Map tab"
+
+        
+      >Map</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
+      There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">
+            Proportion of population reporting to have experienced discrimination or unfair treatment in the past 5 years
+          </h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Statistics Canada</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Canada</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Note:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+    <dl class="observation-attribute-list"></dl>
+    
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Download chart as image"
+          aria-label="Download chart as image"
+          class='btn btn-primary btn-download'>
+          Download Chart Image
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Click to sort by this column</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Statistics Canada</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Canada</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Note:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+    <dl class="observation-attribute-list"></dl>
+    
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="mapview" class="map">
+          
+<h4 id="map-heading" class="map-title">Proportion of population reporting to have experienced discrimination or unfair treatment in the past 5 years</h4>
+<div id="map" aria-describedby="table-alternative">
+  <img class="map-loading-image" src="/sdg-odd-dev/assets/img/loading.gif" alt="Loading map" />
+</div>
+
+
+
+
+<div id="mapFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Statistics Canada</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Canada</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Note:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+    <dl class="observation-attribute-list"></dl>
+    
+</div>
+
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -479,7 +990,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator </th>
         <td>
           
-            <p>Indicator 10.3.1: Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law</p>
+            <p>Indicator 10.3.1: Proportion of population reporting to have experienced discrimination or unfair treatment in the past 5 years</p>
 
           
         </td>
@@ -555,7 +1066,22 @@ data-event-label="Change to Sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            <p>This indicator is defined as the proportion of the population (adults) who self-report that they personally experienced discrimination or harassment during the last 12 months based on ground(s) prohibited by international human rights law. International human rights law refers to the body of international legal instruments aiming to promote and protect human rights, including the Universal Declaration of Human Rights and subsequent international human rights treaties adopted by the United Nations.</p>
+            <p>This indicator measures the proportion of population reporting to have experienced discrimination or unfair treatment over the past five years based on any of the following factors: <br /></p>
+<ul>
+  <li>Indigenous identity; <br /></li>
+  <li>Ethnicity or culture; <br /></li>
+  <li>Race or skin colour; <br /></li>
+  <li>Religion; <br /></li>
+  <li>Language; <br /></li>
+  <li>Accent; <br /></li>
+  <li>Physical appearance; <br /></li>
+  <li>Sex; <br /></li>
+  <li>Sexual orientation; <br /></li>
+  <li>Gender identity or expression; <br /></li>
+  <li>Age; <br /></li>
+  <li>Physical or mental disability; <br /></li>
+  <li>Any other specified reason.</li>
+</ul>
 
           
         </td>
@@ -631,7 +1157,11 @@ data-event-label="Change to Sources tab"
         <th scope="row">Comment and limitations </th>
         <td>
           
-            
+            <p>This is a proxy indicator. The UN Global indicator states: “Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law”. 
+<br /><br />
+The total for Canada does not include data from the territories.
+<br /><br />
+The discrimination indicators in the primary series, “Proportion of the population reporting experiences of discrimination or unfair treatment,” uses the total population as the denominator. The secondary series, “Proportion of individuals within a population who reported experiencing discrimination or unfair treatment,” calculates the indicator based on the population of individuals who report such experiences, rather than employing the total population as the denominator.</p>
 
           
         </td>
@@ -647,7 +1177,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            
+            <p>Data were readily available to report on this indicator as specified by the metadata. Please refer to the sources to access additional information on the metadata or source.</p>
 
           
         </td>
@@ -1456,6 +1986,776 @@ data-event-label="Change to Sources tab"
 
 
 
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      
+        <h4>Source 1</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Statistics Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>Occasional Quarterly</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Geographical coverage </th>
+        <td>
+          
+            <p>Canada, Province or territory</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+            
+              <a href="https://doi.org/10.25318/4510010001-eng" target="_blank">
+                Statistics Canada. Table 45-10-0100-01  Discrimination and unfair treatment by gender and province <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+      
+        <h4>Source 2</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Statistics Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>Occasional Quarterly</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Geographical coverage </th>
+        <td>
+          
+            <p>Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+            
+              <a href="https://doi.org/10.25318/4510010101-eng" target="_blank">
+                Statistics Canada. Table 45-10-0101-01  Discrimination and unfair treatment by gender and other selected sociodemographic characteristics <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
+
 
 </div>
     
@@ -1476,8 +2776,15 @@ data-event-label="Change to Sources tab"
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js" integrity="sha384-kdgUFNEbslNOEAQ/zFH9wjDORAbvN0KUYOpfJIJYPdjtzLXkZsMJAXU9HPpi5B5c" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
 
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.js" integrity="sha384-+Ae+bvCvR9gwQHFyh60GUfdqhUAL+S/O5mLeAkmkv2yBQxeLxm3gvLEzYPoXBwbT" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js" integrity="sha384-cU7kVmimPTBpe76764qMxEdujXzlgSm15cCQe6FXFud5DiV4vrJQHUK9S0Lo2cqT" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.js" integrity="sha384-vOZkQA9epgnqbXkNdVSlxfyhrOSzYBsL3s3b2CQYn05H6lzrbrb368uBSRSUTAiv" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/socib/Leaflet.TimeDimension@fa36ffee7f6390aadce8c055ca7c60ede7c2134c/dist/leaflet.timedimension.min.js" integrity="sha384-xQ62+wlP0nHf7UhZ81djmqLn+7arwKiMk/dJk+smi+rJhaXPZAeFPX4bEiD9twIy" crossorigin="anonymous"></script>
+<script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js" integrity="sha384-btJhAWztz7ttA6ibFC5ppM39nkCPK6CWzRVmsaLcDn37mA3x1TzF1DbFwa6tJpTN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/torfsen/leaflet.zoomhome@84a0291e80244ed9301cbc09d55850f0af53e602/dist/leaflet.zoomhome.min.js" integrity="sha384-UH2Ux7vOhzo5dH5kWWPmpvCCRCiS0hQ12YQN6qTUJXOpx+HpKePItLNSSm2AxKjF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js" integrity="sha384-C/UzSz5aXmLxJwe/b9I0CIv+cfLcGIXmfl40m9+kyJhlgNxvWT6+WRjCbA8Eflf/" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha384-eEX5kO4tdQpY+eTjDbZNPlMm4QhsK+kosSZtkzp+uZk0L5g0lSzmWXWHzKDoOzA7" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js" integrity="sha384-3qyhlVVDXXiWhzgKIoL/aw+uaXN5kyAFE0Jv2LGoV+nnQnum4ebt1QAtRbjnz9pL" crossorigin="anonymous"></script>
@@ -1495,12 +2802,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250423182721'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250505151738'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250423182721"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250505151738"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
