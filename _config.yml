@@ -1,8 +1,8 @@
 # Jekyll configuration for Open SDG platform
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-# remote_theme: open-sdg/open-sdg@2.3.2
-remote_theme: open-sdg/open-sdg@2.4.0-dev
+remote_theme: open-sdg/open-sdg@2.3.2 # temporary switch back to 2.3.2 for stability and to avoid publishing progress measures until progress_calc_options are ready
+# remote_theme: open-sdg/open-sdg@2.4.0-dev
 
 # Replace this title as needed.
 title: general.site_title
