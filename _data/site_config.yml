@@ -141,6 +141,8 @@ header_language_toggle: dropdown
 hide_empty_metadata: true
 hide_single_series: true
 hide_single_unit: true
+ignored_disaggregations:
+  - Progress
 indicator_config_form:
   enabled: true
   dropdowns: []
