@@ -543,11 +543,11 @@
         },
         {
           "id": "4-a-1",
-          "title": "Proportion of schools offering basic services, by type of service",
+          "title": "Proportion of schools offering basic services",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/4-a-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-b-1",

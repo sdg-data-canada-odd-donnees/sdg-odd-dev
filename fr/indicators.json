@@ -543,11 +543,11 @@
         },
         {
           "id": "4-a-1",
-          "title": "Proportion d’établissements scolaires offrant des services essentiels, par type de service",
+          "title": "Proportion d’établissements scolaires offrant des services essentiels",
           "description": "",
           "keywords": "",
           "href": "/sdg-odd-dev/fr/4-a-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-b-1",
