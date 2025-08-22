@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250822134135">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250822160104">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -536,7 +536,7 @@ data-event-label="high"
 
 <p>Any series that achieves its target is automatically assigned a progress score of +5. However, all series must achieve the target for the aggregate progress status to be “Target achieved”.</p>
 
-<h5 id="sub-indicator-grouping"><b>Sub-indicator grouping</b></h5>
+<h5 id="sub-indicator-grouping">Sub-indicator grouping</h5>
 <p>In rare cases, sub-indicators may be reported via multiple series (sub-sub-indicators). In this situation, the progress scores from each series grouped within the sub-indicator are determined and averaged together before passing along the group’s mean score to be used in the next steps of the aggregate progress calculation of the indicator. For example, GIF indicator 1.4.1 Proportion of population living in households with access to basic services is composed of many sub-indicators covering access to different forms of basic services. Each basic service should be accorded equal weighting in the determination of the progress score for this indicator. However, the Access to basic education sub-indicator is itself composed of multiple sub-sub-indicators that cover a range of age groups and subjects. Therefore, the progress scores from each available sub-sub-indicator are grouped together and averaged, resulting in a single mean progress score for the Access to basic education sub-indicator. The mean of the progress scores from each sub-indicator (where some of the sub-indicators’ scores may themselves be the result of an averaged group of sub-sub-indicator scores) then becomes the final aggregate progress score for the indicator. Grouping depth is not limited. This grouping method guarantees that sub-indicators are weighted equally when assigning a progress status to the indicator.</p>
 
 <h3 id="considerations-and-exceptions">Considerations and Exceptions</h3>
@@ -581,8 +581,8 @@ data-event-label="high"
 <h4 id="specific-exceptions-for-canadas-global-indicator-framework-reporting"><b>Specific exceptions for Canada’s Global Indicator Framework reporting</b></h4>
 <p>To overcome certain limitations of the progress measurement methodology, data may be transformed into an equivalent valid form before calculating progress. Such transformations are intended to enable consistent progress measurements across a greater number of indicators.</p>
 
-<h5 id="goldilocks-indicators"><b>Goldilocks indicators</b></h5>
-<p>For some indicators, it is desirable to approach and meet the target, but exceeding it may have negative consequences. We have labelled indicators with these types of targets as “Goldilocks” indicators because being far above the target is “too cold”, being below the target is “too hot”, while achieving the target is deemed “just right”. The results improve as we approach the target and worsen as we move away from the target in either direction. The methods used to address with this type of target are described below:</p>
+<h5 id="goldilocks-indicators">Goldilocks indicators</h5>
+<p>For some indicators, it is desirable to approach and meet the target, but exceeding it may have negative consequences. We have labelled indicators with these types of targets as “Goldilocks” indicators because being far above the target is “too cold”, being below the target is “too hot”, while achieving the target is deemed “just right”. The results improve as we approach the target and worsen as we move away from the target in either direction. The methods used to address this type of target are described below:</p>
 <ol type="a">
   <li>GIF indicator 4.5.1 <i>Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated</i>: The observed parity index value, <i>y</i><sub>i</sub>, is compared to the ideal parity index value of 1. To ensure that inequities in either direction are handled fairly and equally, the observed parity index value and the ideal parity index value are compared through a ratio of one to the other. In other words, the observed values are transformed as max(<i>y</i><sub>i</sub>, 1⁄<i>y</i><sub>i</sub>), which corresponds to selecting whichever is larger between the ratio of the observed value to the ideal value of 1 and the reciprocal situation. Therefore, a group performing twice as well as another is measured equally to the reciprocal situation, in which a group performs half as well as the other. The desired progress is a reduction of the transformed value towards a target of 1. Furthermore, if the observed parity index value is between 0.97 and 1.03, the transformed value is simply taken to be 1 since it falls within the accepted range for parity.</li>
   <li>GIF indicator 5.4.1 <i>Proportion of time spent on unpaid domestic and care work, by sex, age and location</i>: The stated target of promoting “shared responsibility within the household and family” is interpreted as meaning the time spent on unpaid domestic and care work for men and women should be equal. As such, this indicator’s data is transformed into a measure of the ratio of the time spent on unpaid domestic and care work between men and women and assessed similarly to GIF indicator 4.5.1. The transformed value used in subsequent progress calculations is whichever is larger between the ratio of women to men and the ratio of men to women: max(<i>f</i><sub>i</sub>⁄<i>m</i><sub>i</sub>, <i>m</i><sub>i</sub>⁄<i>f</i><sub>i</sub> ), where <i>f</i><sub>i</sub> represents the observed time spent by women on unpaid domestic and care work and <i>m</i><sub>i</sub> represents the observed time spent by men on unpaid domestic and care work. The desired progression is a reduction towards a target ratio of 1. However, a reduction in the total time spent on domestic and care work from all genders may not be the desired outcome as it may indicate growing neglect rather than gender equality. Therefore, caution should be exercised when interpreting the progress of this indicator.</li>
@@ -591,8 +591,8 @@ data-event-label="high"
   <li>GIF indicator 16.6.1 <i>Primary government expenditures as a proportion of original approved budget, by sector</i>: A responsible government is expected to spend according to its approved budget, while not exceeding or failing short of the approved amount. Prior to the progress calculation, the values for this indicator can be transformed to account equally for both over- and under-spending. Similarly to GIF indicators 5.5.1, 5.5.2, and 5.a.1(b), the transformation adds the absolute difference between the observed proportion and the target to the target of 100% as follow: 100% + abs(<i>y</i><sub>i</sub> - 100%), where <i>y</i><sub>i</sub> is the observed proportion. This transformation ensures that the desired progress is a reduction of the transformed value towards 100%, reflecting any proportion below the target to its equivalent position above the target. Due to unpredictable outcomes below 25%, progress will not be measured in extreme situations that fall below this threshold.</li>
 </ol>
 
-<h5 id="unit-transformations"><b>Unit transformations</b></h5>
-<p>The methodology is not applicable to indicators that allow both negative and positive value, such as indicators measuring percent change or growth rates. When possible, the values for these types of indicators should be transformed into unit types that are compatible with the progress measurement methodology before performing the progress calculations. In the GIF, this transformation may be applied to measure the progress of the following indicators and series:</p>
+<h5 id="unit-transformations">Unit transformations</h5>
+<p>The methodology is not applicable to indicators that allow both negative and positive values, such as indicators measuring percent change or growth rates. When possible, the values for these types of indicators should be transformed into unit types that are compatible with the progress measurement methodology before performing the progress calculations. In the GIF, this transformation may be applied to measure the progress of the following indicators and series:</p>
 <ul>
   <li>GIF indicator 8.1.1 <i>Annual growth rate of real GDP per capita</i></li>
   <li>GIF indicator 8.2.1 <i>Annual growth rate of real GDP per employed person</i></li>
@@ -793,22 +793,22 @@ data-event-label="high"
     <tr>
       <td>3.3.2</td>
       <td>Tuberculosis incidence per 100,000 population</td>
-      <td>0</td>
+      <td>Reduce by 80%</td>
     </tr>
     <tr>
       <td>3.3.3</td>
       <td>Malaria incidence per 1,000 population</td>
-      <td>0</td>
+      <td>Reduce by 90%</td>
     </tr>
     <tr>
       <td>3.3.4</td>
       <td>Hepatitis B incidence per 100,000 population</td>
-      <td>0</td>
+      <td>Reduce by 90%</td>
     </tr>
     <tr>
       <td>3.3.5</td>
       <td>Number of people requiring interventions against neglected tropical diseases</td>
-      <td>0</td>
+      <td>Reduce by 90% (compared to 2010 baseline)</td>
     </tr>
     <tr>
       <td>3.4.1</td>
@@ -1173,7 +1173,7 @@ data-event-label="high"
     <tr>
       <td>8.8.2</td>
       <td>Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status</td>
-      <td>Score = 0</td>
+      <td>Decrease</td>
     </tr>
     <tr>
       <td>8.9.1</td>
@@ -2017,12 +2017,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250822134135'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250822160104'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250822134135"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250822160104"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
