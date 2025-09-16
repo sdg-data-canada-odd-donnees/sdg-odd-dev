@@ -306,7 +306,7 @@ reporting_status:
     - value: notavailable
       label: status.not_available
       hide_on_goal_pages: false
-  disaggregation_indicator_count_label: indicators in scope
+  disaggregation_indicator_count_label: status.scope
 repository_url_data: 'https://github.com/open-sdg/open-sdg-data-starter'
 repository_url_site: ''
 search_index_boost: []
