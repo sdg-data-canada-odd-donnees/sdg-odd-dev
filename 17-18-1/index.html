@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250923133201">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20250925152158">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -1266,10 +1266,9 @@ data-event-label="Change to Sources tab"
 The Open Data Inventory (ODIN) is an evaluation of the coverage and openness of data provided on the websites maintained by national statistical offices (NSOs) and any official government website that is accessible from the NSO site, as well as a country’s official SDG portal.
 </p>
 <p>
-ODIN measures the completeness of a countries’ statistical offerings (called, “coverage”) and how well those datasets meet international standards of data openness (called, “openness”). To determine the coverage and openness of datasets assessed in ODIN, ten elements are used.
-</p>
+ODIN measures the completeness of a countries’ statistical offerings (called, “coverage”) and how well those datasets meet international standards of data openness (called, “openness”). This assessment is conducted across 22 data categories of social, economic, and environmental statistics. Each data category is evaluated based on 10 elements to determine the coverage and openness of datasets.
 <p>
-Coverage of data are measured by five elements that measure how complete the country’s data offerings are. Information on all elements are collected for each dataset assessed in ODIN, except for elements 4 and 5 that are not included for some data categories or for small countries. 
+Coverage of data are measured by five elements that measure how complete the country’s data offerings are.
 </p>
 <p>
 The five coverage elements are:
@@ -1315,6 +1314,7 @@ Each of these pillars is supported by four or five dimensions and uses defined m
 </p>
 <p>
 The scores for each pillar are calculated using the scores for the underlying dimensions, which in turn are derived from the values of their indicators. The overall SPI score is an average of the scores for the five pillars. For the overall score, a country can achieve a maximum of 100 and a minimum of 0. A score of 100 would indicate that a country has every single element that the SPI measures in place, and a score of 0 that none are in place. <i>(World Bank Group)</i>
+</p>
 </p>
 
           
@@ -3137,12 +3137,12 @@ The scores for each pillar are calculated using the scores for the underlying di
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250923133201'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20250925152158'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250923133201"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20250925152158"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
