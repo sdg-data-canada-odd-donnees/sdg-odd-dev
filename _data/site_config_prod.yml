@@ -21,6 +21,3 @@ remote_data_prefix: "https://sdggif-data-canada-oddcmi-donnee.github.io/canada-g
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
   ga_prod: ''
-reporting_status:
-  description: status.status_description
-  disaggregation_tabs: false
