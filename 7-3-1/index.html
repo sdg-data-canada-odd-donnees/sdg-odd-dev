@@ -146,7 +146,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20260127164619">
+        <link rel="stylesheet" href="/sdg-odd-dev/assets/css/style.css?v=20260127191750">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -442,7 +442,7 @@ data-event-label="high"
   
 <div class="row metadata-available-indicator">
   <div class="col-xs-12">
-    <h2>Energy intensity measured in terms of GDP</h2>
+    <h2>Energy intensity [measured in terms of energy use, final demand and gross domestic product (GDP)]</h2>
   </div>
 </div>
 
@@ -473,9 +473,13 @@ data-event-label="high"
         <div class="progress-status">
         
             <div class="progress-status-label">
-                Unable to assess
+                Limited progress
             </div>
         
+        
+            <div class="progress-status-image">
+                <img src="/sdg-odd-dev/assets/img/progress/orange-gauge.png" alt="Limited progress" />
+            </div>
         
         </div>
     
@@ -497,7 +501,7 @@ data-event-label="high"
   data-indicatorid='indicator_7-3-1'
   data-id="7-3-1"
   data-country="Canada"
-  data-charttitle="Energy intensity measured in terms of GDP"
+  data-charttitle="Energy intensity [measured in terms of energy use, final demand and gross domestic product (GDP)]"
   data-charttitles="[]"
   data-measurementunit="Terajoules per million dollars of real GDP"
   data-xaxislabel=""
@@ -506,14 +510,14 @@ data-event-label="high"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Supply and demand characteristics&quot;,&quot;value&quot;:&quot;Energy use, final demand&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;}]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Yukon&quot;,&quot;Northwest Territories&quot;,&quot;Nunavut&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;Supply and demand characteristics&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Energy use, final demand&quot;,&quot;Total industrial&quot;,&quot;Total transportation&quot;,&quot;Agriculture, fishing, hunting and trapping&quot;,&quot;Residential&quot;,&quot;Public administration&quot;,&quot;Commercial and other institutional&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Supply and demand characteristics&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Yukon&quot;,&quot;Northwest Territories&quot;,&quot;Nunavut&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy="proxy"
@@ -548,15 +552,169 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/en/headline/7-3-1.csv" class="btn btn-primary btn-download" download="indicator_7-3-1.csv" tabindex="0" role="button">Download Headline CSV</a>
+    
     <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/en/data/7-3-1.csv" class="btn btn-primary btn-download" download='indicator_7-3-1.csv' tabindex='0' role='button'>Download All Data (CSV)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>No headline data available</h3>
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Energy intensity [measured in terms of energy use, final demand and gross domestic product (GDP)]</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">3.98</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">3.92</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">3.95</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">4.02</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">3.98</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">3.76</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">3.65</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">3.63</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td class="table-value">3.51</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024</td>
+          
+          
+          
+          <td class="table-value">3.46</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source: Statistics Canada</p>
+    
+    
+    <p>Geographical Area: Canada</p>
+    
+    
+    <p>Unit of Measurement: Terajoules per million dollars of real GDP</p>
+    
+    
+    <p>Note: </p>
+    
+  </div>
   
 
 </div>
@@ -640,7 +798,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Energy intensity measured in terms of GDP
+            Energy intensity [measured in terms of energy use, final demand and gross domestic product (GDP)]
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -937,7 +1095,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator </th>
         <td>
           
-            <p>Indicator 7.3.1: Energy intensity measured in terms of GDP</p>
+            <p>Indicator 7.3.1: Energy intensity [measured in terms of energy use, final demand and gross domestic product (GDP)]</p>
 
           
         </td>
@@ -1013,7 +1171,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            <p>This indicator measures the total energy use intensity in terms of GDP. This is expressed as Terajoules per million dollars of real GDP.</p>
+            <p>This indicator measures the total energy use, final demand in terms of GDP. This is expressed as Terajoules per million dollars of real GDP.</p>
 
           
         </td>
@@ -1089,7 +1247,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Comment and limitations </th>
         <td>
           
-            <p>This is a proxy indicator. The UN Global indicator states: “Energy intensity measured in terms of primary energy and GDP”. This indicator measures the total energy use intensity in terms of GDP rather than the energy supplied to the economy per unit value of economic output as specified in the metadata.</p>
+            <p>This is a proxy indicator. The UN Global indicator states: “Energy intensity measured in terms of primary energy and GDP”. This indicator measures the energy use, final demand in terms of GDP rather than the energy supplied to the economy per unit value of economic output as specified in the metadata.</p>
 
           
         </td>
@@ -1105,7 +1263,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            <p>Total energy use per unit of GDP = Total energy use / Real GDP, expenditure based, at market prices (chained 2017 Canadian dollars)</p>
+            <p>Energy intensity = energy use, final demand / Real GDP, expenditure based, at market prices (chained 2017 Canadian dollars)</p>
 
           
         </td>
@@ -2835,12 +2993,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-odd-dev/assets/js/sdg.js?v=20260127164619'></script>
+<script src='/sdg-odd-dev/assets/js/sdg.js?v=20260127191750'></script>
 
 
     
     
-    <script src="/sdg-odd-dev/assets/js/custom.js?v=20260127164619"></script><script>
+    <script src="/sdg-odd-dev/assets/js/custom.js?v=20260127191750"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
