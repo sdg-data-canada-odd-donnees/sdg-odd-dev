@@ -1,7 +1,7 @@
 ---
 title: Sommaire de progrès annuel
 language: fr
-permalink: /fr/summary/
+permalink: fr/summary/
 layout: page
 ---
 
