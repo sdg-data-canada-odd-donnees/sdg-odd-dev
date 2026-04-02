@@ -230,9 +230,7 @@ menu:
       - path: /related-products
         translation_key: menu.related-products
       - path: /methodology
-        translation_key: menu.methodology
-      - path: /summary
-        translation_key: menu.summary    
+        translation_key: menu.methodology  
 #  - path: /news
 #    translation_key: menu.updates
 #    dropdown: []
