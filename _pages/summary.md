@@ -1,7 +1,7 @@
 ---
 title: Annual Summary of Progress
 language: en
-permalink: /summary/
+permalink: summary/
 layout: page
 ---
 
