@@ -9,7 +9,7 @@ layout: page
 
 ### Introduction
 
-Il y a 251 indicateurs dans le CMI. En date du 29 décembre 2025, il est possible de classer les progrès réalisés pour 132 (52,6 %) d'entre eux. Ceux-ci sont divisés en cinq niveaux de progrès, allant de « Détérioration » à « Cible atteinte » (voir la section <a href="https://sdggif-data-canada-oddcmi-donnee.github.io/fr/methodology">Méthodologie de mesure des progrès</a>). La figure 1 présente un résumé visuel des progrès réalisés par le Canada depuis 2015, ventilés par objectif. Pour chaque objectif, des cercles de différentes tailles indiquent le nombre d'indicateurs entrant dans chaque catégorie de progrès. 
+Il y a 251 indicateurs dans le CMI. En date du 29 décembre 2025, il est possible de classer les progrès réalisés pour 132 (52,6 %) d'entre eux. Ceux-ci sont divisés en cinq niveaux de progrès, allant de « Détérioration » à « Cible atteinte » (voir la section Méthodologie de mesure des progrès). La figure 1 présente un résumé visuel des progrès réalisés par le Canada depuis 2015, ventilés par objectif. Pour chaque objectif, des cercles de différentes tailles indiquent le nombre d'indicateurs entrant dans chaque catégorie de progrès. 
 
 ### Sommaire
 
