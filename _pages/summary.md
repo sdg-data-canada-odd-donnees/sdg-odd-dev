@@ -9,7 +9,7 @@ layout: page
 
 ### Introduction
 
-As of December 31, 2025, there was 251 indicators in the GIF and progress has been assessed for 132 (52.6%) of them. These are divided into five progress levels, ranging from “Deterioration” to “Target Achieved” (refer to the [Progress Measurement Methodology](https://sdggif-data-canada-oddcmi-donnee.github.io/methodology/) section). Figure 1 provides a visual summary of Canada’s progress since 2015, broken down by goal. For each goal, circles of different sizes indicate the number of indicators classified into each progress category.
+As of December 31, 2025, there was 251 indicators in the GIF and progress has been assessed for 132 (52.6%) of them. These are divided into five progress levels, ranging from “Deterioration” to “Target Achieved” (for more information regarding the progress levels, please refer to the [Progress Measurement Methodology](https://sdggif-data-canada-oddcmi-donnee.github.io/methodology/) section). Figure 1 provides a visual summary of Canada’s progress since 2015, broken down by goal. For each goal, circles of different sizes indicate the number of indicators classified into each progress category.
 
 ### Summary
 
