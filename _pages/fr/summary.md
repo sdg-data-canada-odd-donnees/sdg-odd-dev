@@ -20,6 +20,6 @@ En date du 31 décembre 2025,
 - 19,7 %  avaient démontré des progrès limités.
 - 25,8 % démontraient une détérioration du progrès. 
 
-#### Figure 1  : Progrès réalisés par le Canada à l’égard des objectifs de développement durable au cours de la période allant de 2015 au 31 décembre 2025, par objectif, Cadre mondial d’indicateurs
+#### <b>Figure 1  : Progrès réalisés par le Canada à l’égard des objectifs de développement durable au cours de la période allant de 2015 au 31 décembre 2025, par objectif, Cadre mondial d’indicateurs</b>
 
 ![Image sommaire du Cadre mondial d'indicateurs, 2025](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/sdg-odd-dev/develop/assets/img/summary/2025/GIF_2025_FR.png)
