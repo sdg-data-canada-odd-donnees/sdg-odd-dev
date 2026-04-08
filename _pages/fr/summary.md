@@ -9,7 +9,9 @@ layout: page
 
 ### Introduction
 
-En date du 31 décembre 2025, il y avait 251 indicateurs dans le CMI et il était possible de classer les progrès réalisés pour 132 (52,6 %) d'entre eux. Ceux-ci sont divisés en cinq niveaux de progrès, allant de « Détérioration » à « Cible atteinte » (pour plus d'information sur les niveaux de progrès, veuillez vous référer à la section [Méthodologie de mesure des progrès](https://sdggif-data-canada-oddcmi-donnee.github.io/fr/methodology/)). La figure 1 présente un résumé visuel des progrès réalisés par le Canada depuis 2015, ventilés par objectif. Pour chaque objectif, des cercles de différentes tailles indiquent le nombre d'indicateurs classé dans chaque catégorie de progrès. 
+En date du 31 décembre 2025, il y avait 251 indicateurs dans le CMI et il était possible de classer les progrès réalisés pour 132 (52,6 %) d'entre eux. Ceux-ci sont divisés en cinq niveaux de progrès, allant de « Détérioration » à « Cible atteinte » (pour plus d'information sur les niveaux de progrès, veuillez vous référer à la section [Méthodologie de mesure des progrès](https://sdggif-data-canada-oddcmi-donnee.github.io/fr/methodology/)). 
+
+La figure 1 présente un résumé visuel des progrès réalisés par le Canada depuis 2015, ventilés par objectif. Pour chaque objectif, des cercles de différentes tailles indiquent le nombre d'indicateurs classé dans chaque catégorie de progrès. 
 
 ### Sommaire
 
@@ -21,4 +23,4 @@ En date du 31 décembre 2025,
 - 25,8 % démontraient une détérioration du progrès. 
 
 #### <b>Figure 1  : Progrès réalisés par le Canada à l’égard des objectifs de développement durable au cours de la période allant de 2015 au 31 décembre 2025, par objectif, Cadre mondial d’indicateurs</b>
-![Image sommaire du Cadre mondial d'indicateurs, 2025](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/sdg-odd-dev/develop/assets/img/summary/2025/GIF_2025_FR.png)
+![Image sommaire du Cadre mondial d'indicateurs, 2025](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/sdg-odd-dev/develop/assets/img/summary/2025/GIF_2025_FR.svg)
