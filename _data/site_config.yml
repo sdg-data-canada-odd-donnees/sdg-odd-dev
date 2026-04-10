@@ -228,7 +228,7 @@ menu:
   - translation_key: menu.summary
     dropdown:
       - path: /summary_2025
-        translation_key: menu.summary
+        translation_key: menu.summary_2025
   - translation_key: menu.more_info
     dropdown:
       - path: /related-products
