@@ -1,7 +1,7 @@
 ---
 title: Annual Summary of Progress - 2025
 language: en
-permalink: /summary/
+permalink: /summary_2025/
 layout: page
 ---
 
