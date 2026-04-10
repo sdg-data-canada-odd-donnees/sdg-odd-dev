@@ -1,7 +1,7 @@
 ---
 title: Sommaire de progrès annuel - 2025
 language: fr
-permalink: /fr/summary/
+permalink: /fr/summary_2025/
 layout: page
 ---
 
