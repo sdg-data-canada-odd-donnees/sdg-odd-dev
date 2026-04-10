@@ -222,13 +222,13 @@ menu:
   - path: /faq
     translation_key: menu.faq
     dropdown: []
-  # - path: menu.cif_hub_url
-  #   translation_key: menu.cif_hub
-  #   dropdown: []
   - translation_key: menu.summary
     dropdown:
       - path: /summary_2025
         translation_key: menu.summary_2025
+  # - path: menu.cif_hub_url
+  #   translation_key: menu.cif_hub
+  #   dropdown: []
   - translation_key: menu.more_info
     dropdown:
       - path: /related-products
