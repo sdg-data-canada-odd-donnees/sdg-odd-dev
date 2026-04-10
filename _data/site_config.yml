@@ -225,7 +225,7 @@ menu:
   - translation_key: menu.summary
     dropdown:
       - path: /summary_2025
-        translation_key: menu.summary-2025
+        translation_key: menu.summary_2025
   # - path: menu.cif_hub_url
   #   translation_key: menu.cif_hub
   #   dropdown: []
