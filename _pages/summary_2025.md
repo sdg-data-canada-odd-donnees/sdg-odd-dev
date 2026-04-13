@@ -25,7 +25,7 @@ As of December 31, 2025,
 #### <b>Figure 1: Canada’s progress toward the Sustainable Development Goals from 2015 to December 31, 2025, by goal, Global Indicator Framework</b>
 ![Global Indicator Framework Image Summary, 2025](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/sdg-odd-dev/develop/assets/img/summary/2025/GIF_2025_EN.svg)
 
-<a href="assets/img/summary/2025/gif_metadata_2025.csv" download>
+<a href="https://github.com/sdg-data-canada-odd-donnees/sdg-odd-dev/blob/4e4de68188854f53e55d6ed08b5059a9377429bc/assets/img/summary/2025/gif_metadata_2025.csv" download>
   Download the detailed Summary of progress for 2025
 </a>
 
