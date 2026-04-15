@@ -265,13 +265,6 @@ progress_status:
   progress_tabs: true
   status_heading: status.progress_status
   status_types:
-    - value: not_available_manual
-      label: status.not_available_manual
-      alt: status.not_available_manual
-    - value: not_available
-      label: status.progress_not_available_full
-      # image: assets/img/progress/not-available.png
-      alt: status.progress_not_available
     - value: target_achieved
       label: status.target_achieved
       image: assets/img/progress/target-achieved-gauge.png
@@ -292,6 +285,9 @@ progress_status:
       label: status.deterioration
       image: assets/img/progress/red-gauge.png
       alt: status.deterioration
+    - value: not_available
+      label: status.progress_not_available_full
+      alt: status.progress_not_available_full
         
 remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
 reporting_status:
