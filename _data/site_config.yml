@@ -262,13 +262,14 @@ observation_attributes:
   - field: COMMENT_OBS_2
     label: ''
 progress_status:
+  progress_tabs: true
   status_heading: status.progress_status
   status_types:
     - value: not_available_manual
       label: status.not_available_manual
       alt: status.not_available_manual
     - value: not_available
-      label: status.progress_not_available
+      label: status.progress_not_available_full
       # image: assets/img/progress/not-available.png
       alt: status.progress_not_available
     - value: target_achieved
