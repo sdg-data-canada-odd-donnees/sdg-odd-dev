@@ -269,7 +269,7 @@ progress_status:
       label: status.not_available_manual
       alt: status.not_available_manual
     - value: not_available
-      label: status.progress_not_available
+      label: status.progress_not_available_full
       # image: assets/img/progress/not-available.png
       alt: status.progress_not_available
     - value: target_achieved
