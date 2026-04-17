@@ -24,7 +24,7 @@ En date du 31 décembre 2025,
 
 #### <b>Figure 1  : Progrès réalisés par le Canada à l’égard des objectifs de développement durable au cours de la période allant de 2015 au 31 décembre 2025, par objectif, Cadre mondial d’indicateurs</b>
 ![Image sommaire du Cadre mondial d'indicateurs, 2025](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/sdg-odd-dev/develop/assets/img/summary/2025/GIF_2025_FR.svg)
-<a href="https://github.com/sdg-data-canada-odd-donnees/sdg-odd-dev/blob/4e4de68188854f53e55d6ed08b5059a9377429bc/assets/img/summary/2025/gif_metadata_2025_fr.csv" download>
+<a href="https://github.com/sdg-data-canada-odd-donnees/sdg-odd-dev/blob/8b167cb3f4ebb22366ebd17a2949c17179c66e59/assets/img/summary/2025/gif_metadata_2025_fr.csv" download>
   Télécharger le Sommaire de progrès détaillé pour 2025
 </a>
 
