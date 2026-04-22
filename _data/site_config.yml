@@ -288,9 +288,13 @@ progress_status:
     - value: not_available
       label: status.progress_not_available_full
       alt: status.progress_not_available_full
-    - value: not_available_manual
+    - value: not_available
       label: status.not_available_manual
       alt: status.not_available_manual
+#Avant c'était ce qu'il y a en dessous, mais j'ai combiné les "not_available" pour le current progress status. ne pas avoir le"not_available" divisé en 2
+#    - value: not_available_manual
+#      label: status.not_available_manual
+#     alt: status.not_available_manual
         
 remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
 reporting_status:
