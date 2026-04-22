@@ -263,7 +263,7 @@ observation_attributes:
     label: ''
 progress_status:
   progress_tabs: true
-  status_heading: status.progress_status
+  status_heading: status.progress_status_summary
   status_help: ''
   status_types:
     - value: target_achieved
