@@ -262,7 +262,7 @@ observation_attributes:
   - field: COMMENT_OBS_2
     label: ''
 progress_status:
-  progress_tabs: true
+  progress_tabs: false
   status_heading: status.progress_status_indicators
   status_help: ''
   status_types:
