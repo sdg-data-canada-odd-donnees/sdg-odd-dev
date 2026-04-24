@@ -222,6 +222,10 @@ menu:
   - path: /faq
     translation_key: menu.faq
     dropdown: []
+  - translation_key: menu.summary
+    dropdown:
+      - path: /summary_2025
+        translation_key: menu.summary_2025
   # - path: menu.cif_hub_url
   #   translation_key: menu.cif_hub
   #   dropdown: []
@@ -230,7 +234,7 @@ menu:
       - path: /related-products
         translation_key: menu.related-products
       - path: /methodology
-        translation_key: menu.methodology
+        translation_key: menu.methodology   
 #  - path: /news
 #    translation_key: menu.updates
 #    dropdown: []
@@ -258,15 +262,10 @@ observation_attributes:
   - field: COMMENT_OBS_2
     label: ''
 progress_status:
-  status_heading: status.progress_status
+  progress_tabs: false
+  status_heading: status.progress_status_indicators
+  status_help: ''
   status_types:
-    - value: not_available_manual
-      label: status.not_available_manual
-      alt: status.not_available_manual
-    - value: not_available
-      label: status.progress_not_available
-      # image: assets/img/progress/not-available.png
-      alt: status.progress_not_available
     - value: target_achieved
       label: status.target_achieved
       image: assets/img/progress/target-achieved-gauge.png
@@ -287,6 +286,12 @@ progress_status:
       label: status.deterioration
       image: assets/img/progress/red-gauge.png
       alt: status.deterioration
+    - value: not_available
+      label: status.progress_not_available
+      alt: status.progress_not_available
+    - value: not_available_manual
+      label: status.not_available_manual
+      alt: status.not_available_manual
         
 remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
 reporting_status:
