@@ -44,7 +44,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        REPOSITORY_NAME: sdggif-data-canada-oddcmi-donnee/sdggif-data-canada-oddcmi-donnee.github.io
+        REPOSITORY_NAME: sdg-data-canada-odd-donnees/sdggif-data-canada-oddcmi-donnee.github.io
         ACCESS_TOKEN: ${{ secrets.token }}
         BRANCH: master
         FOLDER: _site
