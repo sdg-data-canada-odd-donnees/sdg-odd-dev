@@ -16,33 +16,36 @@
 # ****************************************************************************
 
 name: Deploy to production
+
 on:
-  workflow_dispatch:
+  workflow_dispatch: 
+    # enables button to trigger workflow manually
   push:
     branches:
       - master
-
+      
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '2.7'
-          bundler-cache: true
-
-      - name: Build the site
-        run: |
-          JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_prod.yml
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          repository-name: sdggif-data-canada-oddcmi-donnee/sdggif-data-canada-oddcmi-donnee.github.io
-          token: ${{ secrets.token }}
-          branch: master
-          folder: _site
-          clean: true
+    - uses: actions/checkout@v1
+    - name: Set up Ruby 2.6
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '2.6'
+    - name: Build the site
+      run: |
+        gem install bundler -v 2.4.22
+        bundle config path vendor/bundle
+        bundle install
+        bundle exec jekyll build --config _config.yml,_config_prod.yml
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        repository-name: sdggif-data-canada-oddcmi-donnee/sdggif-data-canada-oddcmi-donnee.github.io
+        token: ${{ secrets.token }}
+        branch: master
+        folder: _site
+        clean: true
