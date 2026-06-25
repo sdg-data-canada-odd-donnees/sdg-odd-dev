@@ -27,12 +27,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
-          bundler-cache: true   # handles `bundle install` + caching automatically
+          ruby-version: '2.7'
+          bundler-cache: true
 
       - name: Build the site
         run: |
