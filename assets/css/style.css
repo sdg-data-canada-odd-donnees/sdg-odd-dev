@@ -1471,6 +1471,14 @@ body.contrast-high .proxy-pill {
   .status .status-inner {
     padding: 0 2px;
     border-radius: 5px; }
+  .status {
+    color: #0b0c0c;
+    border: 1px solid #0b0c0c;
+    background-color: #CFCFCF;
+    background: #CFCFCF; }
+    .status .status-inner {
+      background-color: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.9); }
   .status.complete {
     color: white;
     border: 1px solid transparent;
@@ -1552,6 +1560,15 @@ body.contrast-high .proxy-pill {
       background-color: rgba(255, 255, 255, 0.9);
       background: rgba(255, 255, 255, 0.9); }
 
+body.contrast-high .status {
+  border: 1px solid white;
+  background-color: #CFCFCF;
+  background: #CFCFCF;
+  color: black; }
+  body.contrast-high .status .status-inner {
+    background-color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
+    color: black; }
 body.contrast-high .status.complete {
   border: 1px solid transparent;
   background-color: white;
@@ -1888,6 +1905,14 @@ body.contrast-high .indicator.goal-banner .goal-tiles img {
     .layout-reportingstatus #main-content .statuses > div .status .status-inner {
       padding: 0 2px;
       border-radius: 5px; }
+    .layout-reportingstatus #main-content .statuses > div .status {
+      color: #0b0c0c;
+      border: 1px solid #0b0c0c;
+      background-color: #CFCFCF;
+      background: #CFCFCF; }
+      .layout-reportingstatus #main-content .statuses > div .status .status-inner {
+        background-color: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.9); }
     .layout-reportingstatus #main-content .statuses > div .status.complete {
       color: white;
       border: 1px solid transparent;
@@ -1986,7 +2011,9 @@ body.contrast-high .indicator.goal-banner .goal-tiles img {
   .layout-reportingstatus #main-content .goal-stats span {
     display: inline-block;
     height: 10px;
-    font-weight: bold; }
+    font-weight: bold;
+    background-color: #CFCFCF;
+    background: #CFCFCF; }
   .layout-reportingstatus #main-content .goal-stats .notapplicable {
     background-color: repeating-linear-gradient(135deg, #757575, white 10px, #757575 10px, white 20px);
     background: repeating-linear-gradient(135deg, #757575, white 10px, #757575 10px, white 20px); }
@@ -2079,6 +2106,9 @@ body.contrast-high .indicator.goal-banner .goal-tiles img {
   background-color: black !important; }
 .layout-reportingstatus.contrast-high #main-content .goal-stats {
   border: 1px solid white !important; }
+  .layout-reportingstatus.contrast-high #main-content .goal-stats span {
+    background-color: #CFCFCF;
+    background: #CFCFCF; }
   .layout-reportingstatus.contrast-high #main-content .goal-stats .notapplicable {
     background-color: repeating-linear-gradient(135deg, #757575, white 10px, #757575 10px, white 20px);
     background: repeating-linear-gradient(135deg, #757575, white 10px, #757575 10px, white 20px); }
@@ -2115,6 +2145,15 @@ body.contrast-high .indicator.goal-banner .goal-tiles img {
   color: white !important; }
 .layout-reportingstatus.contrast-high #main-content .statuses .status {
   border: none !important; }
+  .layout-reportingstatus.contrast-high #main-content .statuses .status {
+    border: 1px solid white;
+    background-color: #CFCFCF;
+    background: #CFCFCF;
+    color: black; }
+    .layout-reportingstatus.contrast-high #main-content .statuses .status .status-inner {
+      background-color: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.9);
+      color: black; }
   .layout-reportingstatus.contrast-high #main-content .statuses .status.complete {
     border: 1px solid transparent;
     background-color: white;
